@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 const { execFileSync } = require("child_process");
 
 const input = process.argv[2];
@@ -27,12 +28,26 @@ function normalizeQuizItem(item, index = 0) {
   const answers = item.answers || item.options || item.choices || [];
   const correctIndex = Number.isInteger(item.correctIndex) ? item.correctIndex : Number(item.correct_index);
   const correct = item.correct ?? item.answer ?? item.correct_answer ?? answers[correctIndex] ?? answers[0];
+
+  // Validation: Ensure at least 2 answers
+  if (!Array.isArray(answers) || answers.length < 2) {
+    throw new Error(`Quiz ${index + 1}: cần ít nhất 2 đáp án, nhận được ${answers.length}`);
+  }
+
+  const normalizedAnswers = answers.map(String).filter(Boolean);
+  const normalizedCorrect = String(correct || "");
+
+  // Validation: Ensure correct answer exists in answers
+  if (!normalizedCorrect || !normalizedAnswers.includes(normalizedCorrect)) {
+    throw new Error(`Quiz ${index + 1}: đáp án đúng "${normalizedCorrect}" không có trong danh sách đáp án`);
+  }
+
   return {
     question: item.question || item.q || `Câu hỏi ${index + 1}`,
-    answers: answers.map(String).filter(Boolean),
-    correct: String(correct || ""),
+    answers: normalizedAnswers,
+    correct: normalizedCorrect,
     feedback_correct: item.feedback_correct || item.feedbackCorrect || item.explanation || "Giỏi quá, con trả lời đúng rồi!",
-    feedback_wrong: item.feedback_wrong || item.feedbackWrong || `Gần đúng rồi. Đáp án đúng là: ${correct}`
+    feedback_wrong: item.feedback_wrong || item.feedbackWrong || `Gần đúng rồi. Đáp án đúng là: ${normalizedCorrect}`
   };
 }
 
@@ -237,10 +252,19 @@ async function main() {
   }
 
   const safeTitle = slugify(plan.title);
-  const buildId = Date.now();
+  const buildId = crypto.randomUUID().replace(/-/g, '').substring(0, 16);
   const lessonDirName = `lesson_${safeTitle}_${buildId}`;
-  const outDir = path.join(__dirname, "lessons", lessonDirName);
-  const planPath = path.join(__dirname, `temp_plan_${buildId}.json`);
+  const outDir = path.resolve(__dirname, "lessons", lessonDirName);
+  const planPath = path.resolve(__dirname, `temp_plan_${buildId}.json`);
+
+  // Validate paths to prevent directory traversal
+  if (!outDir.startsWith(path.resolve(__dirname, "lessons"))) {
+    throw new Error("Invalid output directory path");
+  }
+  if (!planPath.startsWith(path.resolve(__dirname))) {
+    throw new Error("Invalid plan path");
+  }
+
   fs.writeFileSync(planPath, JSON.stringify(plan, null, 2), "utf8");
 
   console.log("[2/3] Đã chuẩn hóa kịch bản. Bắt đầu tạo ảnh slide...");

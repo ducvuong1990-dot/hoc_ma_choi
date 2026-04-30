@@ -9,10 +9,20 @@ from gtts import gTTS
 from mutagen.mp3 import MP3
 
 
+# Constants for word complexity calculation
+VOWEL_WEIGHT = 0.42  # Trọng số cho nguyên âm tiếng Việt
+CHAR_WEIGHT = 0.1    # Trọng số cho độ dài từ
+MIN_COMPLEXITY = 1.0 # Độ phức tạp tối thiểu
+
+# Punctuation weights for timing
+SENTENCE_END_WEIGHT = 1.2   # Dấu câu kết thúc (. ! ?)
+CLAUSE_PAUSE_WEIGHT = 0.55  # Dấu ngắt câu (, ; :)
+
 def word_complexity(word):
+    """Calculate complexity score for Vietnamese word based on vowels and length."""
     vowels = "aeiouyáàảãạâấầẩẫậăắằẳẵặéèẻẽẹêếềểễệíìỉĩịóòỏõọôốồổỗộơớờởỡợúùủũụưứừửữự"
     vowel_count = sum(1 for char in word.lower() if char in vowels)
-    return max(1.0, vowel_count * 0.42 + len(word) * 0.1)
+    return max(MIN_COMPLEXITY, vowel_count * VOWEL_WEIGHT + len(word) * CHAR_WEIGHT)
 
 
 def estimate_word_timestamps(text, actual_duration=None):
@@ -24,9 +34,9 @@ def estimate_word_timestamps(text, actual_duration=None):
     for word in words:
         weight = word_complexity(word)
         if word.endswith((".", "!", "?")):
-            weight += 1.2
+            weight += SENTENCE_END_WEIGHT
         elif word.endswith((",", ";", ":")):
-            weight += 0.55
+            weight += CLAUSE_PAUSE_WEIGHT
         weights.append(weight)
 
     total_weight = sum(weights) or 1
@@ -75,8 +85,18 @@ def generate_audio_local(text, output_mp3, output_json):
         tts.save(output_mp3)
         duration = MP3(output_mp3).info.length
         print(f"  Audio generated with gTTS: {duration:.2f}s")
+    except (OSError, IOError) as error:
+        print(f"  Warning: File I/O error, using local placeholder audio. Error: {error}")
+        timestamps = estimate_word_timestamps(clean_text)
+        duration = (timestamps[-1]["end"] + 0.4) if timestamps else 2.4
+        write_placeholder_audio(output_mp3, duration)
+        with open(output_json, "w", encoding="utf-8") as f:
+            json.dump(timestamps, f, ensure_ascii=False, indent=2)
+        return
     except Exception as error:
         print(f"  Warning: gTTS unavailable, using local placeholder audio. Error: {error}")
+        import traceback
+        traceback.print_exc()
         timestamps = estimate_word_timestamps(clean_text)
         duration = (timestamps[-1]["end"] + 0.4) if timestamps else 2.4
         write_placeholder_audio(output_mp3, duration)
