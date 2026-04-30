@@ -1,0 +1,103 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# API Keys & Secrets
+.env
+.env.local
+*.key
+*_key.json
+credentials.json
+
+# Temporary files
+temp_*.json
+*.tmp
+*.log
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# Audio/Video (large files)
+*.mp3
+*.mp4
+*.wav
+*.avi
+*.mov
+
+# Large image files (keep thumbnails)
+# lessons/*/images/*.png
+# lessons/*/images2/*.png
+# But allow thumbnails
+!lessons/*/images/slide-01.png
+!lessons/*/images2/slide-01.png
+
+# Generated content (optional - uncomment if you want to exclude)
+# lessons/lesson_*/
+# lessons/gen_*/
+
+# Cache
+.cache/
+*.cache
+
+# Python
+*.egg
+*.egg-info
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.manifest
+*.spec
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/

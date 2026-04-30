@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Vector illustration for a lesson about the butterfly life cycle</title>
+  <desc id="desc">A child-friendly vector scene showing eggs, caterpillar, chrysalis, and butterfly connected in a circular learning flow.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eefaff"/>
+      <stop offset="0.56" stop-color="#dff7ff"/>
+      <stop offset="1" stop-color="#fff3d6"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b7f47a"/>
+      <stop offset="1" stop-color="#33c77a"/>
+    </linearGradient>
+    <linearGradient id="wingPink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff9ac0"/>
+      <stop offset="1" stop-color="#ff5f8f"/>
+    </linearGradient>
+    <linearGradient id="wingBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8fe9ff"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#174e79" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="210" cy="140" r="120" fill="#22f2d2" opacity="0.16"/>
+  <circle cx="1340" cy="170" r="150" fill="#ff8a5c" opacity="0.13"/>
+  <circle cx="1260" cy="760" r="210" fill="#a7f36d" opacity="0.16"/>
+
+  <g opacity="0.48">
+    <path d="M82 760C250 668 366 732 520 676C678 618 786 494 962 548C1130 600 1258 724 1518 620" fill="none" stroke="#ffffff" stroke-width="34" stroke-linecap="round"/>
+    <path d="M104 792C294 700 414 762 552 708C710 646 816 540 974 588C1138 638 1254 766 1512 668" fill="none" stroke="#48d5ff" stroke-width="8" stroke-linecap="round" opacity="0.26"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="156" y="148" width="1288" height="606" rx="54" fill="#ffffff" opacity="0.62"/>
+    <rect x="184" y="176" width="1232" height="550" rx="42" fill="#ffffff" opacity="0.58"/>
+  </g>
+
+  <g fill="none" stroke="#b8d7e8" stroke-width="10" stroke-linecap="round" stroke-dasharray="18 22" opacity="0.82">
+    <path d="M790 250C612 248 474 354 474 450C474 560 620 646 800 646C986 646 1128 548 1128 444C1128 344 988 252 790 250Z"/>
+  </g>
+  <g fill="#48d5ff" opacity="0.85">
+    <path d="M488 360l-34-10l10 34z"/>
+    <path d="M1096 346l38 4l-18-34z"/>
+    <path d="M982 635l18 34l22-32z"/>
+    <path d="M570 610l-40 0l22 32z"/>
+  </g>
+
+  <!-- Stage 1: eggs on leaf -->
+  <g transform="translate(270 324)">
+    <ellipse cx="180" cy="116" rx="172" ry="66" fill="url(#leaf)" transform="rotate(-10 180 116)"/>
+    <path d="M42 144C128 110 230 92 324 76" fill="none" stroke="#166534" stroke-width="12" stroke-linecap="round" opacity="0.55"/>
+    <g fill="#fff5e8" stroke="#ffba71" stroke-width="5">
+      <ellipse cx="154" cy="88" rx="22" ry="28"/>
+      <ellipse cx="188" cy="80" rx="21" ry="27"/>
+      <ellipse cx="220" cy="96" rx="21" ry="27"/>
+      <ellipse cx="178" cy="120" rx="22" ry="28"/>
+    </g>
+    <circle cx="72" cy="40" r="16" fill="#ffe46b" opacity="0.72"/>
+  </g>
+
+  <!-- Stage 2: caterpillar -->
+  <g transform="translate(490 548)">
+    <path d="M36 92C70 42 138 30 196 58C254 86 320 74 374 42" fill="none" stroke="#3bbf65" stroke-width="28" stroke-linecap="round"/>
+    <g>
+      <circle cx="62" cy="82" r="44" fill="#74f19c"/>
+      <circle cx="126" cy="62" r="48" fill="#a7f36d"/>
+      <circle cx="196" cy="76" r="50" fill="#74f19c"/>
+      <circle cx="268" cy="70" r="46" fill="#a7f36d"/>
+      <circle cx="334" cy="46" r="44" fill="#74f19c"/>
+    </g>
+    <circle cx="348" cy="36" r="7" fill="#102033"/>
+    <circle cx="326" cy="42" r="7" fill="#102033"/>
+    <path d="M346 58c-10 14-24 14-34 2" fill="none" stroke="#102033" stroke-width="6" stroke-linecap="round"/>
+    <path d="M316 4c-10-22-30-28-50-20M352 2c6-24 26-34 50-26" fill="none" stroke="#166534" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Stage 3: chrysalis -->
+  <g transform="translate(980 500)">
+    <path d="M180 20C142 58 128 106 134 160C144 236 206 276 258 236C306 198 300 110 260 54C238 24 204 8 180 20Z" fill="#92d36e" stroke="#166534" stroke-width="8"/>
+    <path d="M186 34C176 88 198 128 178 178C168 204 178 228 202 244" fill="none" stroke="#eaffd8" stroke-width="10" stroke-linecap="round" opacity="0.75"/>
+    <path d="M172 18C160-24 118-36 78-20" fill="none" stroke="#8a5a00" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="78" cy="-20" r="16" fill="#8a5a00"/>
+  </g>
+
+  <!-- Stage 4: butterfly -->
+  <g transform="translate(926 188)">
+    <ellipse cx="156" cy="154" rx="36" ry="98" fill="#3b2f4a"/>
+    <path d="M148 78C64 8-18 72 26 166C56 230 118 206 150 164Z" fill="url(#wingPink)" stroke="#ffffff" stroke-width="8"/>
+    <path d="M166 78C250 8 332 72 288 166C258 230 196 206 164 164Z" fill="url(#wingBlue)" stroke="#ffffff" stroke-width="8"/>
+    <path d="M146 168C70 184 38 258 98 308C154 354 192 250 158 176Z" fill="url(#wingBlue)" stroke="#ffffff" stroke-width="8"/>
+    <path d="M168 168C244 184 276 258 216 308C160 354 122 250 156 176Z" fill="url(#wingPink)" stroke="#ffffff" stroke-width="8"/>
+    <circle cx="156" cy="96" r="28" fill="#3b2f4a"/>
+    <path d="M142 74C110 36 84 34 66 54M170 74C202 36 228 34 246 54" fill="none" stroke="#3b2f4a" stroke-width="8" stroke-linecap="round"/>
+    <g fill="#fff4a8" opacity="0.9">
+      <circle cx="78" cy="126" r="13"/>
+      <circle cx="238" cy="126" r="13"/>
+      <circle cx="110" cy="262" r="12"/>
+      <circle cx="204" cy="262" r="12"/>
+    </g>
+  </g>
+
+  <!-- Friendly learning markers without embedded text labels -->
+  <g>
+    <circle cx="344" cy="254" r="42" fill="#fff8dd" stroke="#ffe46b" stroke-width="8"/>
+    <circle cx="580" cy="660" r="42" fill="#e7fff0" stroke="#74f19c" stroke-width="8"/>
+    <circle cx="1162" cy="650" r="42" fill="#e7fff0" stroke="#74f19c" stroke-width="8"/>
+    <circle cx="1116" cy="248" r="42" fill="#e8f7ff" stroke="#48d5ff" stroke-width="8"/>
+    <g fill="#102033" font-family="Arial, sans-serif" font-size="42" font-weight="800" text-anchor="middle">
+      <text x="344" y="268">1</text>
+      <text x="580" y="674">2</text>
+      <text x="1162" y="664">3</text>
+      <text x="1116" y="262">4</text>
+    </g>
+  </g>
+
+  <g opacity="0.72">
+    <circle cx="212" cy="236" r="12" fill="#ff8a5c"/>
+    <circle cx="1388" cy="610" r="14" fill="#22f2d2"/>
+    <circle cx="708" cy="210" r="10" fill="#ffe46b"/>
+    <circle cx="1360" cy="294" r="9" fill="#ff7aa8"/>
+    <path d="M282 682l22 10l-22 10l-10 22l-10-22l-22-10l22-10l10-22z" fill="#ffe46b"/>
+    <path d="M1304 438l20 8l-20 8l-8 20l-8-20l-20-8l20-8l8-20z" fill="#ff8a5c"/>
+  </g>
+</svg>

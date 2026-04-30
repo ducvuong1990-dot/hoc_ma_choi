@@ -1,0 +1,20 @@
+{
+  "name": "hoc_chu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "python -m http.server 3000",
+    "check": "node --check app.js",
+    "catalog:sync": "python sync_catalog.py",
+    "test": "npm run check"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "animejs": "^4.3.6",
+    "canvas-confetti": "^1.9.4"
+  }
+}
