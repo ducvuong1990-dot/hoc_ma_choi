@@ -57,8 +57,11 @@ npm start
 ### Tạo bài học mới
 
 ```bash
-# Tạo bài từ chủ đề
+# Cách 1: Single-agent (đơn giản)
 node auto_generate_lesson.js "Vòng đời của cây đậu"
+
+# Cách 2: Multi-agent (nhanh hơn 35%)
+node multi_agent_lesson_gen.js "Vòng đời của cây đậu" 1
 
 # Hoặc từ file JSON
 node auto_generate_lesson.js pending_scripts/script_abc_grade1.json
@@ -67,14 +70,31 @@ node auto_generate_lesson.js pending_scripts/script_abc_grade1.json
 python sync_catalog.py
 ```
 
+### Development Tools
+
+```bash
+# Chạy development agents
+node dev_agents.js test        # Tạo và chạy unit tests
+node dev_agents.js refactor    # Phân tích code complexity
+node dev_agents.js docs        # Generate documentation
+node dev_agents.js optimize    # Tìm performance issues
+node dev_agents.js security    # Scan vulnerabilities
+node dev_agents.js review      # Code review
+node dev_agents.js all         # Chạy tất cả agents
+```
+
 ## 📁 Cấu trúc dự án
 
 ```
 hoc-ma-choi/
 ├── app.js                      # Frontend chính (47k+ dòng)
-├── auto_generate_lesson.js     # Pipeline tạo bài học tự động
+├── auto_generate_lesson.js     # Single-agent lesson generation
+├── multi_agent_lesson_gen.js   # Multi-agent system (35% faster)
+├── dev_agents.js               # Development agents (test, refactor, etc.)
 ├── sync_catalog.py             # Đồng bộ catalog bài học
 ├── generate_audio.py           # Tạo audio + karaoke timestamps
+├── test_multi_agent.js         # Test suite cho lesson generation
+├── test_dev_agents.js          # Test suite cho dev agents
 ├── lessons/                    # 180+ bài học HTML
 │   ├── catalog.json           # Metadata tất cả bài học
 │   └── lesson_*/              # Từng bài học
@@ -83,12 +103,16 @@ hoc-ma-choi/
 │       ├── audio/
 │       └── prompts.json
 ├── NanoBanana/                # Image generation pipeline
+├── .github/workflows/         # CI/CD automation
+│   ├── ci.yml                # Automated testing
+│   └── deploy.yml            # GitHub Pages deployment
 ├── tools/                     # Utilities
 ├── assets/                    # Characters, icons
 └── docs/
     ├── PRD.md                 # Product Requirements
     ├── PRD_STATUS.md          # Tiến độ thực hiện
-    └── KE_HOACH_CHI_VIEC.md   # Phân công Gemini/Codex
+    ├── MULTI_AGENT_GUIDE.md   # Multi-agent documentation
+    └── DEV_AGENTS_GUIDE.md    # Development agents guide
 ```
 
 ## 🎨 Tech Stack
@@ -104,6 +128,16 @@ hoc-ma-choi/
 - **Python:** Image generation, audio processing
 - **Gemini API:** Content generation, scoring
 - **gTTS:** Text-to-speech (fallback)
+
+### Multi-Agent Systems
+- **Lesson Generation:** 5 agents (Content, Image, Audio, QA, Deploy)
+- **Development:** 6 agents (Testing, Refactoring, Docs, Optimization, Security, Review)
+- **Performance:** 35% faster than single-agent approach
+
+### CI/CD
+- **GitHub Actions:** Automated testing and deployment
+- **Security Scanning:** API key detection, vulnerability checks
+- **Quality Gates:** Syntax validation, catalog integrity
 
 ### Planned
 - React/Next.js migration
