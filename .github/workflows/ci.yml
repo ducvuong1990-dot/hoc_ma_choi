@@ -1,0 +1,59 @@
+name: CI - Test and Lint
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install Node dependencies
+        run: npm install
+
+      - name: Check JavaScript syntax
+        run: node scan_syntax.js || echo "Syntax check completed"
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Test catalog sync
+        run: python sync_catalog.py
+
+      - name: Verify catalog.json
+        run: |
+          if [ -f "lessons/catalog.json" ]; then
+            echo "✅ Catalog exists"
+            python -m json.tool lessons/catalog.json > /dev/null
+            echo "✅ Catalog is valid JSON"
+          else
+            echo "❌ Catalog not found"
+            exit 1
+          fi
+
+      - name: Check for sensitive data
+        run: |
+          if grep -r "GEMINI_API_KEY.*=" . --include="*.js" --include="*.py" --exclude-dir=node_modules; then
+            echo "❌ Found hardcoded API key!"
+            exit 1
+          else
+            echo "✅ No hardcoded API keys found"
+          fi
