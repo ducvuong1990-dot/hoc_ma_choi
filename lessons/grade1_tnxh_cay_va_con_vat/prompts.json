@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "title": "Cây và con vật quanh em",
+    "grade": 1,
+    "subject": "Tự nhiên và Xã hội",
+    "total_slides": 7,
+    "style": "vector-illustration",
+    "generated_at": "2026-04-28T19:42:54",
+    "nano_banana_ready": true
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "cover",
+      "content": "Cây và con vật quanh em\nTự nhiên và Xã hội lớp 1\nHọc bằng hình, nói bằng lời, chơi để nhớ lâu.\nHoạt động: Giáo viên hoặc phụ huynh đọc tên bài, bé nhắc lại chủ đề.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 HTML PPT slide image for Vietnamese grade 1 children\nPrimary request: Create slide 1 for lesson 'Cây và con vật quanh em' (Tự nhiên và Xã hội).\nStyle: warm vector illustration, large readable Vietnamese text, child-friendly, no brand characters, no watermark.\nExact Vietnamese slide title: Cây và con vật quanh em\nExact Vietnamese content: Tự nhiên và Xã hội lớp 1\nHọc bằng hình, nói bằng lời, chơi để nhớ lâu.\nTeacher activity note: Giáo viên hoặc phụ huynh đọc tên bài, bé nhắc lại chủ đề.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade1_tnxh_cay_va_con_vat\\images\\slide-01.svg"
+    },
+    {
+      "slide_number": 2,
+      "page_type": "content",
+      "content": "Mục tiêu hôm nay\nBé sẽ biết:\n- Nhận ra nội dung chính của bài.\n- Nói được từ khóa quan trọng.\n- Làm một nhiệm vụ nhỏ để kiểm tra.\nHoạt động: Bé giơ tay khi nghe từ khóa quen thuộc.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 HTML PPT slide image for Vietnamese grade 1 children\nPrimary request: Create slide 2 for lesson 'Cây và con vật quanh em' (Tự nhiên và Xã hội).\nStyle: warm vector illustration, large readable Vietnamese text, child-friendly, no brand characters, no watermark.\nExact Vietnamese slide title: Mục tiêu hôm nay\nExact Vietnamese content: Bé sẽ biết:\n- Nhận ra nội dung chính của bài.\n- Nói được từ khóa quan trọng.\n- Làm một nhiệm vụ nhỏ để kiểm tra.\nTeacher activity note: Bé giơ tay khi nghe từ khóa quen thuộc.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade1_tnxh_cay_va_con_vat\\images\\slide-02.svg"
+    },
+    {
+      "slide_number": 3,
+      "page_type": "content",
+      "content": "Từ khóa cần nhớ\n- cây\n- lá\n- hoa\n- mèo\n- chó\n- chim\nHoạt động: Bé đọc từng từ khóa. Nếu từ khó, đọc chậm từng tiếng.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 HTML PPT slide image for Vietnamese grade 1 children\nPrimary request: Create slide 3 for lesson 'Cây và con vật quanh em' (Tự nhiên và Xã hội).\nStyle: warm vector illustration, large readable Vietnamese text, child-friendly, no brand characters, no watermark.\nExact Vietnamese slide title: Từ khóa cần nhớ\nExact Vietnamese content: - cây\n- lá\n- hoa\n- mèo\n- chó\n- chim\nTeacher activity note: Bé đọc từng từ khóa. Nếu từ khó, đọc chậm từng tiếng.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade1_tnxh_cay_va_con_vat\\images\\slide-03.svg"
+    },
+    {
+      "slide_number": 4,
+      "page_type": "content",
+      "content": "Ví dụ dễ hiểu\n- Cây cần nước và ánh sáng.\n- Con vật cần được chăm sóc nhẹ nhàng.\nHoạt động: Bé chọn một ví dụ và nói lại bằng lời của mình.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 HTML PPT slide image for Vietnamese grade 1 children\nPrimary request: Create slide 4 for lesson 'Cây và con vật quanh em' (Tự nhiên và Xã hội).\nStyle: warm vector illustration, large readable Vietnamese text, child-friendly, no brand characters, no watermark.\nExact Vietnamese slide title: Ví dụ dễ hiểu\nExact Vietnamese content: - Cây cần nước và ánh sáng.\n- Con vật cần được chăm sóc nhẹ nhàng.\nTeacher activity note: Bé chọn một ví dụ và nói lại bằng lời của mình.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade1_tnxh_cay_va_con_vat\\images\\slide-04.svg"
+    },
+    {
+      "slide_number": 5,
+      "page_type": "practice",
+      "content": "Bé cùng luyện tập\nBé phân loại tranh cây và tranh con vật.\nHoạt động: Làm mẫu một lần, sau đó để bé tự làm lại.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 HTML PPT slide image for Vietnamese grade 1 children\nPrimary request: Create slide 5 for lesson 'Cây và con vật quanh em' (Tự nhiên và Xã hội).\nStyle: warm vector illustration, large readable Vietnamese text, child-friendly, no brand characters, no watermark.\nExact Vietnamese slide title: Bé cùng luyện tập\nExact Vietnamese content: Bé phân loại tranh cây và tranh con vật.\nTeacher activity note: Làm mẫu một lần, sau đó để bé tự làm lại.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade1_tnxh_cay_va_con_vat\\images\\slide-05.svg"
+    },
+    {
+      "slide_number": 6,
+      "page_type": "game",
+      "content": "Trò chơi củng cố\nĐưa cây về vườn, đưa con vật về nhà.\nHoạt động: Hoàn thành trò chơi, bé nhận 20-35 xu tùy mức độ cố gắng.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 HTML PPT slide image for Vietnamese grade 1 children\nPrimary request: Create slide 6 for lesson 'Cây và con vật quanh em' (Tự nhiên và Xã hội).\nStyle: warm vector illustration, large readable Vietnamese text, child-friendly, no brand characters, no watermark.\nExact Vietnamese slide title: Trò chơi củng cố\nExact Vietnamese content: Đưa cây về vườn, đưa con vật về nhà.\nTeacher activity note: Hoàn thành trò chơi, bé nhận 20-35 xu tùy mức độ cố gắng.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade1_tnxh_cay_va_con_vat\\images\\slide-06.svg"
+    },
+    {
+      "slide_number": 7,
+      "page_type": "summary",
+      "content": "Con đã học được gì?\nHôm nay bé đã học: cây và con vật quanh em.\nBé nói lại 2 từ khóa và 1 điều bé thích nhất.\nHoạt động: Phụ huynh ghi nhận xét ngắn: rõ, cần luyện thêm, hoặc rất tự tin.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 HTML PPT slide image for Vietnamese grade 1 children\nPrimary request: Create slide 7 for lesson 'Cây và con vật quanh em' (Tự nhiên và Xã hội).\nStyle: warm vector illustration, large readable Vietnamese text, child-friendly, no brand characters, no watermark.\nExact Vietnamese slide title: Con đã học được gì?\nExact Vietnamese content: Hôm nay bé đã học: cây và con vật quanh em.\nBé nói lại 2 từ khóa và 1 điều bé thích nhất.\nTeacher activity note: Phụ huynh ghi nhận xét ngắn: rõ, cần luyện thêm, hoặc rất tự tin.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade1_tnxh_cay_va_con_vat\\images\\slide-07.svg"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "grade1_toan_ngay_trong_tuan",
+  "title": "Các ngày trong tuần",
+  "grade": 1,
+  "subject": "Toán",
+  "keywords": [
+    "thứ hai",
+    "thứ ba",
+    "thứ tư",
+    "cuối tuần"
+  ],
+  "objectives": [
+    "Nhận biết nội dung chính của bài.",
+    "Đọc hoặc nói được các từ khóa quan trọng.",
+    "Hoàn thành một hoạt động luyện tập ngắn."
+  ],
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "cover",
+      "title": "Các ngày trong tuần",
+      "content": "Toán lớp 1\nHọc bằng hình, nói bằng lời, chơi để nhớ lâu.",
+      "activity": "Giáo viên hoặc phụ huynh đọc tên bài, bé nhắc lại chủ đề.",
+      "audio_script": "Các ngày trong tuần. Toán lớp 1 Học bằng hình, nói bằng lời, chơi để nhớ lâu. Hoạt động: Giáo viên hoặc phụ huynh đọc tên bài, bé nhắc lại chủ đề.",
+      "image": "images/slide-01.svg",
+      "audio": "audio/slide-01.mp3"
+    },
+    {
+      "slide_number": 2,
+      "page_type": "content",
+      "title": "Mục tiêu hôm nay",
+      "content": "Bé sẽ biết:\n- Nhận ra nội dung chính của bài.\n- Nói được từ khóa quan trọng.\n- Làm một nhiệm vụ nhỏ để kiểm tra.",
+      "activity": "Bé giơ tay khi nghe từ khóa quen thuộc.",
+      "audio_script": "Mục tiêu hôm nay. Bé sẽ biết: - Nhận ra nội dung chính của bài. - Nói được từ khóa quan trọng. - Làm một nhiệm vụ nhỏ để kiểm tra. Hoạt động: Bé giơ tay khi nghe từ khóa quen thuộc.",
+      "image": "images/slide-02.svg",
+      "audio": "audio/slide-02.mp3"
+    },
+    {
+      "slide_number": 3,
+      "page_type": "content",
+      "title": "Từ khóa cần nhớ",
+      "content": "- thứ hai\n- thứ ba\n- thứ tư\n- cuối tuần",
+      "activity": "Bé đọc từng từ khóa. Nếu từ khó, đọc chậm từng tiếng.",
+      "audio_script": "Từ khóa cần nhớ. - thứ hai - thứ ba - thứ tư - cuối tuần Hoạt động: Bé đọc từng từ khóa. Nếu từ khó, đọc chậm từng tiếng.",
+      "image": "images/slide-03.svg",
+      "audio": "audio/slide-03.mp3"
+    },
+    {
+      "slide_number": 4,
+      "page_type": "content",
+      "title": "Ví dụ dễ hiểu",
+      "content": "- Thứ hai em đi học.\n- Thứ bảy em nghỉ ngơi cùng gia đình.",
+      "activity": "Bé chọn một ví dụ và nói lại bằng lời của mình.",
+      "audio_script": "Ví dụ dễ hiểu. - Thứ hai em đi học. - Thứ bảy em nghỉ ngơi cùng gia đình. Hoạt động: Bé chọn một ví dụ và nói lại bằng lời của mình.",
+      "image": "images/slide-04.svg",
+      "audio": "audio/slide-04.mp3"
+    },
+    {
+      "slide_number": 5,
+      "page_type": "practice",
+      "title": "Bé cùng luyện tập",
+      "content": "Bé đọc thứ tự các ngày trong tuần.",
+      "activity": "Làm mẫu một lần, sau đó để bé tự làm lại.",
+      "audio_script": "Bé cùng luyện tập. Bé đọc thứ tự các ngày trong tuần. Hoạt động: Làm mẫu một lần, sau đó để bé tự làm lại.",
+      "image": "images/slide-05.svg",
+      "audio": "audio/slide-05.mp3"
+    },
+    {
+      "slide_number": 6,
+      "page_type": "game",
+      "title": "Trò chơi củng cố",
+      "content": "Sắp xếp thẻ ngày theo đúng thứ tự.",
+      "activity": "Hoàn thành trò chơi, bé nhận 20-35 xu tùy mức độ cố gắng.",
+      "audio_script": "Trò chơi củng cố. Sắp xếp thẻ ngày theo đúng thứ tự. Hoạt động: Hoàn thành trò chơi, bé nhận 20-35 xu tùy mức độ cố gắng.",
+      "image": "images/slide-06.svg",
+      "audio": "audio/slide-06.mp3"
+    },
+    {
+      "slide_number": 7,
+      "page_type": "summary",
+      "title": "Con đã học được gì?",
+      "content": "Hôm nay bé đã học: các ngày trong tuần.\nBé nói lại 2 từ khóa và 1 điều bé thích nhất.",
+      "activity": "Phụ huynh ghi nhận xét ngắn: rõ, cần luyện thêm, hoặc rất tự tin.",
+      "audio_script": "Con đã học được gì?. Hôm nay bé đã học: các ngày trong tuần. Bé nói lại 2 từ khóa và 1 điều bé thích nhất. Hoạt động: Phụ huynh ghi nhận xét ngắn: rõ, cần luyện thêm, hoặc rất tự tin.",
+      "image": "images/slide-07.svg",
+      "audio": "audio/slide-07.mp3"
+    }
+  ],
+  "created_at": "2026-04-28T19:42:54",
+  "source_note": "Nội dung tự soạn theo năng lực lớp 1, không sao chép nguyên văn sách giáo khoa."
+}

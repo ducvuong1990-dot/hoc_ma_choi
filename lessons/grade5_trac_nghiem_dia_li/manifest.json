@@ -1,0 +1,163 @@
+{
+  "id": "grade5_trac_nghiem_dia_li",
+  "title": "Trắc nghiệm ôn tập Địa lí lớp 5",
+  "grade": 5,
+  "subject": "Trắc nghiệm cuối năm - Địa lí",
+  "type": "multiple_choice_quiz",
+  "keywords": [
+    "bản đồ",
+    "khí hậu",
+    "sông ngòi",
+    "địa hình",
+    "kinh tế"
+  ],
+  "question_count": 12,
+  "questions": [
+    {
+      "q": "Bản đồ giúp chúng ta:",
+      "choices": [
+        "xác định vị trí địa lí",
+        "nghe nhạc",
+        "đo nhiệt độ cơ thể",
+        "viết đoạn văn"
+      ],
+      "answer": 0,
+      "explain": "Bản đồ thể hiện vị trí và phân bố không gian."
+    },
+    {
+      "q": "Việt Nam có đặc điểm nổi bật là:",
+      "choices": [
+        "có đường bờ biển dài",
+        "không có sông",
+        "chỉ toàn sa mạc",
+        "không có đồng bằng"
+      ],
+      "answer": 0,
+      "explain": "Việt Nam có đường bờ biển dài, thuận lợi cho kinh tế biển."
+    },
+    {
+      "q": "Đồng bằng thường thuận lợi cho:",
+      "choices": [
+        "trồng lúa",
+        "khai thác băng tuyết",
+        "nuôi tuần lộc",
+        "trồng cây xương rồng trên cát"
+      ],
+      "answer": 0,
+      "explain": "Đồng bằng bằng phẳng, đất phù sa thuận lợi trồng lúa."
+    },
+    {
+      "q": "Khí hậu nước ta có tính chất:",
+      "choices": [
+        "nhiệt đới gió mùa",
+        "hàn đới quanh năm",
+        "hoang mạc khô nóng toàn bộ",
+        "ôn đới lạnh"
+      ],
+      "answer": 0,
+      "explain": "Việt Nam nằm trong vùng nhiệt đới gió mùa."
+    },
+    {
+      "q": "Sông ngòi có vai trò:",
+      "choices": [
+        "cung cấp nước, phù sa, giao thông một số nơi",
+        "làm mất hoàn toàn đất đai",
+        "không có ích",
+        "chỉ dùng để trang trí bản đồ"
+      ],
+      "answer": 0,
+      "explain": "Sông ngòi có nhiều vai trò trong tự nhiên và đời sống."
+    },
+    {
+      "q": "Miền núi thuận lợi cho:",
+      "choices": [
+        "trồng cây công nghiệp, phát triển thủy điện ở nơi phù hợp",
+        "trồng lúa nước mọi nơi",
+        "nuôi cá biển",
+        "làm cảng biển trên núi"
+      ],
+      "answer": 0,
+      "explain": "Địa hình miền núi có tiềm năng rừng, cây công nghiệp và thủy điện."
+    },
+    {
+      "q": "Khi đọc bản đồ, cần chú ý:",
+      "choices": [
+        "tên bản đồ, kí hiệu, tỉ lệ, phương hướng",
+        "chỉ màu đẹp",
+        "bỏ phần chú giải",
+        "không cần phương hướng"
+      ],
+      "answer": 0,
+      "explain": "Các yếu tố đó giúp đọc bản đồ chính xác."
+    },
+    {
+      "q": "Biển có thể cung cấp:",
+      "choices": [
+        "hải sản, muối, giao thông biển, du lịch",
+        "than trong mọi con sóng",
+        "lúa nước",
+        "tuyết quanh năm"
+      ],
+      "answer": 0,
+      "explain": "Biển có nhiều tài nguyên và điều kiện phát triển kinh tế."
+    },
+    {
+      "q": "Dân cư thường tập trung đông ở:",
+      "choices": [
+        "đồng bằng và đô thị",
+        "đỉnh núi rất cao",
+        "vùng hoang mạc không nước",
+        "giữa biển xa bờ"
+      ],
+      "answer": 0,
+      "explain": "Đồng bằng và đô thị thuận lợi sinh sống, sản xuất."
+    },
+    {
+      "q": "Kí hiệu bản đồ dùng để:",
+      "choices": [
+        "thể hiện đối tượng địa lí",
+        "thay thế toàn bộ bài học",
+        "trang trí không có nghĩa",
+        "đo thời gian"
+      ],
+      "answer": 0,
+      "explain": "Kí hiệu giúp biểu diễn sông, núi, thành phố, đường giao thông."
+    },
+    {
+      "q": "Lũ lụt có thể giảm thiệt hại nếu:",
+      "choices": [
+        "theo dõi dự báo, chuẩn bị và sơ tán khi cần",
+        "không nghe thông tin",
+        "chơi gần dòng nước xiết",
+        "vứt rác xuống cống"
+      ],
+      "answer": 0,
+      "explain": "Chuẩn bị và làm theo hướng dẫn giúp an toàn hơn."
+    },
+    {
+      "q": "Hoạt động nào góp phần bảo vệ tài nguyên?",
+      "choices": [
+        "tiết kiệm nước và không xả rác",
+        "chặt phá rừng bừa bãi",
+        "lãng phí điện",
+        "đổ rác xuống sông"
+      ],
+      "answer": 0,
+      "explain": "Tiết kiệm và giữ sạch môi trường bảo vệ tài nguyên."
+    }
+  ],
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "quiz_cover",
+      "title": "Trắc nghiệm ôn tập Địa lí lớp 5",
+      "content": "Trắc nghiệm cuối năm - Địa lí. 12 câu trắc nghiệm.",
+      "activity": "Làm bài, xem giải thích và ghi lại phần cần ôn thêm.",
+      "audio_script": "Trắc nghiệm ôn tập Địa lí lớp 5. Bài có 12 câu trắc nghiệm. Hãy đọc kỹ câu hỏi rồi chọn đáp án đúng nhất.",
+      "image": "images/slide-01.svg",
+      "audio": "audio/slide-01.mp3"
+    }
+  ],
+  "created_at": "2026-04-28T10:22:11",
+  "source_note": "Bộ câu hỏi tự soạn để ôn tập cuối năm lớp 5, không sao chép nguyên văn sách giáo khoa."
+}

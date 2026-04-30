@@ -1,0 +1,163 @@
+{
+  "id": "grade5_trac_nghiem_cong_nghe",
+  "title": "Trắc nghiệm ôn tập Công nghệ lớp 5",
+  "grade": 5,
+  "subject": "Trắc nghiệm cuối năm - Công nghệ",
+  "type": "multiple_choice_quiz",
+  "keywords": [
+    "thiết kế",
+    "an toàn",
+    "vật liệu",
+    "dụng cụ",
+    "sản phẩm"
+  ],
+  "question_count": 12,
+  "questions": [
+    {
+      "q": "Khi làm sản phẩm thủ công, bước đầu tiên nên là:",
+      "choices": [
+        "xác định yêu cầu và lập kế hoạch",
+        "cắt vật liệu ngay",
+        "bỏ qua dụng cụ",
+        "dọn dẹp sau cùng trước khi làm"
+      ],
+      "answer": 0,
+      "explain": "Lập kế hoạch giúp chọn vật liệu và thao tác an toàn."
+    },
+    {
+      "q": "Dụng cụ sắc nhọn cần được sử dụng:",
+      "choices": [
+        "cẩn thận, đúng cách, có người lớn hướng dẫn khi cần",
+        "đùa nghịch với bạn",
+        "cầm chạy trong lớp",
+        "để dưới sàn"
+      ],
+      "answer": 0,
+      "explain": "Dụng cụ sắc nhọn cần dùng an toàn."
+    },
+    {
+      "q": "Vật liệu tái chế có lợi vì:",
+      "choices": [
+        "giảm rác thải và tiết kiệm tài nguyên",
+        "luôn đắt hơn",
+        "không cần làm sạch",
+        "không dùng được"
+      ],
+      "answer": 0,
+      "explain": "Tái chế giúp bảo vệ môi trường và tiết kiệm."
+    },
+    {
+      "q": "Khi sản phẩm chưa chắc chắn, em nên:",
+      "choices": [
+        "kiểm tra, điều chỉnh và thử lại",
+        "bỏ qua lỗi",
+        "giấu đi",
+        "đổ lỗi cho vật liệu"
+      ],
+      "answer": 0,
+      "explain": "Thiết kế công nghệ cần thử nghiệm và cải tiến."
+    },
+    {
+      "q": "Để dán hai mảnh giấy chắc hơn, cần:",
+      "choices": [
+        "bôi keo vừa đủ và ép nhẹ",
+        "bôi quá nhiều keo",
+        "không chờ keo khô",
+        "dán vào bụi bẩn"
+      ],
+      "answer": 0,
+      "explain": "Keo vừa đủ và bề mặt sạch giúp dán chắc."
+    },
+    {
+      "q": "Khi dùng thiết bị điện đơn giản, em cần:",
+      "choices": [
+        "đọc hướng dẫn và giữ tay khô",
+        "cắm rút bằng tay ướt",
+        "tháo thiết bị đang hoạt động",
+        "kéo mạnh dây điện"
+      ],
+      "answer": 0,
+      "explain": "Đọc hướng dẫn và tay khô giúp an toàn."
+    },
+    {
+      "q": "Tiêu chí đánh giá sản phẩm có thể gồm:",
+      "choices": [
+        "đúng yêu cầu, chắc chắn, đẹp, an toàn",
+        "chỉ màu sắc",
+        "chỉ kích thước",
+        "không cần kiểm tra"
+      ],
+      "answer": 0,
+      "explain": "Sản phẩm cần đạt nhiều tiêu chí, không chỉ đẹp."
+    },
+    {
+      "q": "Khi làm việc nhóm, việc nên làm là:",
+      "choices": [
+        "phân công, lắng nghe, hỗ trợ nhau",
+        "tranh giành dụng cụ",
+        "không trao đổi",
+        "làm hỏng phần của bạn"
+      ],
+      "answer": 0,
+      "explain": "Làm việc nhóm cần phối hợp và tôn trọng."
+    },
+    {
+      "q": "Bản phác thảo giúp:",
+      "choices": [
+        "hình dung sản phẩm trước khi làm",
+        "thay thế mọi vật liệu",
+        "không cần đo đạc",
+        "làm sản phẩm tự hoàn thành"
+      ],
+      "answer": 0,
+      "explain": "Phác thảo giúp lên ý tưởng và kiểm tra bố cục."
+    },
+    {
+      "q": "Nếu cần làm mô hình cây cầu giấy, yếu tố quan trọng là:",
+      "choices": [
+        "độ vững và cách gấp, nối",
+        "màu bút duy nhất",
+        "dán càng nhiều keo càng tốt",
+        "không thử tải"
+      ],
+      "answer": 0,
+      "explain": "Cầu cần vững, các mối nối và cách gấp rất quan trọng."
+    },
+    {
+      "q": "Sau khi hoàn thành sản phẩm, nên:",
+      "choices": [
+        "dọn dụng cụ và ghi nhận điều cần cải tiến",
+        "vứt vật liệu còn dùng được",
+        "để kéo dưới đất",
+        "không kiểm tra sản phẩm"
+      ],
+      "answer": 0,
+      "explain": "Dọn dẹp và rút kinh nghiệm là thói quen tốt."
+    },
+    {
+      "q": "Chọn vật liệu cho sản phẩm cần dựa vào:",
+      "choices": [
+        "mục đích sử dụng, độ bền, an toàn",
+        "chọn ngẫu nhiên",
+        "chỉ chọn vật nặng nhất",
+        "chỉ chọn vật đắt nhất"
+      ],
+      "answer": 0,
+      "explain": "Vật liệu phù hợp giúp sản phẩm dùng tốt và an toàn."
+    }
+  ],
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "quiz_cover",
+      "title": "Trắc nghiệm ôn tập Công nghệ lớp 5",
+      "content": "Trắc nghiệm cuối năm - Công nghệ. 12 câu trắc nghiệm.",
+      "activity": "Làm bài, xem giải thích và ghi lại phần cần ôn thêm.",
+      "audio_script": "Trắc nghiệm ôn tập Công nghệ lớp 5. Bài có 12 câu trắc nghiệm. Hãy đọc kỹ câu hỏi rồi chọn đáp án đúng nhất.",
+      "image": "images/slide-01.svg",
+      "audio": "audio/slide-01.mp3"
+    }
+  ],
+  "created_at": "2026-04-28T10:22:11",
+  "source_note": "Bộ câu hỏi tự soạn để ôn tập cuối năm lớp 5, không sao chép nguyên văn sách giáo khoa."
+}

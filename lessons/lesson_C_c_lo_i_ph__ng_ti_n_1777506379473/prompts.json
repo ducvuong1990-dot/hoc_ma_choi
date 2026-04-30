@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "title": "Các loại phương tiện giao thông",
+    "total_slides": 5,
+    "resolution": "2K",
+    "style": "styles/vector-illustration.md",
+    "generated_at": "2026-04-30T06:46:19.602534"
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "cover",
+      "content": "Chào mừng các bạn nhỏ đến với bài học: Các loại phương tiện giao thông!",
+      "script": "Xin chào tất cả các bé! Hôm nay, chúng ta sẽ cùng nhau khám phá một thế giới thật thú vị, đó là thế giới của các loại xe cộ, thuyền bè và máy bay nhé. Các con đã sẵn sàng chưa nào?",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a cover page based on visual balance aesthetics.\nPlace a large complex 3D glass object in the center, overlaid with bold text:\n\nChào mừng các bạn nhỏ đến với bài học: Các loại phương tiện giao thông!\n\nBackground with extended aurora waves.",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_C_c_lo_i_ph__ng_ti_n_1777506379473\\images\\slide-01.png"
+    },
+    {
+      "slide_number": 2,
+      "page_type": "content",
+      "content": "Phương tiện giao thông đường bộ: Những người bạn trên mặt đất!",
+      "script": "Đầu tiên, chúng ta hãy cùng xem những phương tiện quen thuộc đi trên đường bộ nhé. Chúng mình có xe ô tô chở cả nhà đi chơi, xe máy phóng bon bon, và cả xe đạp thân thiện nữa đó! Chúng giúp chúng ta đi lại thật dễ dàng trên mặt đất.",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nPhương tiện giao thông đường bộ: Những người bạn trên mặt đất!",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_C_c_lo_i_ph__ng_ti_n_1777506379473\\images\\slide-02.png"
+    },
+    {
+      "slide_number": 3,
+      "page_type": "content",
+      "content": "Phương tiện giao thông đường thủy: Du ngoạn trên sóng nước!",
+      "script": "Bây giờ, hãy cùng xuống nước nào! Chúng ta có những chiếc thuyền, tàu thủy to lớn rẽ sóng ra khơi. Chúng giúp chúng ta đi lại trên sông, trên biển và khám phá những vùng đất mới.",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nPhương tiện giao thông đường thủy: Du ngoạn trên sóng nước!",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_C_c_lo_i_ph__ng_ti_n_1777506379473\\images\\slide-03.png"
+    },
+    {
+      "slide_number": 4,
+      "page_type": "content",
+      "content": "Phương tiện giao thông đường hàng không: Bay cao lên bầu trời!",
+      "script": "Và cuối cùng, hãy cùng ngước lên bầu trời xanh nào! Chúng ta có những chiếc máy bay khổng lồ, hay cả khinh khí cầu bay lượn thật đẹp. Chúng giúp chúng ta bay thật nhanh, thật xa tới mọi nơi trên thế giới.",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nPhương tiện giao thông đường hàng không: Bay cao lên bầu trời!",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_C_c_lo_i_ph__ng_ti_n_1777506379473\\images\\slide-04.png"
+    },
+    {
+      "slide_number": 5,
+      "page_type": "content",
+      "content": "Cùng ôn lại nào! Các bé nhớ được gì rồi?",
+      "script": "Vậy là chúng ta vừa cùng nhau tìm hiểu về các phương tiện giao thông trên cạn, dưới nước và trên trời rồi đó. Cô hy vọng các con đã có một buổi học thật vui và bổ ích nhé. Hẹn gặp lại các con ở bài học sau!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a data/summary page using split-screen design.\nLeft side: typeset the following text.\nRight side: floating large glowing 3D data visualization:\n\nCùng ôn lại nào! Các bé nhớ được gì rồi?",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_C_c_lo_i_ph__ng_ti_n_1777506379473\\images\\slide-05.png"
+    }
+  ]
+}

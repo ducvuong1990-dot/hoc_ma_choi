@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f8fbff"/>
+  <circle cx="1460" cy="100" r="250" fill="#effbef"/>
+  <circle cx="150" cy="790" r="230" fill="#effbef"/>
+  <rect x="70" y="58" width="1460" height="784" rx="42" fill="#fff" stroke="#dfe9f0" stroke-width="6"/>
+  <rect x="70" y="58" width="1460" height="96" rx="42" fill="#82c97f"/>
+  <rect x="70" y="112" width="1460" height="42" fill="#82c97f"/>
+  <text x="118" y="122" fill="#fff" font-size="34" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="900">Toán · Lớp 1</text>
+  <text x="1430" y="122" fill="#fff" font-size="30" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="800">2/7</text>
+  <rect x="1140" y="220" width="300" height="250" rx="44" fill="#effbef" stroke="#82c97f" stroke-width="5"/>
+  <circle cx="1235" cy="315" r="54" fill="#82c97f" opacity=".9"/>
+  <rect x="1300" y="284" width="74" height="116" rx="18" fill="#fff" opacity=".95"/>
+  <path d="M1198 410c72-60 142-60 214 0" fill="none" stroke="#265f2b" stroke-width="16" stroke-linecap="round"/>
+  <rect x="118" y="206" width="945" height="158" rx="28" fill="#effbef"/>
+  <text x="154" y="274" fill="#265f2b" font-size="58" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="900">Mục tiêu</text>
+  <rect x="118" y="400" width="945" height="286" rx="30" fill="#fff" stroke="#e5edf2" stroke-width="4"/>
+  <text x="154" y="466" fill="#17202a" font-size="38" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="800">Học sinh sẽ:</text>
+<text x="154" y="516" fill="#17202a" font-size="38" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="800">- Nhận biết kiến thức trọng tâm.</text>
+<text x="154" y="566" fill="#17202a" font-size="38" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="800">- Luyện bằng ví dụ ngắn.</text>
+<text x="154" y="616" fill="#17202a" font-size="38" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="800">- Tự kiểm tra qua trò chơi.</text>
+  <rect x="118" y="718" width="1282" height="82" rx="26" fill="#effbef" stroke="#82c97f" stroke-width="4"/>
+  <text x="154" y="770" fill="#265f2b" font-size="28" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="900">Hoạt động:</text>
+  <text x="330" y="770" fill="#24313b" font-size="26" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="800">Nói lại mục tiêu bằng một câu ngắn.</text>
+</svg>

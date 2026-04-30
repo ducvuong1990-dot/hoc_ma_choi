@@ -1,0 +1,163 @@
+{
+  "id": "grade5_trac_nghiem_lich_su",
+  "title": "Trắc nghiệm ôn tập Lịch sử lớp 5",
+  "grade": 5,
+  "subject": "Trắc nghiệm cuối năm - Lịch sử",
+  "type": "multiple_choice_quiz",
+  "keywords": [
+    "mốc thời gian",
+    "nhân vật",
+    "sự kiện",
+    "ý nghĩa",
+    "dòng thời gian"
+  ],
+  "question_count": 12,
+  "questions": [
+    {
+      "q": "Khi học lịch sử, dòng thời gian giúp ta:",
+      "choices": [
+        "sắp xếp sự kiện theo thứ tự",
+        "tính diện tích",
+        "đọc bản đồ thời tiết",
+        "đo khối lượng"
+      ],
+      "answer": 0,
+      "explain": "Dòng thời gian thể hiện thứ tự trước sau của sự kiện."
+    },
+    {
+      "q": "Một sự kiện lịch sử thường cần tìm hiểu:",
+      "choices": [
+        "thời gian, địa điểm, nhân vật, ý nghĩa",
+        "màu áo yêu thích",
+        "số trang vở",
+        "độ dài bút chì"
+      ],
+      "answer": 0,
+      "explain": "Đó là các thông tin cốt lõi khi tìm hiểu sự kiện."
+    },
+    {
+      "q": "Khi đọc tư liệu lịch sử, nên:",
+      "choices": [
+        "kiểm tra nguồn và đối chiếu thông tin",
+        "tin ngay mọi thông tin",
+        "chỉ nhìn hình",
+        "bỏ qua mốc thời gian"
+      ],
+      "answer": 0,
+      "explain": "Kiểm tra nguồn giúp học lịch sử chính xác hơn."
+    },
+    {
+      "q": "Câu hỏi 'Vì sao sự kiện này quan trọng?' giúp tìm:",
+      "choices": [
+        "ý nghĩa lịch sử",
+        "màu sắc bức tranh",
+        "số chữ trong đoạn",
+        "độ cao ngọn núi"
+      ],
+      "answer": 0,
+      "explain": "Câu hỏi đó hướng đến ý nghĩa của sự kiện."
+    },
+    {
+      "q": "Nhân vật lịch sử là:",
+      "choices": [
+        "người có vai trò trong sự kiện, giai đoạn lịch sử",
+        "nhân vật trong trò chơi bất kỳ",
+        "tên một đồ vật",
+        "một phép tính"
+      ],
+      "answer": 0,
+      "explain": "Nhân vật lịch sử gắn với sự kiện hoặc giai đoạn lịch sử."
+    },
+    {
+      "q": "Khi kể lại một sự kiện, trình tự hợp lý là:",
+      "choices": [
+        "bối cảnh - diễn biến - kết quả - ý nghĩa",
+        "kết quả - màu sắc - trò chơi",
+        "ý nghĩa - bỏ diễn biến",
+        "chỉ nêu một chi tiết"
+      ],
+      "answer": 0,
+      "explain": "Trình tự này giúp câu chuyện lịch sử rõ ràng."
+    },
+    {
+      "q": "Bản đồ lịch sử thường dùng để:",
+      "choices": [
+        "xác định địa điểm, phạm vi sự kiện",
+        "nghe âm thanh",
+        "đo cân nặng",
+        "tô màu tùy ý"
+      ],
+      "answer": 0,
+      "explain": "Bản đồ giúp hiểu không gian của sự kiện."
+    },
+    {
+      "q": "Mốc thời gian là:",
+      "choices": [
+        "thời điểm xảy ra sự kiện",
+        "tên một con vật",
+        "một kiểu hình học",
+        "một loại thức ăn"
+      ],
+      "answer": 0,
+      "explain": "Mốc thời gian cho biết khi nào sự kiện xảy ra."
+    },
+    {
+      "q": "Việc so sánh hai sự kiện giúp:",
+      "choices": [
+        "nhận ra điểm giống và khác",
+        "làm mất thông tin",
+        "không cần đọc bài",
+        "thay thế mọi bằng chứng"
+      ],
+      "answer": 0,
+      "explain": "So sánh giúp hiểu sâu hơn về sự kiện."
+    },
+    {
+      "q": "Kết quả của một sự kiện lịch sử là:",
+      "choices": [
+        "điều xảy ra sau sự kiện",
+        "tên người kể chuyện",
+        "màu nền của trang",
+        "số trang sách"
+      ],
+      "answer": 0,
+      "explain": "Kết quả cho biết sự kiện dẫn đến điều gì."
+    },
+    {
+      "q": "Khi ôn lịch sử, cách học hiệu quả là:",
+      "choices": [
+        "lập sơ đồ sự kiện và mốc thời gian",
+        "học thuộc rời rạc từng chữ",
+        "bỏ qua câu hỏi vì sao",
+        "không xem lại bài"
+      ],
+      "answer": 0,
+      "explain": "Sơ đồ giúp hệ thống kiến thức."
+    },
+    {
+      "q": "Ý nghĩa lịch sử thường trả lời câu hỏi:",
+      "choices": [
+        "Sự kiện để lại bài học hoặc tác động gì?",
+        "Bút dài bao nhiêu?",
+        "Bài có mấy màu?",
+        "Hôm nay ăn gì?"
+      ],
+      "answer": 0,
+      "explain": "Ý nghĩa nói về tác động và bài học của sự kiện."
+    }
+  ],
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "quiz_cover",
+      "title": "Trắc nghiệm ôn tập Lịch sử lớp 5",
+      "content": "Trắc nghiệm cuối năm - Lịch sử. 12 câu trắc nghiệm.",
+      "activity": "Làm bài, xem giải thích và ghi lại phần cần ôn thêm.",
+      "audio_script": "Trắc nghiệm ôn tập Lịch sử lớp 5. Bài có 12 câu trắc nghiệm. Hãy đọc kỹ câu hỏi rồi chọn đáp án đúng nhất.",
+      "image": "images/slide-01.svg",
+      "audio": "audio/slide-01.mp3"
+    }
+  ],
+  "created_at": "2026-04-28T10:22:11",
+  "source_note": "Bộ câu hỏi tự soạn để ôn tập cuối năm lớp 5, không sao chép nguyên văn sách giáo khoa."
+}

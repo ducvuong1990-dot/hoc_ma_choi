@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "Du hành cùng Tớ: Khám phá các Hành tinh!",
+    "total_slides": 5,
+    "resolution": "2K",
+    "style": "styles/vector-illustration.md",
+    "generated_at": "2026-04-30T06:05:20.060453"
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "cover",
+      "content": "Du hành cùng Tớ: Khám phá các Hành tinh!\n(Hình ảnh một bé phi hành gia dễ thương, bay giữa các hành tinh đầy màu sắc, tiêu đề lớn, hấp dẫn)",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a cover page based on visual balance aesthetics.\nPlace a large complex 3D glass object in the center, overlaid with bold text:\n\nDu hành cùng Tớ: Khám phá các Hành tinh!\n(Hình ảnh một bé phi hành gia dễ thương, bay giữa các hành tinh đầy màu sắc, tiêu đề lớn, hấp dẫn)\n\nBackground with extended aurora waves.",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_C_c_h_nh_tinh_trong__1777503919848\\images\\slide-01.png"
+    },
+    {
+      "slide_number": 2,
+      "page_type": "content",
+      "content": "Mặt Trời và những người bạn quay quanh!\nChào các bạn! Hôm nay chúng mình sẽ cùng phi thuyền của tớ bay lên vũ trụ để thăm Mặt Trời và những người bạn 'hành tinh' của Mặt Trời nhé!\n(Hình ảnh Mặt Trời rạng rỡ ở trung tâm, vài hành tinh nhỏ quay xung quanh theo quỹ đạo đơn giản)",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nMặt Trời và những người bạn quay quanh!\nChào các bạn! Hôm nay chúng mình sẽ cùng phi thuyền của tớ bay lên vũ trụ để thăm Mặt Trời và những người bạn 'hành tinh' của Mặt Trời nhé!\n(Hình ảnh Mặt Trời rạng rỡ ở trung tâm, vài hành tinh nhỏ quay xung quanh theo quỹ đạo đơn giản)",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_C_c_h_nh_tinh_trong__1777503919848\\images\\slide-02.png"
+    },
+    {
+      "slide_number": 3,
+      "page_type": "content",
+      "content": "Mỗi hành tinh một vẻ!\nChúng mình cùng gặp gỡ một vài bạn hành tinh đặc biệt nhé:\n1. Sao Hỏa: Bạn có màu đỏ chót, như một quả cà chua khổng lồ!\n2. Sao Mộc: Bạn to nhất, khổng lồ như 1000 quả bóng Trái Đất!\n3. Sao Thổ: Bạn có chiếc vòng tuyệt đẹp quanh người!\n(Hình ảnh minh họa rõ nét của Sao Hỏa (đỏ), Sao Mộc (to lớn, vân sọc), Sao Thổ (có vành đai), mỗi hình kèm tên và đặc điểm)",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nMỗi hành tinh một vẻ!\nChúng mình cùng gặp gỡ một vài bạn hành tinh đặc biệt nhé:\n1. Sao Hỏa: Bạn có màu đỏ chót, như một quả cà chua khổng lồ!\n2. Sao Mộc: Bạn to nhất, khổng lồ như 1000 quả bóng Trái Đất!\n3. Sao Thổ: Bạn có chiếc vòng tuyệt đẹp quanh người!\n(Hình ảnh minh họa rõ nét của Sao Hỏa (đỏ), Sao Mộc (to lớn, vân sọc), Sao Thổ (có vành đai), mỗi hình kèm tên và đặc điểm)",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_C_c_h_nh_tinh_trong__1777503919848\\images\\slide-03.png"
+    },
+    {
+      "slide_number": 4,
+      "page_type": "content",
+      "content": "Trái Đất: Ngôi nhà xanh của chúng ta!\nTrong số các hành tinh, có một hành tinh rất đặc biệt, đó chính là Ngôi nhà của chúng ta - Trái Đất!\nTrái Đất có nước biển xanh, có cây cối, có con người và muôn loài vật đáng yêu. Chúng mình cùng bảo vệ Trái Đất luôn xanh, sạch, đẹp nhé!\n(Hình ảnh Trái Đất xanh tươi với mây trắng, đại dương và một chút cây cối, trông thật hiền hòa)",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nTrái Đất: Ngôi nhà xanh của chúng ta!\nTrong số các hành tinh, có một hành tinh rất đặc biệt, đó chính là Ngôi nhà của chúng ta - Trái Đất!\nTrái Đất có nước biển xanh, có cây cối, có con người và muôn loài vật đáng yêu. Chúng mình cùng bảo vệ Trái Đất luôn xanh, sạch, đẹp nhé!\n(Hình ảnh Trái Đất xanh tươi với mây trắng, đại dương và một chút cây cối, trông thật hiền hòa)",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_C_c_h_nh_tinh_trong__1777503919848\\images\\slide-04.png"
+    },
+    {
+      "slide_number": 5,
+      "page_type": "content",
+      "content": "Chào tạm biệt và hẹn gặp lại!\nVậy là chuyến du hành của chúng mình đã kết thúc rồi! Các bạn có nhớ hành tinh nào là ngôi nhà của chúng ta không?\nHãy luôn yêu thương và bảo vệ hành tinh xanh của mình nhé! Tạm biệt và hẹn gặp lại trong những chuyến phiêu lưu khác!\n(Hình ảnh bé phi hành gia vẫy tay chào tạm biệt, các hành tinh nhỏ lấp lánh xung quanh, chữ 'Tạm biệt!' to và thân thiện)",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a data/summary page using split-screen design.\nLeft side: typeset the following text.\nRight side: floating large glowing 3D data visualization:\n\nChào tạm biệt và hẹn gặp lại!\nVậy là chuyến du hành của chúng mình đã kết thúc rồi! Các bạn có nhớ hành tinh nào là ngôi nhà của chúng ta không?\nHãy luôn yêu thương và bảo vệ hành tinh xanh của mình nhé! Tạm biệt và hẹn gặp lại trong những chuyến phiêu lưu khác!\n(Hình ảnh bé phi hành gia vẫy tay chào tạm biệt, các hành tinh nhỏ lấp lánh xung quanh, chữ 'Tạm biệt!' to và thân thiện)",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_C_c_h_nh_tinh_trong__1777503919848\\images\\slide-05.png"
+    }
+  ]
+}

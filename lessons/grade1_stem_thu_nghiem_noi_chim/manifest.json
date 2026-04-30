@@ -1,0 +1,92 @@
+{
+  "id": "grade1_stem_thu_nghiem_noi_chim",
+  "title": "Vật nổi, vật chìm",
+  "grade": 1,
+  "subject": "STEM lớp 1",
+  "keywords": [
+    "nổi",
+    "chìm",
+    "nước",
+    "dự đoán",
+    "quan sát"
+  ],
+  "objectives": [
+    "Nhận biết kiến thức trọng tâm.",
+    "Luyện tập qua ví dụ và trò chơi.",
+    "Tự kiểm tra mức độ chắc chắn."
+  ],
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "cover",
+      "title": "Vật nổi, vật chìm",
+      "content": "STEM lớp 1 lớp 1\nHọc bằng hình, luyện bằng trò chơi.",
+      "activity": "Đọc tên bài, quan sát tranh và nêu điều đã biết.",
+      "audio_script": "Vật nổi, vật chìm. STEM lớp 1 lớp 1 Học bằng hình, luyện bằng trò chơi. Hoạt động: Đọc tên bài, quan sát tranh và nêu điều đã biết.",
+      "image": "images/slide-01.svg",
+      "audio": "audio/slide-01.mp3"
+    },
+    {
+      "slide_number": 2,
+      "page_type": "goal",
+      "title": "Mục tiêu",
+      "content": "Học sinh sẽ:\n- Nhận biết kiến thức trọng tâm.\n- Luyện bằng ví dụ ngắn.\n- Tự kiểm tra qua trò chơi.",
+      "activity": "Nói lại mục tiêu bằng một câu ngắn.",
+      "audio_script": "Mục tiêu. Học sinh sẽ: - Nhận biết kiến thức trọng tâm. - Luyện bằng ví dụ ngắn. - Tự kiểm tra qua trò chơi. Hoạt động: Nói lại mục tiêu bằng một câu ngắn.",
+      "image": "images/slide-02.svg",
+      "audio": "audio/slide-02.mp3"
+    },
+    {
+      "slide_number": 3,
+      "page_type": "keywords",
+      "title": "Từ khóa",
+      "content": "- nổi\n- chìm\n- nước\n- dự đoán\n- quan sát",
+      "activity": "Đọc từng từ khóa, đánh dấu từ còn cần luyện.",
+      "audio_script": "Từ khóa. - nổi - chìm - nước - dự đoán - quan sát Hoạt động: Đọc từng từ khóa, đánh dấu từ còn cần luyện.",
+      "image": "images/slide-03.svg",
+      "audio": "audio/slide-03.mp3"
+    },
+    {
+      "slide_number": 4,
+      "page_type": "examples",
+      "title": "Ví dụ",
+      "content": "- Lá thường nổi trên nước\n- Viên đá thường chìm",
+      "activity": "Chọn một ví dụ và giải thích bằng lời của mình.",
+      "audio_script": "Ví dụ. - Lá thường nổi trên nước - Viên đá thường chìm Hoạt động: Chọn một ví dụ và giải thích bằng lời của mình.",
+      "image": "images/slide-04.svg",
+      "audio": "audio/slide-04.mp3"
+    },
+    {
+      "slide_number": 5,
+      "page_type": "practice",
+      "title": "Luyện tập",
+      "content": "Bé dự đoán rồi thử với đồ vật an toàn.",
+      "activity": "Làm chậm một lượt, sau đó thử làm nhanh hơn.",
+      "audio_script": "Luyện tập. Bé dự đoán rồi thử với đồ vật an toàn. Hoạt động: Làm chậm một lượt, sau đó thử làm nhanh hơn.",
+      "image": "images/slide-05.svg",
+      "audio": "audio/slide-05.mp3"
+    },
+    {
+      "slide_number": 6,
+      "page_type": "game",
+      "title": "Trò chơi",
+      "content": "Chọn nhóm vật nổi hoặc chìm.",
+      "activity": "Hoàn thành trò chơi để nhận xu và sticker ôn tập.",
+      "audio_script": "Trò chơi. Chọn nhóm vật nổi hoặc chìm. Hoạt động: Hoàn thành trò chơi để nhận xu và sticker ôn tập.",
+      "image": "images/slide-06.svg",
+      "audio": "audio/slide-06.mp3"
+    },
+    {
+      "slide_number": 7,
+      "page_type": "summary",
+      "title": "Tự kiểm tra",
+      "content": "Hôm nay đã học: vật nổi, vật chìm.\nNói lại 2 từ khóa và 1 điều còn muốn luyện.",
+      "activity": "Tự chấm: chắc rồi, cần luyện thêm, hoặc muốn thử mức khó hơn.",
+      "audio_script": "Tự kiểm tra. Hôm nay đã học: vật nổi, vật chìm. Nói lại 2 từ khóa và 1 điều còn muốn luyện. Hoạt động: Tự chấm: chắc rồi, cần luyện thêm, hoặc muốn thử mức khó hơn.",
+      "image": "images/slide-07.svg",
+      "audio": "audio/slide-07.mp3"
+    }
+  ],
+  "created_at": "2026-04-28T09:26:11",
+  "source_note": "Nội dung tự soạn theo năng lực phù hợp, không sao chép nguyên văn sách giáo khoa."
+}

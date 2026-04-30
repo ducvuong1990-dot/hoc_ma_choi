@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "title": "Ôn an toàn số",
+    "grade": 5,
+    "subject": "Ôn tập cuối năm - Tin học",
+    "total_slides": 7,
+    "style": "vector-illustration-no-text",
+    "generated_at": "2026-04-28T09:26:12"
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "cover",
+      "content": "Ôn an toàn số\nÔn tập cuối năm - Tin học lớp 5\nHọc bằng hình, luyện bằng trò chơi.\nHoạt động: Đọc tên bài, quan sát tranh và nêu điều đã biết.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 lesson illustration for Vietnamese grade 5 students\nPrimary request: Create a child-friendly illustration for slide 1 of lesson 'Ôn an toàn số' (Ôn tập cuối năm - Tin học).\nStyle: warm classroom vector illustration, expressive and concrete, no brand characters.\nLesson title context: Ôn an toàn số\nLesson content context: Ôn tập cuối năm - Tin học lớp 5\nHọc bằng hình, luyện bằng trò chơi.\nTeacher activity context: Đọc tên bài, quan sát tranh và nêu điều đã biết.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade5_on_tap_tin_hoc_an_toan\\images\\slide-01.svg"
+    },
+    {
+      "slide_number": 2,
+      "page_type": "goal",
+      "content": "Mục tiêu\nHọc sinh sẽ:\n- Nhận biết kiến thức trọng tâm.\n- Luyện bằng ví dụ ngắn.\n- Tự kiểm tra qua trò chơi.\nHoạt động: Nói lại mục tiêu bằng một câu ngắn.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 lesson illustration for Vietnamese grade 5 students\nPrimary request: Create a child-friendly illustration for slide 2 of lesson 'Ôn an toàn số' (Ôn tập cuối năm - Tin học).\nStyle: warm classroom vector illustration, expressive and concrete, no brand characters.\nLesson title context: Mục tiêu\nLesson content context: Học sinh sẽ:\n- Nhận biết kiến thức trọng tâm.\n- Luyện bằng ví dụ ngắn.\n- Tự kiểm tra qua trò chơi.\nTeacher activity context: Nói lại mục tiêu bằng một câu ngắn.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade5_on_tap_tin_hoc_an_toan\\images\\slide-02.svg"
+    },
+    {
+      "slide_number": 3,
+      "page_type": "keywords",
+      "content": "Từ khóa\n- mật khẩu\n- thông tin cá nhân\n- lịch sự\n- kiểm chứng\nHoạt động: Đọc từng từ khóa, đánh dấu từ còn cần luyện.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 lesson illustration for Vietnamese grade 5 students\nPrimary request: Create a child-friendly illustration for slide 3 of lesson 'Ôn an toàn số' (Ôn tập cuối năm - Tin học).\nStyle: warm classroom vector illustration, expressive and concrete, no brand characters.\nLesson title context: Từ khóa\nLesson content context: - mật khẩu\n- thông tin cá nhân\n- lịch sự\n- kiểm chứng\nTeacher activity context: Đọc từng từ khóa, đánh dấu từ còn cần luyện.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade5_on_tap_tin_hoc_an_toan\\images\\slide-03.svg"
+    },
+    {
+      "slide_number": 4,
+      "page_type": "examples",
+      "content": "Ví dụ\n- Không chia sẻ mật khẩu\n- Kiểm tra nguồn tin trước khi tin\nHoạt động: Chọn một ví dụ và giải thích bằng lời của mình.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 lesson illustration for Vietnamese grade 5 students\nPrimary request: Create a child-friendly illustration for slide 4 of lesson 'Ôn an toàn số' (Ôn tập cuối năm - Tin học).\nStyle: warm classroom vector illustration, expressive and concrete, no brand characters.\nLesson title context: Ví dụ\nLesson content context: - Không chia sẻ mật khẩu\n- Kiểm tra nguồn tin trước khi tin\nTeacher activity context: Chọn một ví dụ và giải thích bằng lời của mình.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade5_on_tap_tin_hoc_an_toan\\images\\slide-04.svg"
+    },
+    {
+      "slide_number": 5,
+      "page_type": "practice",
+      "content": "Luyện tập\nHọc sinh chọn cách xử lý tình huống online.\nHoạt động: Làm chậm một lượt, sau đó thử làm nhanh hơn.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 lesson illustration for Vietnamese grade 5 students\nPrimary request: Create a child-friendly illustration for slide 5 of lesson 'Ôn an toàn số' (Ôn tập cuối năm - Tin học).\nStyle: warm classroom vector illustration, expressive and concrete, no brand characters.\nLesson title context: Luyện tập\nLesson content context: Học sinh chọn cách xử lý tình huống online.\nTeacher activity context: Làm chậm một lượt, sau đó thử làm nhanh hơn.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade5_on_tap_tin_hoc_an_toan\\images\\slide-05.svg"
+    },
+    {
+      "slide_number": 6,
+      "page_type": "game",
+      "content": "Trò chơi\nPhân loại hành vi an toàn và rủi ro.\nHoạt động: Hoàn thành trò chơi để nhận xu và sticker ôn tập.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 lesson illustration for Vietnamese grade 5 students\nPrimary request: Create a child-friendly illustration for slide 6 of lesson 'Ôn an toàn số' (Ôn tập cuối năm - Tin học).\nStyle: warm classroom vector illustration, expressive and concrete, no brand characters.\nLesson title context: Trò chơi\nLesson content context: Phân loại hành vi an toàn và rủi ro.\nTeacher activity context: Hoàn thành trò chơi để nhận xu và sticker ôn tập.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade5_on_tap_tin_hoc_an_toan\\images\\slide-06.svg"
+    },
+    {
+      "slide_number": 7,
+      "page_type": "summary",
+      "content": "Tự kiểm tra\nHôm nay đã học: ôn an toàn số.\nNói lại 2 từ khóa và 1 điều còn muốn luyện.\nHoạt động: Tự chấm: chắc rồi, cần luyện thêm, hoặc muốn thử mức khó hơn.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 lesson illustration for Vietnamese grade 5 students\nPrimary request: Create a child-friendly illustration for slide 7 of lesson 'Ôn an toàn số' (Ôn tập cuối năm - Tin học).\nStyle: warm classroom vector illustration, expressive and concrete, no brand characters.\nLesson title context: Tự kiểm tra\nLesson content context: Hôm nay đã học: ôn an toàn số.\nNói lại 2 từ khóa và 1 điều còn muốn luyện.\nTeacher activity context: Tự chấm: chắc rồi, cần luyện thêm, hoặc muốn thử mức khó hơn.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade5_on_tap_tin_hoc_an_toan\\images\\slide-07.svg"
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài giảng EduPlay</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            overflow: hidden;
+            background: #1a1a2e;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        .app-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .slide-area {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background: #000;
+            overflow: hidden;
+        }
+        .slide-img {
+            max-width: 90%;
+            max-height: 65vh; /* Giới hạn chiều cao ảnh */
+            object-fit: contain;
+            display: none;
+            box-shadow: 0 0 30px rgba(0,0,0,0.8);
+            border-radius: 15px;
+            border: 2px solid #333;
+        }
+        .slide-img.active { display: block; animation: fadeIn 0.5s; }
+        
+        @keyframes fadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+
+        .script-area {
+            height: 220px; /* Tăng nhẹ không gian cho chữ */
+            background: linear-gradient(180deg, #16213e 0%, #0f3460 100%);
+            border-top: 6px solid #e94560;
+            padding: 20px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 -10px 30px rgba(0,0,0,0.5);
+            z-index: 10;
+        }
+        
+        .script-text {
+            font-size: 34px;
+            font-weight: 600;
+            line-height: 1.6;
+            color: #ecf0f1;
+            max-width: 1100px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        .word {
+            display: inline-block;
+            margin-right: 8px;
+            transition: all 0.2s;
+        }
+        
+        .word.highlight {
+            color: #fdd34d;
+            transform: scale(1.15);
+            text-shadow: 0 0 15px rgba(253, 211, 77, 0.6);
+        }
+
+        .controls {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            background: rgba(0,0,0,0.6);
+            padding: 10px 20px;
+            border-radius: 30px;
+            backdrop-filter: blur(5px);
+            z-index: 100;
+        }
+        
+        .btn {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 50%;
+            transition: background 0.3s;
+        }
+        .btn:hover { background: rgba(255,255,255,0.2); }
+
+        .indicator {
+            position: fixed;
+            top: 25px;
+            right: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            background: rgba(233, 69, 96, 0.8);
+            padding: 5px 15px;
+            border-radius: 15px;
+            z-index: 100;
+        }
+
+        .loading-screen {
+            position: fixed;
+            inset: 0;
+            background: #1a1a2e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-screen" id="loading">
+        <h1>Đang tải bài học...</h1>
+    </div>
+
+    <div class="app-container">
+        <div class="slide-area" id="slideArea">
+            <!-- Slides images will be here -->
+        </div>
+
+        <div class="script-area">
+            <div class="script-text" id="scriptText"></div>
+            <audio id="audioPlayer"></audio>
+        </div>
+    </div>
+
+    <div class="indicator" id="indicator">1 / 5</div>
+
+    <div class="controls">
+        <button class="btn" id="prevBtn" title="Trở lại">⏮️</button>
+        <button class="btn" id="playBtn" title="Nghe lại">🔊</button>
+        <button class="btn" id="nextBtn" title="Tiếp theo">⏭️</button>
+    </div>
+
+    <script>
+        const slides = ['images/slide-01.png',
+            'images/slide-02.png',
+            'images/slide-03.png',
+            'images/slide-04.png',
+            'images/slide-05.png'];
+        const rawScripts = [{'num': 1, 'text': "Chào các con! Hôm nay, cô và các con sẽ cùng nhau khám phá một thế giới đầy màu sắc và những điều bí ẩn đấy. Đó chính là khu rừng xanh thẳm, nơi rất nhiều bạn động vật đáng yêu đang chờ chúng ta!"},
+            {'num': 2, 'text': "Nhìn kìa, đây chính là khu rừng xanh mát, nơi không khí trong lành và cây cối xanh tươi quanh năm. Trong khu rừng này, có vô vàn những người bạn động vật nhỏ bé và cả những bạn lớn nữa đang sinh sống đấy!"},
+            {'num': 3, 'text': "Ồ, bạn khỉ con đây rồi! Các con có biết không, bạn khỉ rất giỏi leo trèo, chúng có thể chuyền cành nhanh như chớp. Và món ăn yêu thích nhất của bạn ấy chính là những quả chuối vàng ươm đấy!"},
+            {'num': 4, 'text': "Tiếp theo là bạn voi con khổng lồ nhưng rất hiền lành. Bạn ấy có một chiếc vòi thật dài để lấy thức ăn và uống nước, cùng với đôi tai to như cái quạt giúp bạn ấy nghe rõ mọi âm thanh trong rừng."},
+            {'num': 5, 'text': "Và kìa, trên cao là bạn chim nhỏ xinh đang hót líu lo những giai điệu thật hay. Các bạn chim không chỉ biết bay lượn tự do trên bầu trời mà còn xây những chiếc tổ ấm áp trên cành cây cao nữa đấy! Các con thấy không, thế giới động vật thật kỳ diệu và đáng yêu phải không nào?"}];
+        let currentIdx = 0;
+        let wordTimestamps = [];
+        
+        const audioPlayer = document.getElementById('audioPlayer');
+        const scriptContainer = document.getElementById('scriptText');
+        const indicator = document.getElementById('indicator');
+        
+        async function loadSlide(index) {
+            if (index < 0 || index >= slides.length) return;
+            currentIdx = index;
+            
+            // 1. Update UI
+            const allImgs = document.querySelectorAll('.slide-img');
+            allImgs.forEach((img, i) => img.classList.toggle('active', i === index));
+            indicator.textContent = `${index + 1} / ${slides.length}`;
+            
+            // 2. Load Audio and Timestamps
+            const slideNum = String(index + 1).padStart(2, '0');
+            const audioSrc = `audio/slide-${slideNum}.mp3`;
+            const jsonSrc = `audio/slide-${slideNum}.json`;
+            
+            audioPlayer.src = audioSrc;
+            audioPlayer.playbackRate = 1.1; 
+            
+            try {
+                const response = await fetch(jsonSrc);
+                if (!response.ok) throw new Error("JSON not found");
+                wordTimestamps = await response.json();
+                renderScript();
+                audioPlayer.play().catch(e => console.log("Play blocked"));
+            } catch (e) {
+                console.error("Lỗi tải timestamps:", e);
+                wordTimestamps = [];
+                // Hiển thị text từ dữ liệu nhúng sẵn nếu không có JSON bôi màu
+                const fallbackText = rawScripts[index] ? rawScripts[index].text : "Đang phát âm thanh thuyết minh...";
+                scriptContainer.innerHTML = `<span style="opacity: 0.9;">${fallbackText}</span>`;
+                audioPlayer.play().catch(e => console.log("Play blocked"));
+            }
+        }
+        
+        function renderScript() {
+            if (wordTimestamps.length === 0) return;
+            scriptContainer.innerHTML = wordTimestamps.map((w, i) => 
+                `<span class="word" id="word-${i}">${w.text}</span>`
+            ).join(' ');
+        }
+        
+        audioPlayer.ontimeupdate = () => {
+            if (wordTimestamps.length === 0) return;
+            const time = audioPlayer.currentTime;
+            
+            // Tìm từ hiện tại dựa trên Start time
+            // Chúng ta dùng Start của từ kế tiếp để xác định từ hiện tại kết thúc
+            wordTimestamps.forEach((w, i) => {
+                const el = document.getElementById(`word-${i}`);
+                if (!el) return;
+                
+                const nextWord = wordTimestamps[i + 1];
+                const isCurrent = time >= w.start && (nextWord ? time < nextWord.start : true);
+                
+                if (isCurrent) {
+                    el.classList.add('highlight');
+                    // Tự động cuộn nếu chữ quá dài (tùy chọn)
+                    // el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                } else {
+                    el.classList.remove('highlight');
+                }
+            });
+        };
+        
+        audioPlayer.onended = () => {
+            // Có thể tự động chuyển slide nếu muốn
+            // setTimeout(() => { if(currentIdx < slides.length - 1) loadSlide(currentIdx + 1); }, 2000);
+        };
+
+        function init() {
+            const slideArea = document.getElementById('slideArea');
+            slides.forEach((src, i) => {
+                const img = document.createElement('img');
+                img.src = src;
+                img.className = 'slide-img';
+                slideArea.appendChild(img);
+            });
+            
+            document.getElementById('prevBtn').onclick = () => loadSlide(currentIdx - 1);
+            document.getElementById('nextBtn').onclick = () => loadSlide(currentIdx + 1);
+            document.getElementById('playBtn').onclick = () => {
+                audioPlayer.currentTime = 0;
+                audioPlayer.play();
+            };
+            
+            document.getElementById('loading').style.display = 'none';
+            loadSlide(0);
+        }
+
+        window.onload = init;
+        
+        // Keyboard controls
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') loadSlide(currentIdx + 1);
+            if (e.key === 'ArrowLeft') loadSlide(currentIdx - 1);
+            if (e.key === ' ') { audioPlayer.paused ? audioPlayer.play() : audioPlayer.pause(); e.preventDefault(); }
+        });
+    </script>
+</body>
+</html>

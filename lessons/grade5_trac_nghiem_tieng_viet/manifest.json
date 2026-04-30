@@ -1,0 +1,163 @@
+{
+  "id": "grade5_trac_nghiem_tieng_viet",
+  "title": "Trắc nghiệm ôn tập Tiếng Việt lớp 5",
+  "grade": 5,
+  "subject": "Trắc nghiệm cuối năm - Tiếng Việt",
+  "type": "multiple_choice_quiz",
+  "keywords": [
+    "đọc hiểu",
+    "từ loại",
+    "câu ghép",
+    "dấu câu",
+    "liên kết câu"
+  ],
+  "question_count": 12,
+  "questions": [
+    {
+      "q": "Trong câu 'Những bông hoa nở rực rỡ trong nắng', chủ ngữ là:",
+      "choices": [
+        "Những bông hoa",
+        "nở rực rỡ",
+        "trong nắng",
+        "rực rỡ trong nắng"
+      ],
+      "answer": 0,
+      "explain": "Chủ ngữ trả lời câu hỏi Ai? Cái gì? Ở đây là 'Những bông hoa'."
+    },
+    {
+      "q": "Từ nào là từ đồng nghĩa với 'chăm chỉ'?",
+      "choices": [
+        "siêng năng",
+        "vội vàng",
+        "lặng lẽ",
+        "rộng rãi"
+      ],
+      "answer": 0,
+      "explain": "'Siêng năng' gần nghĩa với 'chăm chỉ'."
+    },
+    {
+      "q": "Cặp từ nào là từ trái nghĩa?",
+      "choices": [
+        "cao - thấp",
+        "xinh - đẹp",
+        "nhanh - mau",
+        "to - lớn"
+      ],
+      "answer": 0,
+      "explain": "Cao và thấp có nghĩa trái ngược nhau."
+    },
+    {
+      "q": "Câu nào là câu ghép?",
+      "choices": [
+        "Trời mưa to và gió thổi mạnh.",
+        "Em học bài.",
+        "Hoa nở trong vườn.",
+        "Bạn Nam đọc sách rất hay."
+      ],
+      "answer": 0,
+      "explain": "Câu có hai vế nêu hai sự việc: trời mưa to, gió thổi mạnh."
+    },
+    {
+      "q": "Dấu hai chấm thường dùng để:",
+      "choices": [
+        "Báo hiệu lời nói trực tiếp hoặc phần giải thích",
+        "Kết thúc câu hỏi",
+        "Ngăn cách các tiếng trong từ",
+        "Thay cho dấu chấm hết"
+      ],
+      "answer": 0,
+      "explain": "Dấu hai chấm có thể báo hiệu lời nói trực tiếp hoặc phần giải thích, liệt kê."
+    },
+    {
+      "q": "Từ 'xanh biếc' thuộc kiểu từ nào?",
+      "choices": [
+        "Từ ghép phân loại",
+        "Từ láy",
+        "Đại từ",
+        "Quan hệ từ"
+      ],
+      "answer": 0,
+      "explain": "'Xanh biếc' là từ ghép chỉ sắc xanh cụ thể."
+    },
+    {
+      "q": "Quan hệ từ trong câu 'Em học bài vì ngày mai kiểm tra' là:",
+      "choices": [
+        "Em",
+        "học",
+        "vì",
+        "kiểm tra"
+      ],
+      "answer": 2,
+      "explain": "'Vì' nối nguyên nhân với sự việc."
+    },
+    {
+      "q": "Câu 'Bạn Lan vừa hát vừa múa' dùng cặp quan hệ từ nào?",
+      "choices": [
+        "vừa...vừa",
+        "nếu...thì",
+        "tuy...nhưng",
+        "không những...mà còn"
+      ],
+      "answer": 0,
+      "explain": "Cặp từ thể hiện hai hoạt động diễn ra cùng lúc."
+    },
+    {
+      "q": "Để liên kết câu, có thể dùng cách nào?",
+      "choices": [
+        "Lặp từ ngữ, thay thế từ ngữ, dùng từ nối",
+        "Viết câu thật dài",
+        "Bỏ dấu câu",
+        "Chỉ dùng một kiểu câu"
+      ],
+      "answer": 0,
+      "explain": "Đây là ba cách liên kết câu thường gặp."
+    },
+    {
+      "q": "Trong bài văn tả cảnh, phần mở bài thường có nhiệm vụ:",
+      "choices": [
+        "Giới thiệu cảnh được tả",
+        "Nêu kết quả phép tính",
+        "Kể toàn bộ câu chuyện",
+        "Liệt kê từ đồng nghĩa"
+      ],
+      "answer": 0,
+      "explain": "Mở bài giới thiệu đối tượng hoặc cảnh được tả."
+    },
+    {
+      "q": "Từ nào là đại từ xưng hô?",
+      "choices": [
+        "tôi",
+        "đẹp",
+        "chạy",
+        "xanh"
+      ],
+      "answer": 0,
+      "explain": "'Tôi' dùng để xưng hô."
+    },
+    {
+      "q": "Câu hỏi thường kết thúc bằng dấu:",
+      "choices": [
+        "dấu hỏi",
+        "dấu chấm",
+        "dấu phẩy",
+        "dấu gạch ngang"
+      ],
+      "answer": 0,
+      "explain": "Câu hỏi kết thúc bằng dấu hỏi."
+    }
+  ],
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "quiz_cover",
+      "title": "Trắc nghiệm ôn tập Tiếng Việt lớp 5",
+      "content": "Trắc nghiệm cuối năm - Tiếng Việt. 12 câu trắc nghiệm.",
+      "activity": "Làm bài, xem giải thích và ghi lại phần cần ôn thêm.",
+      "audio_script": "Trắc nghiệm ôn tập Tiếng Việt lớp 5. Bài có 12 câu trắc nghiệm. Hãy đọc kỹ câu hỏi rồi chọn đáp án đúng nhất.",
+      "image": "images/slide-01.svg",
+      "audio": "audio/slide-01.mp3"
+    }
+  ],
+  "created_at": "2026-04-28T10:22:11",
+  "source_note": "Bộ câu hỏi tự soạn để ôn tập cuối năm lớp 5, không sao chép nguyên văn sách giáo khoa."
+}

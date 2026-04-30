@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f8fbff"/>
+  <circle cx="1480" cy="80" r="240" fill="#fff8d7"/>
+  <circle cx="120" cy="790" r="240" fill="#fff8d7"/>
+  <rect x="70" y="58" width="1460" height="784" rx="48" fill="#ffffff" stroke="#dde8ef" stroke-width="6"/>
+  <rect x="70" y="58" width="1460" height="96" rx="48" fill="#ffcf4a"/>
+  <rect x="70" y="112" width="1460" height="42" fill="#ffcf4a"/>
+  <text x="118" y="122" fill="#ffffff" font-size="34" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="900">Tự nhiên và Xã hội</text>
+  <text x="1430" y="122" fill="#ffffff" font-size="30" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="800">4/7</text>
+  <g transform="translate(1200 248)"><circle cx="92" cy="76" r="54" fill="#ffcf4a"/><path d="M104 116c54 8 86 38 94 88-54-2-90-26-94-88Z" fill="#75c979"/><path d="M86 116c-52 8-84 38-92 88 54-2 88-26 92-88Z" fill="#5ebd67"/></g>
+  <rect x="1140" y="210" width="300" height="260" rx="44" fill="#fff8d7" opacity="0.86"/>
+  <rect x="118" y="206" width="945" height="158" rx="28" fill="#fff8d7"/>
+  <text x="154" y="274" fill="#705700" font-size="58" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="900">Ví dụ dễ hiểu</text>
+  <rect x="118" y="400" width="945" height="286" rx="30" fill="#ffffff" stroke="#e5edf2" stroke-width="4"/>
+  <text x="154" y="466" fill="#17202a" font-size="38" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="800">- Gia đình yêu thương nhau.</text>
+<text x="154" y="515" fill="#17202a" font-size="38" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="800">- Mỗi người có việc phù hợp trong nhà.</text>
+  <rect x="118" y="718" width="1282" height="82" rx="26" fill="#fff8d7" stroke="#ffcf4a" stroke-width="4"/>
+  <text x="154" y="770" fill="#705700" font-size="28" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="900">Hoạt động:</text>
+  <text x="330" y="770" fill="#24313b" font-size="26" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="800">Bé chọn một ví dụ và nói lại bằng lời của mình.</text>
+</svg>

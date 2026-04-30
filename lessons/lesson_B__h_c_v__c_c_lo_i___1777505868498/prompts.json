@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "Bé học về các loài động vật dưới đại dương",
+    "total_slides": 5,
+    "resolution": "2K",
+    "style": "styles/vector-illustration.md",
+    "generated_at": "2026-04-30T06:37:48.633325"
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "cover",
+      "content": "Chào mừng các bé đến với Thế giới đại dương!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a cover page based on visual balance aesthetics.\nPlace a large complex 3D glass object in the center, overlaid with bold text:\n\nChào mừng các bé đến với Thế giới đại dương!\n\nBackground with extended aurora waves.",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_B__h_c_v__c_c_lo_i___1777505868498\\images\\slide-01.png"
+    },
+    {
+      "slide_number": 2,
+      "page_type": "content",
+      "content": "Bạn Cá Heo thông minh và bạn Cá Hề vui vẻ",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nBạn Cá Heo thông minh và bạn Cá Hề vui vẻ",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_B__h_c_v__c_c_lo_i___1777505868498\\images\\slide-02.png"
+    },
+    {
+      "slide_number": 3,
+      "page_type": "content",
+      "content": "Bạn Sứa lung linh và bạn Rùa biển hiền lành",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nBạn Sứa lung linh và bạn Rùa biển hiền lành",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_B__h_c_v__c_c_lo_i___1777505868498\\images\\slide-03.png"
+    },
+    {
+      "slide_number": 4,
+      "page_type": "content",
+      "content": "Trò chơi: Bé đoán xem ai?",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nTrò chơi: Bé đoán xem ai?",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_B__h_c_v__c_c_lo_i___1777505868498\\images\\slide-04.png"
+    },
+    {
+      "slide_number": 5,
+      "page_type": "summary",
+      "content": "Thế giới đại dương thật tuyệt vời! Hẹn gặp lại các bé!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a data/summary page using split-screen design.\nLeft side: typeset the following text.\nRight side: floating large glowing 3D data visualization:\n\nThế giới đại dương thật tuyệt vời! Hẹn gặp lại các bé!",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_B__h_c_v__c_c_lo_i___1777505868498\\images\\slide-05.png"
+    }
+  ]
+}

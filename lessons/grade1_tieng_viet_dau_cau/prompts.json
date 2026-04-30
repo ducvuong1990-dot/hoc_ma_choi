@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "title": "Dấu chấm, dấu hỏi, dấu cảm",
+    "grade": 1,
+    "subject": "Tiếng Việt",
+    "total_slides": 7,
+    "style": "vector-illustration-no-text",
+    "generated_at": "2026-04-28T09:26:11"
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "cover",
+      "content": "Dấu chấm, dấu hỏi, dấu cảm\nTiếng Việt lớp 1\nHọc bằng hình, luyện bằng trò chơi.\nHoạt động: Đọc tên bài, quan sát tranh và nêu điều đã biết.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 lesson illustration for Vietnamese grade 1 students\nPrimary request: Create a child-friendly illustration for slide 1 of lesson 'Dấu chấm, dấu hỏi, dấu cảm' (Tiếng Việt).\nStyle: warm classroom vector illustration, expressive and concrete, no brand characters.\nLesson title context: Dấu chấm, dấu hỏi, dấu cảm\nLesson content context: Tiếng Việt lớp 1\nHọc bằng hình, luyện bằng trò chơi.\nTeacher activity context: Đọc tên bài, quan sát tranh và nêu điều đã biết.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade1_tieng_viet_dau_cau\\images\\slide-01.svg"
+    },
+    {
+      "slide_number": 2,
+      "page_type": "goal",
+      "content": "Mục tiêu\nHọc sinh sẽ:\n- Nhận biết kiến thức trọng tâm.\n- Luyện bằng ví dụ ngắn.\n- Tự kiểm tra qua trò chơi.\nHoạt động: Nói lại mục tiêu bằng một câu ngắn.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 lesson illustration for Vietnamese grade 1 students\nPrimary request: Create a child-friendly illustration for slide 2 of lesson 'Dấu chấm, dấu hỏi, dấu cảm' (Tiếng Việt).\nStyle: warm classroom vector illustration, expressive and concrete, no brand characters.\nLesson title context: Mục tiêu\nLesson content context: Học sinh sẽ:\n- Nhận biết kiến thức trọng tâm.\n- Luyện bằng ví dụ ngắn.\n- Tự kiểm tra qua trò chơi.\nTeacher activity context: Nói lại mục tiêu bằng một câu ngắn.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade1_tieng_viet_dau_cau\\images\\slide-02.svg"
+    },
+    {
+      "slide_number": 3,
+      "page_type": "keywords",
+      "content": "Từ khóa\n- dấu chấm\n- dấu hỏi\n- dấu cảm\n- câu kể\n- câu hỏi\nHoạt động: Đọc từng từ khóa, đánh dấu từ còn cần luyện.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 lesson illustration for Vietnamese grade 1 students\nPrimary request: Create a child-friendly illustration for slide 3 of lesson 'Dấu chấm, dấu hỏi, dấu cảm' (Tiếng Việt).\nStyle: warm classroom vector illustration, expressive and concrete, no brand characters.\nLesson title context: Từ khóa\nLesson content context: - dấu chấm\n- dấu hỏi\n- dấu cảm\n- câu kể\n- câu hỏi\nTeacher activity context: Đọc từng từ khóa, đánh dấu từ còn cần luyện.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade1_tieng_viet_dau_cau\\images\\slide-03.svg"
+    },
+    {
+      "slide_number": 4,
+      "page_type": "examples",
+      "content": "Ví dụ\n- Bé đi học.\n- Bạn tên gì?\n- Ôi, đẹp quá!\nHoạt động: Chọn một ví dụ và giải thích bằng lời của mình.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 lesson illustration for Vietnamese grade 1 students\nPrimary request: Create a child-friendly illustration for slide 4 of lesson 'Dấu chấm, dấu hỏi, dấu cảm' (Tiếng Việt).\nStyle: warm classroom vector illustration, expressive and concrete, no brand characters.\nLesson title context: Ví dụ\nLesson content context: - Bé đi học.\n- Bạn tên gì?\n- Ôi, đẹp quá!\nTeacher activity context: Chọn một ví dụ và giải thích bằng lời của mình.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade1_tieng_viet_dau_cau\\images\\slide-04.svg"
+    },
+    {
+      "slide_number": 5,
+      "page_type": "practice",
+      "content": "Luyện tập\nBé đọc câu theo đúng giọng: kể, hỏi, vui.\nHoạt động: Làm chậm một lượt, sau đó thử làm nhanh hơn.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 lesson illustration for Vietnamese grade 1 students\nPrimary request: Create a child-friendly illustration for slide 5 of lesson 'Dấu chấm, dấu hỏi, dấu cảm' (Tiếng Việt).\nStyle: warm classroom vector illustration, expressive and concrete, no brand characters.\nLesson title context: Luyện tập\nLesson content context: Bé đọc câu theo đúng giọng: kể, hỏi, vui.\nTeacher activity context: Làm chậm một lượt, sau đó thử làm nhanh hơn.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade1_tieng_viet_dau_cau\\images\\slide-05.svg"
+    },
+    {
+      "slide_number": 6,
+      "page_type": "game",
+      "content": "Trò chơi\nChọn dấu câu còn thiếu cho câu ngắn.\nHoạt động: Hoàn thành trò chơi để nhận xu và sticker ôn tập.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 lesson illustration for Vietnamese grade 1 students\nPrimary request: Create a child-friendly illustration for slide 6 of lesson 'Dấu chấm, dấu hỏi, dấu cảm' (Tiếng Việt).\nStyle: warm classroom vector illustration, expressive and concrete, no brand characters.\nLesson title context: Trò chơi\nLesson content context: Chọn dấu câu còn thiếu cho câu ngắn.\nTeacher activity context: Hoàn thành trò chơi để nhận xu và sticker ôn tập.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade1_tieng_viet_dau_cau\\images\\slide-06.svg"
+    },
+    {
+      "slide_number": 7,
+      "page_type": "summary",
+      "content": "Tự kiểm tra\nHôm nay đã học: dấu chấm, dấu hỏi, dấu cảm.\nNói lại 2 từ khóa và 1 điều còn muốn luyện.\nHoạt động: Tự chấm: chắc rồi, cần luyện thêm, hoặc muốn thử mức khó hơn.",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 lesson illustration for Vietnamese grade 1 students\nPrimary request: Create a child-friendly illustration for slide 7 of lesson 'Dấu chấm, dấu hỏi, dấu cảm' (Tiếng Việt).\nStyle: warm classroom vector illustration, expressive and concrete, no brand characters.\nLesson title context: Tự kiểm tra\nLesson content context: Hôm nay đã học: dấu chấm, dấu hỏi, dấu cảm.\nNói lại 2 từ khóa và 1 điều còn muốn luyện.\nTeacher activity context: Tự chấm: chắc rồi, cần luyện thêm, hoặc muốn thử mức khó hơn.\n",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade1_tieng_viet_dau_cau\\images\\slide-07.svg"
+    }
+  ]
+}

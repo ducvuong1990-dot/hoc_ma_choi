@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Học chữ a, ă, â - Vũ trụ Kinh Bắc</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Quicksand:wght@500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  <style>
+    :root {
+      --panel-bg: rgba(255, 255, 255, 0.7);
+      --stage-size: 280px;
+    }
+    body { background: #f0f7ff; font-family: 'Quicksand', sans-serif; }
+    .lesson-container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    
+    .lesson-nav {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 24px; padding: 16px 24px;
+      background: var(--glass-bg); backdrop-filter: blur(12px);
+      border-radius: 20px; box-shadow: var(--glass-shadow);
+    }
+    .lesson-title-box { display: flex; align-items: center; gap: 12px; }
+    .lesson-title-box h1 { font-size: 20px; margin: 0; font-family: 'Outfit', sans-serif; font-weight: 900; color: var(--sky-dark); }
+    
+    .roadmap-panel {
+      background: #fff; border-radius: 24px; padding: 24px; margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+    
+    .activity-split { display: grid; grid-template-columns: 320px 1fr; gap: 30px; }
+    
+    .mascot-area { position: sticky; top: 20px; display: flex; flex-direction: column; gap: 20px; }
+    .mascot-card { 
+      background: linear-gradient(135deg, #fff 0%, #eef7ff 100%);
+      border-radius: 30px; height: 320px; display: grid; place-items: center;
+      position: relative; box-shadow: var(--glass-shadow);
+      border: 6px solid #fff;
+    }
+    .mascot-img { width: 220px; height: 220px; object-fit: contain; }
+    
+    .bubble-card {
+      background: #fff; border-radius: 20px; padding: 20px;
+      position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      font-weight: 700; color: var(--muted); line-height: 1.6;
+    }
+    .bubble-card::after {
+      content: ""; position: absolute; top: -12px; left: 40px;
+      border-left: 12px solid transparent; border-right: 12px solid transparent;
+      border-bottom: 12px solid #fff;
+    }
+
+    .interaction-card {
+      background: #fff; border-radius: 32px; padding: 40px;
+      min-height: 500px; box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+      display: flex; flex-direction: column;
+    }
+
+    /* Phase UI */
+    .phase-header { margin-bottom: 30px; border-bottom: 2px solid var(--line); padding-bottom: 20px; }
+    .phase-header h2 { font-family: 'Outfit', sans-serif; font-weight: 900; margin: 0; font-size: 28px; }
+    .phase-instruction { font-size: 18px; color: var(--muted); margin-top: 8px; }
+
+    /* Sub-stages within an activity */
+    .stage-pills { display: flex; gap: 8px; margin-bottom: 24px; }
+    .stage-pill { 
+      padding: 6px 16px; border-radius: 20px; background: var(--line); 
+      font-size: 13px; font-weight: 800; color: var(--muted);
+      transition: all 0.3s ease;
+    }
+    .stage-pill.active { background: var(--sky); color: #fff; }
+    .stage-pill.done { background: var(--leaf); color: #fff; }
+
+    /* Custom interaction styles */
+    .choice-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin-top: 24px; }
+    .choice-btn {
+      height: 120px; border-radius: 24px; border: 4px solid var(--line);
+      background: #fff; font-size: 48px; font-weight: 900; color: var(--sky-dark);
+      cursor: pointer; transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .choice-btn:hover { transform: translateY(-5px); border-color: var(--sky); box-shadow: 0 10px 20px rgba(72, 213, 255, 0.2); }
+    .choice-btn.correct { background: var(--leaf); border-color: var(--leaf); color: #fff; }
+    .choice-btn.wrong { background: #ff7675; border-color: #ff7675; color: #fff; }
+
+    .action-row { margin-top: auto; padding-top: 40px; display: flex; gap: 16px; }
+    
+    .hud-stats { display: flex; gap: 16px; }
+    .hud-item {
+      display: flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,0.5); padding: 8px 16px;
+      border-radius: 12px; font-weight: 800;
+    }
+    .hud-item.coins { color: #f39c12; }
+    .hud-item.xp { color: var(--sky-dark); }
+  </style>
+</head>
+<body class="theme-kinhbac">
+  <div class="lesson-container">
+    <nav class="lesson-nav">
+      <div class="lesson-title-box">
+        <a href="../index.html" class="secondary-button" style="padding: 8px;"><span class="material-symbols-outlined">arrow_back</span></a>
+        <div>
+          <h1>Chữ a, ă, â</h1>
+          <div style="font-size: 12px; font-weight: 700; color: var(--muted);"> Grade 1 • Tiếng Việt</div>
+        </div>
+      </div>
+      <div class="hud-stats">
+        <div class="hud-item coins"><span class="material-symbols-outlined">payments</span> <span id="coins">0</span></div>
+        <div class="hud-item xp"><span class="material-symbols-outlined">stars</span> <span id="xp">--</span></div>
+      </div>
+    </nav>
+
+    <div class="roadmap-panel">
+      <div class="roadmap" id="roadmap">
+        <!-- Steps will be rendered here -->
+      </div>
+    </div>
+
+    <div class="activity-split">
+      <aside class="mascot-area">
+        <div class="mascot-card" id="mascot-container">
+          <img src="../../assets/characters/capy-lv1.png" class="mascot-img char-action" id="mascot-img" alt="Mascot">
+        </div>
+        <div class="bubble-card" id="coach-bubble">
+          Chào con! Mình cùng khám phá vũ trụ chữ cái nhé!
+        </div>
+      </aside>
+
+      <main class="interaction-card" id="main-interaction">
+        <!-- Activity content injected here -->
+      </main>
+    </div>
+  </div>
+
+  <script>
+    const STORE_KEY = "lesson_grade1_tv_a_a_aa_v2";
+    let manifest = {
+      title: "Chữ a, ă, â",
+      activities: [
+        {
+          id: "act1", title: "Nhận diện", instruction: "Bé nghe âm rồi chọn chữ cái đúng nhé!",
+          type: "listen_choose",
+          stages: [
+            { audio: "a", options: ["a", "o", "e"], answer: "a", hint: "Mở miệng thật to nào: aaaaa" },
+            { audio: "ă", options: ["ă", "â", "a"], answer: "ă", hint: "Chữ a có cái mũ ngửa lên là ă" },
+            { audio: "â", options: ["â", "ă", "a"], answer: "â", hint: "Chữ a có cái nón úp xuống là â" }
+          ]
+        },
+        {
+          id: "act2", title: "Tìm chữ", instruction: "Tìm xem trong các từ sau, từ nào có chữ a?",
+          type: "word_hunt",
+          stages: [
+            { word: "con cá", has: "a", options: ["có a", "không có"], answer: "có a" },
+            { word: "cái lá", has: "a", options: ["có a", "không có"], answer: "có a" },
+            { word: "quyển vở", has: "a", options: ["có a", "không có"], answer: "không có" }
+          ]
+        },
+        {
+          id: "act3", title: "Luyện đọc", instruction: "Bé hãy đọc to chữ cái hiện lên nhé!",
+          type: "record",
+          stages: [
+            { target: "a", text: "Ba có con cá" },
+            { target: "ă", text: "Mẹ đi chợ về" },
+            { target: "â", text: "Bé đi học bài" }
+          ]
+        }
+      ]
+    };
+
+    let state = JSON.parse(localStorage.getItem(STORE_KEY) || JSON.stringify({
+      coins: 0,
+      xp: 0,
+      currentActivity: 0,
+      currentStage: 0,
+      completed: {}
+    }));
+
+    function save() { localStorage.setItem(STORE_KEY, JSON.stringify(state)); }
+
+    async function say(t) {
+      try {
+        const response = await fetch('http://127.0.0.1:8000/tts', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text: t })
+        });
+        if (!response.ok) return;
+        const blob = await response.blob();
+        const url = URL.createObjectURL(blob);
+        const audio = new Audio(url);
+        audio.onended = () => URL.revokeObjectURL(url);
+        audio.onerror = () => URL.revokeObjectURL(url);
+        audio.play().catch(() => URL.revokeObjectURL(url));
+      } catch {}
+    }
+
+    function setMascotState(s) {
+      const el = document.getElementById('mascot-img');
+      el.className = 'mascot-img char-action state-' + s;
+      setTimeout(() => { if(s !== 'thinking') el.className = 'mascot-img char-action'; }, 2000);
+    }
+
+    function updateUI() {
+      document.getElementById('coins').textContent = state.coins;
+      document.getElementById('xp').textContent = state.xp;
+      
+      const roadmap = document.getElementById('roadmap');
+      roadmap.innerHTML = manifest.activities.map((a, i) => `
+        <div class="road-step ${i === state.currentActivity ? 'active' : ''} ${i < state.currentActivity ? 'completed' : ''}" onclick="goToActivity(${i})">
+          <div class="step-dot">${i < state.currentActivity ? '✓' : (i + 1)}</div>
+          <div class="step-label">${a.title}</div>
+        </div>
+      `).join('');
+
+      renderActivity();
+    }
+
+    function renderActivity() {
+      const act = manifest.activities[state.currentActivity];
+      const stage = act.stages[state.currentStage];
+      const main = document.getElementById('main-interaction');
+      
+      let html = `
+        <div class="phase-header">
+          <h2>${act.title}</h2>
+          <div class="phase-instruction">${act.instruction}</div>
+        </div>
+        <div class="stage-pills">
+          ${act.stages.map((_, i) => `<div class="stage-pill ${i === state.currentStage ? 'active' : ''} ${i < state.currentStage ? 'done' : ''}">Chặng ${i+1}</div>`).join('')}
+        </div>
+      `;
+
+      if (act.type === 'listen_choose') {
+        html += `
+          <div style="text-align:center; margin: 40px 0;">
+            <button class="primary-button" onclick="playStageAudio()" style="font-size: 24px; padding: 20px 40px;">
+              <span class="material-symbols-outlined">volume_up</span> Nghe âm
+            </button>
+          </div>
+          <div class="choice-grid">
+            ${stage.options.map(opt => `<button class="choice-btn" onclick="checkAnswer('${opt}')">${opt}</button>`).join('')}
+          </div>
+        `;
+      } else if (act.type === 'word_hunt') {
+        html += `
+          <div style="text-align:center; margin: 40px 0;">
+            <div style="font-size: 64px; font-weight: 900; color: var(--sky-dark); margin-bottom: 20px;">${stage.word}</div>
+          </div>
+          <div class="choice-grid">
+            ${stage.options.map(opt => `<button class="choice-btn" onclick="checkAnswer('${opt}')" style="font-size: 24px;">${opt}</button>`).join('')}
+          </div>
+        `;
+      } else if (act.type === 'record') {
+        html += `
+          <div style="text-align:center; margin: 40px 0;">
+            <div style="font-size: 48px; font-weight: 900; color: var(--sky-dark); margin-bottom: 20px;">${stage.text}</div>
+            <button class="primary-button" onclick="say('${stage.text}')" style="margin-bottom: 16px;">
+              <span class="material-symbols-outlined">volume_up</span> Nghe mẫu
+            </button>
+            <br>
+            <button class="primary-button" onclick="simulateRecord()" style="background: var(--leaf); scale: 1.2;">
+              <span class="material-symbols-outlined">mic</span> Bé đọc đi nào
+            </button>
+          </div>
+        `;
+      }
+
+      main.innerHTML = html;
+      document.getElementById('coach-bubble').textContent = stage.hint || act.instruction;
+      if (state.currentStage === 0) setMascotState('thinking');
+    }
+
+    function playStageAudio() {
+      const act = manifest.activities[state.currentActivity];
+      const stage = act.stages[state.currentStage];
+      say(stage.audio);
+    }
+
+    function checkAnswer(val) {
+      const act = manifest.activities[state.currentActivity];
+      const stage = act.stages[state.currentStage];
+      const ok = val === stage.answer;
+      
+      if (ok) {
+        setMascotState('happy');
+        say('Đúng rồi! Giỏi quá!');
+        state.coins += 5;
+        state.xp += 10;
+        
+        if (state.currentStage < act.stages.length - 1) {
+          state.currentStage++;
+        } else {
+          if (state.currentActivity < manifest.activities.length - 1) {
+            state.currentActivity++;
+            state.currentStage = 0;
+            say('Chúc mừng bé đã hoàn thành phần này!');
+          } else {
+            say('Tuyệt vời! Bé đã hoàn thành bài học hôm nay rồi!');
+            // Final completion logic
+          }
+        }
+        save();
+        setTimeout(updateUI, 1000);
+      } else {
+        setMascotState('sad');
+        say('Chưa đúng rồi, bé thử lại nhé!');
+      }
+    }
+
+    function simulateRecord() {
+      setMascotState('happy');
+      say('Bé đọc hay quá! Tặng bé 10 xu!');
+      state.coins += 10;
+      state.xp += 20;
+      const act = manifest.activities[state.currentActivity];
+      if (state.currentStage < act.stages.length - 1) {
+        state.currentStage++;
+      } else if (state.currentActivity < manifest.activities.length - 1) {
+        state.currentActivity++;
+        state.currentStage = 0;
+      }
+      save();
+      setTimeout(updateUI, 1500);
+    }
+
+    function goToActivity(i) {
+      if (i <= state.currentActivity) {
+        state.currentActivity = i;
+        state.currentStage = 0;
+        updateUI();
+      }
+    }
+
+    updateUI();
+  </script>
+</body>
+</html>

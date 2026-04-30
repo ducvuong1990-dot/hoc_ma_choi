@@ -1,0 +1,163 @@
+{
+  "id": "grade5_trac_nghiem_toan",
+  "title": "Trắc nghiệm ôn tập Toán lớp 5",
+  "grade": 5,
+  "subject": "Trắc nghiệm cuối năm - Toán",
+  "type": "multiple_choice_quiz",
+  "keywords": [
+    "phân số",
+    "số thập phân",
+    "phần trăm",
+    "hình học",
+    "chuyển động"
+  ],
+  "question_count": 12,
+  "questions": [
+    {
+      "q": "Phân số nào bằng 3/4?",
+      "choices": [
+        "6/8",
+        "4/6",
+        "9/16",
+        "12/20"
+      ],
+      "answer": 0,
+      "explain": "Nhân cả tử và mẫu của 3/4 với 2 được 6/8."
+    },
+    {
+      "q": "Số thập phân 4,75 đọc là gì?",
+      "choices": [
+        "Bốn phẩy bảy mươi lăm",
+        "Bốn phẩy bảy năm",
+        "Bốn trăm bảy mươi lăm",
+        "Bốn và bảy phần năm"
+      ],
+      "answer": 0,
+      "explain": "4,75 đọc là bốn phẩy bảy mươi lăm."
+    },
+    {
+      "q": "25% của 200 là bao nhiêu?",
+      "choices": [
+        "25",
+        "40",
+        "50",
+        "75"
+      ],
+      "answer": 2,
+      "explain": "25% là một phần tư; một phần tư của 200 là 50."
+    },
+    {
+      "q": "Diện tích hình chữ nhật có chiều dài 8 cm, chiều rộng 5 cm là:",
+      "choices": [
+        "13 cm2",
+        "26 cm2",
+        "40 cm2",
+        "80 cm2"
+      ],
+      "answer": 2,
+      "explain": "Diện tích hình chữ nhật bằng dài nhân rộng: 8 x 5 = 40."
+    },
+    {
+      "q": "Một xe đi 120 km trong 3 giờ. Vận tốc trung bình là:",
+      "choices": [
+        "30 km/giờ",
+        "40 km/giờ",
+        "60 km/giờ",
+        "360 km/giờ"
+      ],
+      "answer": 1,
+      "explain": "Vận tốc bằng quãng đường chia thời gian: 120 : 3 = 40."
+    },
+    {
+      "q": "Số 7,08 có chữ số 8 ở hàng nào?",
+      "choices": [
+        "Hàng đơn vị",
+        "Hàng phần mười",
+        "Hàng phần trăm",
+        "Hàng phần nghìn"
+      ],
+      "answer": 2,
+      "explain": "Trong 7,08, chữ số 8 đứng ở hàng phần trăm."
+    },
+    {
+      "q": "Chu vi hình vuông cạnh 9 cm là:",
+      "choices": [
+        "18 cm",
+        "27 cm",
+        "36 cm",
+        "81 cm"
+      ],
+      "answer": 2,
+      "explain": "Chu vi hình vuông bằng cạnh nhân 4: 9 x 4 = 36."
+    },
+    {
+      "q": "Kết quả của 2,5 + 0,75 là:",
+      "choices": [
+        "2,575",
+        "3,25",
+        "3,75",
+        "25,75"
+      ],
+      "answer": 1,
+      "explain": "Cộng thẳng hàng dấu phẩy: 2,50 + 0,75 = 3,25."
+    },
+    {
+      "q": "Rút gọn phân số 12/18 được:",
+      "choices": [
+        "2/3",
+        "3/2",
+        "6/9",
+        "4/8"
+      ],
+      "answer": 0,
+      "explain": "Chia cả tử và mẫu cho 6 được 2/3."
+    },
+    {
+      "q": "Thể tích hình hộp chữ nhật dài 5 cm, rộng 4 cm, cao 3 cm là:",
+      "choices": [
+        "12 cm3",
+        "20 cm3",
+        "60 cm3",
+        "120 cm3"
+      ],
+      "answer": 2,
+      "explain": "Thể tích bằng dài x rộng x cao: 5 x 4 x 3 = 60."
+    },
+    {
+      "q": "3/5 viết dưới dạng số thập phân là:",
+      "choices": [
+        "0,3",
+        "0,5",
+        "0,6",
+        "3,5"
+      ],
+      "answer": 2,
+      "explain": "3 : 5 = 0,6."
+    },
+    {
+      "q": "Một món đồ 80 000 đồng giảm 10%. Số tiền giảm là:",
+      "choices": [
+        "800 đồng",
+        "4 000 đồng",
+        "8 000 đồng",
+        "10 000 đồng"
+      ],
+      "answer": 2,
+      "explain": "10% của 80 000 là 8 000."
+    }
+  ],
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "quiz_cover",
+      "title": "Trắc nghiệm ôn tập Toán lớp 5",
+      "content": "Trắc nghiệm cuối năm - Toán. 12 câu trắc nghiệm.",
+      "activity": "Làm bài, xem giải thích và ghi lại phần cần ôn thêm.",
+      "audio_script": "Trắc nghiệm ôn tập Toán lớp 5. Bài có 12 câu trắc nghiệm. Hãy đọc kỹ câu hỏi rồi chọn đáp án đúng nhất.",
+      "image": "images/slide-01.svg",
+      "audio": "audio/slide-01.mp3"
+    }
+  ],
+  "created_at": "2026-04-28T10:22:11",
+  "source_note": "Bộ câu hỏi tự soạn để ôn tập cuối năm lớp 5, không sao chép nguyên văn sách giáo khoa."
+}

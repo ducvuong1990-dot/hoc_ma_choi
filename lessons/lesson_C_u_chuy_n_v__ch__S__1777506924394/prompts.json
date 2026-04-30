@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "title": "Câu chuyện về chú Sâu nhỏ",
+    "total_slides": 5,
+    "resolution": "2K",
+    "style": "styles/vector-illustration.md",
+    "generated_at": "2026-04-30T06:55:24.528501"
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "cover",
+      "content": "Câu chuyện về chú Sâu nhỏ đáng yêu",
+      "script": "Chào các con! Hôm nay, cô và các con sẽ cùng nhau khám phá một câu chuyện rất thú vị về một người bạn nhỏ bé, đáng yêu. Các con có muốn biết đó là ai không nào? Chúng mình cùng bắt đầu nhé!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a cover page based on visual balance aesthetics.\nPlace a large complex 3D glass object in the center, overlaid with bold text:\n\nCâu chuyện về chú Sâu nhỏ đáng yêu\n\nBackground with extended aurora waves.",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_C_u_chuy_n_v__ch__S__1777506924394\\images\\slide-01.png"
+    },
+    {
+      "slide_number": 2,
+      "page_type": "content",
+      "content": "Chú Sâu nhỏ Tí Tẹo và bữa ăn ngon lành",
+      "script": "Đây là chú sâu nhỏ Tí Tẹo, bạn ấy rất thích ăn lá cây xanh mướt. Tí Tẹo cứ ăn mãi, ăn mãi để lớn thật nhanh và thật khỏe mạnh đấy các con ạ.",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nChú Sâu nhỏ Tí Tẹo và bữa ăn ngon lành",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_C_u_chuy_n_v__ch__S__1777506924394\\images\\slide-02.png"
+    },
+    {
+      "slide_number": 3,
+      "page_type": "content",
+      "content": "Chiếc kén ấm áp của Tí Tẹo",
+      "script": "Sau những ngày ăn no, Tí Tẹo thấy buồn ngủ quá. Bạn ấy đã tự mình dệt một chiếc kén thật ấm áp để nghỉ ngơi. Trong chiếc kén đó, Tí Tẹo sẽ ngủ một giấc thật sâu.",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nChiếc kén ấm áp của Tí Tẹo",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_C_u_chuy_n_v__ch__S__1777506924394\\images\\slide-03.png"
+    },
+    {
+      "slide_number": 4,
+      "page_type": "content",
+      "content": "Tí Tẹo biến thành nàng Bướm xinh đẹp",
+      "script": "Sau một thời gian, điều kỳ diệu đã xảy ra! Tí Tẹo thức dậy, không còn là chú sâu nhỏ nữa, mà đã biến thành một nàng bướm xinh đẹp với đôi cánh rực rỡ sắc màu. Nàng bướm Tí Tẹo bay lượn trên bầu trời xanh.",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nTí Tẹo biến thành nàng Bướm xinh đẹp",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_C_u_chuy_n_v__ch__S__1777506924394\\images\\slide-04.png"
+    },
+    {
+      "slide_number": 5,
+      "page_type": "content",
+      "content": "Bài học từ chú Sâu nhỏ: Lớn lên và thay đổi!",
+      "script": "Vậy là từ một chú sâu nhỏ bé, Tí Tẹo đã trở thành một nàng bướm thật xinh đẹp. Câu chuyện này cho chúng ta thấy rằng, ai cũng sẽ lớn lên và thay đổi theo thời gian, để trở thành những phiên bản tuyệt vời hơn của chính mình đó các con!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a data/summary page using split-screen design.\nLeft side: typeset the following text.\nRight side: floating large glowing 3D data visualization:\n\nBài học từ chú Sâu nhỏ: Lớn lên và thay đổi!",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_C_u_chuy_n_v__ch__S__1777506924394\\images\\slide-05.png"
+    }
+  ]
+}

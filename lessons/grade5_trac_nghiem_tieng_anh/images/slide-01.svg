@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f8fbff"/>
+  <circle cx="1420" cy="110" r="260" fill="#e8f7ff"/>
+  <circle cx="160" cy="770" r="240" fill="#fff4cf"/>
+  <rect x="70" y="58" width="1460" height="784" rx="46" fill="#ffffff" stroke="#dfe8ee" stroke-width="6"/>
+  <rect x="110" y="100" width="1380" height="110" rx="32" fill="#2fb8ff"/>
+  <text x="150" y="168" fill="#fff" font-size="38" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="900">Trắc nghiệm ôn tập cuối năm · Lớp 5</text>
+  <rect x="150" y="270" width="820" height="250" rx="34" fill="#e8f7ff"/>
+  <text x="190" y="350" fill="#064d66" font-size="56" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="900">Trắc nghiệm ôn tập Tiếng Anh</text><text x="190" y="418" fill="#064d66" font-size="56" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="900">lớp 5</text>
+  <rect x="150" y="580" width="1040" height="96" rx="28" fill="#fff4cf" stroke="#f4c34f" stroke-width="4"/>
+  <text x="190" y="640" fill="#5a4300" font-size="30" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="800">vocabulary · sentences · grammar · reading</text>
+  <g transform="translate(1120 285)">
+    <rect x="0" y="0" width="270" height="330" rx="36" fill="#fff" stroke="#2fb8ff" stroke-width="8"/>
+    <circle cx="74" cy="82" r="28" fill="#82c97f"/>
+    <circle cx="74" cy="166" r="28" fill="#fdd34d"/>
+    <circle cx="74" cy="250" r="28" fill="#ff8aa5"/>
+    <path d="M132 78h82M132 162h82M132 246h82" stroke="#17202a" stroke-width="18" stroke-linecap="round"/>
+  </g>
+</svg>

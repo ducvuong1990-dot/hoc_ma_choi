@@ -1,0 +1,163 @@
+{
+  "id": "grade5_trac_nghiem_khoa_hoc",
+  "title": "Trắc nghiệm ôn tập Khoa học lớp 5",
+  "grade": 5,
+  "subject": "Trắc nghiệm cuối năm - Khoa học",
+  "type": "multiple_choice_quiz",
+  "keywords": [
+    "cơ thể",
+    "năng lượng",
+    "vật chất",
+    "môi trường",
+    "an toàn"
+  ],
+  "question_count": 12,
+  "questions": [
+    {
+      "q": "Cơ thể cần chất dinh dưỡng để:",
+      "choices": [
+        "lớn lên và hoạt động",
+        "làm đồ chơi",
+        "tạo ra mưa",
+        "đổi màu quần áo"
+      ],
+      "answer": 0,
+      "explain": "Dinh dưỡng giúp cơ thể phát triển và có năng lượng."
+    },
+    {
+      "q": "Nguồn năng lượng nào là năng lượng tái tạo?",
+      "choices": [
+        "mặt trời",
+        "than đá",
+        "dầu mỏ",
+        "khí đốt"
+      ],
+      "answer": 0,
+      "explain": "Năng lượng mặt trời là nguồn tái tạo."
+    },
+    {
+      "q": "Khi dùng điện, việc nào an toàn?",
+      "choices": [
+        "Lau tay khô trước khi cắm điện",
+        "Chạm tay ướt vào ổ điện",
+        "Kéo dây điện mạnh",
+        "Tự sửa thiết bị đang cắm điện"
+      ],
+      "answer": 0,
+      "explain": "Tay khô giúp giảm nguy cơ điện giật."
+    },
+    {
+      "q": "Chất lỏng có đặc điểm:",
+      "choices": [
+        "có hình dạng theo vật chứa",
+        "luôn có hình dạng cố định",
+        "không chảy được",
+        "không có khối lượng"
+      ],
+      "answer": 0,
+      "explain": "Chất lỏng lấy hình dạng của vật chứa."
+    },
+    {
+      "q": "Cây xanh cần gì để quang hợp?",
+      "choices": [
+        "ánh sáng",
+        "bóng tối hoàn toàn",
+        "khói bụi",
+        "muối ăn"
+      ],
+      "answer": 0,
+      "explain": "Cây cần ánh sáng để quang hợp."
+    },
+    {
+      "q": "Việc nào giúp bảo vệ môi trường?",
+      "choices": [
+        "phân loại rác",
+        "xả rác xuống sông",
+        "đốt rác nhựa bừa bãi",
+        "lãng phí nước"
+      ],
+      "answer": 0,
+      "explain": "Phân loại rác giúp tái chế và xử lý tốt hơn."
+    },
+    {
+      "q": "Âm thanh truyền qua môi trường nào?",
+      "choices": [
+        "không khí, nước, chất rắn",
+        "chỉ chân không",
+        "chỉ ánh sáng",
+        "chỉ màu sắc"
+      ],
+      "answer": 0,
+      "explain": "Âm thanh cần môi trường vật chất để truyền."
+    },
+    {
+      "q": "Để phòng bệnh lây qua đường hô hấp, nên:",
+      "choices": [
+        "che miệng khi ho",
+        "dùng chung ly với người bệnh",
+        "không rửa tay",
+        "ở nơi quá đông khi đang bệnh"
+      ],
+      "answer": 0,
+      "explain": "Che miệng khi ho giúp giảm phát tán mầm bệnh."
+    },
+    {
+      "q": "Vật nào dẫn điện tốt?",
+      "choices": [
+        "đồng",
+        "nhựa",
+        "gỗ khô",
+        "cao su"
+      ],
+      "answer": 0,
+      "explain": "Đồng là kim loại dẫn điện tốt."
+    },
+    {
+      "q": "Nước có thể chuyển từ lỏng sang hơi khi:",
+      "choices": [
+        "được đun nóng",
+        "được tô màu",
+        "được đặt trong hộp kín lạnh",
+        "được trộn với cát"
+      ],
+      "answer": 0,
+      "explain": "Đun nóng làm nước bay hơi."
+    },
+    {
+      "q": "Thói quen nào tốt cho sức khỏe?",
+      "choices": [
+        "ngủ đủ giấc",
+        "bỏ bữa sáng thường xuyên",
+        "ít vận động",
+        "uống ít nước"
+      ],
+      "answer": 0,
+      "explain": "Ngủ đủ giấc giúp cơ thể phục hồi."
+    },
+    {
+      "q": "Nam châm hút được vật nào?",
+      "choices": [
+        "đinh sắt",
+        "cốc nhựa",
+        "giấy",
+        "gỗ"
+      ],
+      "answer": 0,
+      "explain": "Nam châm hút các vật bằng sắt, thép."
+    }
+  ],
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "quiz_cover",
+      "title": "Trắc nghiệm ôn tập Khoa học lớp 5",
+      "content": "Trắc nghiệm cuối năm - Khoa học. 12 câu trắc nghiệm.",
+      "activity": "Làm bài, xem giải thích và ghi lại phần cần ôn thêm.",
+      "audio_script": "Trắc nghiệm ôn tập Khoa học lớp 5. Bài có 12 câu trắc nghiệm. Hãy đọc kỹ câu hỏi rồi chọn đáp án đúng nhất.",
+      "image": "images/slide-01.svg",
+      "audio": "audio/slide-01.mp3"
+    }
+  ],
+  "created_at": "2026-04-28T10:22:11",
+  "source_note": "Bộ câu hỏi tự soạn để ôn tập cuối năm lớp 5, không sao chép nguyên văn sách giáo khoa."
+}

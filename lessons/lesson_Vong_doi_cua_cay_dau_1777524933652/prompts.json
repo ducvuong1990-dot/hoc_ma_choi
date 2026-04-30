@@ -1,0 +1,119 @@
+{
+  "title": "Vòng đời của cây đậu",
+  "grade": 1,
+  "subject": "Tự nhiên",
+  "description": "Bài học lớp 1 giúp bé hiểu hạt đậu nảy mầm, lớn lên và ra quả.",
+  "metadata": {
+    "title": "Vòng đời của cây đậu",
+    "total_slides": 6,
+    "resolution": "2K",
+    "style": "styles/vector-illustration.md",
+    "generated_at": "2026-04-30T11:55:33.857192"
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "cover",
+      "content": "Vòng đời của cây đậu",
+      "script": "Chào con! Hôm nay chúng mình cùng khám phá hành trình của một hạt đậu nhỏ. Từ một hạt bé xíu, cây đậu có thể nảy mầm, lớn lên và tạo ra nhiều quả đậu mới.",
+      "visual_prompt": "Vector illustration for Vietnamese grade 1 science lesson, a cute bean seed and a young sprout, warm classroom feeling, Bento grid, 16:9, Be Vietnam Pro text",
+      "prompt": "风格ID\nvector-illustration\n\nAll visible Vietnamese text must use clean UTF-8 accents and a friendly education font similar to Be Vietnam Pro or Inter. Do not distort Vietnamese tone marks.\n\nVisual direction from lesson script:\nVector illustration for Vietnamese grade 1 science lesson, a cute bean seed and a young sprout, warm classroom feeling, Bento grid, 16:9, Be Vietnam Pro text\n\nPlease generate a cover page based on visual balance aesthetics.\nPlace a large complex 3D glass object in the center, overlaid with bold text:\n\nVòng đời của cây đậu\n\nBackground with extended aurora waves.",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Vong_doi_cua_cay_dau_1777524933652\\images\\slide-01.png"
+    },
+    {
+      "slide_number": 2,
+      "page_type": "content",
+      "content": "Hạt đậu cần đất, nước và ánh sáng",
+      "script": "Đầu tiên, hạt đậu được gieo vào đất mềm. Khi có nước, không khí và ánh sáng vừa đủ, hạt bắt đầu thức dậy sau một giấc ngủ dài.",
+      "visual_prompt": "Educational vector, bean seed in soil with water drops, sun rays and air bubbles, clear labels in Vietnamese, rounded Bento cards, 16:9",
+      "prompt": "风格ID\nvector-illustration\n\nAll visible Vietnamese text must use clean UTF-8 accents and a friendly education font similar to Be Vietnam Pro or Inter. Do not distort Vietnamese tone marks.\n\nVisual direction from lesson script:\nEducational vector, bean seed in soil with water drops, sun rays and air bubbles, clear labels in Vietnamese, rounded Bento cards, 16:9\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nHạt đậu cần đất, nước và ánh sáng",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Vong_doi_cua_cay_dau_1777524933652\\images\\slide-02.png"
+    },
+    {
+      "slide_number": 3,
+      "page_type": "content",
+      "content": "Hạt nảy mầm",
+      "script": "Sau vài ngày, chiếc rễ trắng nhỏ chui xuống đất để hút nước. Một mầm xanh vươn lên khỏi mặt đất để đón ánh nắng.",
+      "visual_prompt": "Vector cutaway of germinating bean, white root growing downward, green shoot growing upward, friendly child education style, 16:9",
+      "prompt": "风格ID\nvector-illustration\n\nAll visible Vietnamese text must use clean UTF-8 accents and a friendly education font similar to Be Vietnam Pro or Inter. Do not distort Vietnamese tone marks.\n\nVisual direction from lesson script:\nVector cutaway of germinating bean, white root growing downward, green shoot growing upward, friendly child education style, 16:9\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nHạt nảy mầm",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Vong_doi_cua_cay_dau_1777524933652\\images\\slide-03.png"
+    },
+    {
+      "slide_number": 4,
+      "page_type": "content",
+      "content": "Cây lớn lên và ra lá",
+      "script": "Mầm non lớn dần thành cây con. Lá xanh giúp cây nhận ánh sáng, còn rễ tiếp tục hút nước và chất dinh dưỡng trong đất.",
+      "visual_prompt": "Cute bean seedling with leaves, roots under soil, sun and watering can, Vietnamese primary science illustration, Bento grid, 16:9",
+      "prompt": "风格ID\nvector-illustration\n\nAll visible Vietnamese text must use clean UTF-8 accents and a friendly education font similar to Be Vietnam Pro or Inter. Do not distort Vietnamese tone marks.\n\nVisual direction from lesson script:\nCute bean seedling with leaves, roots under soil, sun and watering can, Vietnamese primary science illustration, Bento grid, 16:9\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nCây lớn lên và ra lá",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Vong_doi_cua_cay_dau_1777524933652\\images\\slide-04.png"
+    },
+    {
+      "slide_number": 5,
+      "page_type": "data",
+      "content": "Cây ra hoa, kết quả và tạo hạt mới",
+      "script": "Khi cây trưởng thành, cây có thể ra hoa rồi kết thành quả đậu. Bên trong quả có hạt mới, và một vòng đời mới lại bắt đầu.",
+      "visual_prompt": "Full bean plant life cycle diagram: seed, sprout, seedling, flower, bean pod, new seeds, bright vector illustration, 16:9",
+      "prompt": "风格ID\nvector-illustration\n\nAll visible Vietnamese text must use clean UTF-8 accents and a friendly education font similar to Be Vietnam Pro or Inter. Do not distort Vietnamese tone marks.\n\nVisual direction from lesson script:\nFull bean plant life cycle diagram: seed, sprout, seedling, flower, bean pod, new seeds, bright vector illustration, 16:9\n\nPlease generate a data/summary page using split-screen design.\nLeft side: typeset the following text.\nRight side: floating large glowing 3D data visualization:\n\nCây ra hoa, kết quả và tạo hạt mới",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Vong_doi_cua_cay_dau_1777524933652\\images\\slide-05.png"
+    },
+    {
+      "slide_number": 6,
+      "page_type": "data",
+      "content": "Cùng ôn lại bài học",
+      "script": "Con vừa học xong vòng đời của cây đậu: hạt, nảy mầm, cây con, cây trưởng thành, ra quả và tạo hạt mới. Lần tới khi nhìn thấy hạt đậu, con hãy nhớ rằng bên trong hạt nhỏ có cả một mầm sống nhé!",
+      "visual_prompt": "Cheerful lesson summary for \"Vòng đời của cây đậu\", children education, vector bento grid",
+      "prompt": "风格ID\nvector-illustration\n\nAll visible Vietnamese text must use clean UTF-8 accents and a friendly education font similar to Be Vietnam Pro or Inter. Do not distort Vietnamese tone marks.\n\nVisual direction from lesson script:\nCheerful lesson summary for \"Vòng đời của cây đậu\", children education, vector bento grid\n\nPlease generate a data/summary page using split-screen design.\nLeft side: typeset the following text.\nRight side: floating large glowing 3D data visualization:\n\nCùng ôn lại bài học",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Vong_doi_cua_cay_dau_1777524933652\\images\\slide-06.png"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Hạt đậu cần gì để bắt đầu nảy mầm?",
+      "answers": [
+        "Đất, nước và ánh sáng",
+        "Bánh kẹo",
+        "Bút chì",
+        "Ti vi"
+      ],
+      "correct": "Đất, nước và ánh sáng",
+      "feedback_correct": "Đúng rồi! Hạt đậu cần môi trường phù hợp để nảy mầm.",
+      "feedback_wrong": "Gợi ý: hạt đậu cần đất mềm, nước và ánh sáng vừa đủ."
+    },
+    {
+      "question": "Bộ phận nào chui xuống đất để hút nước?",
+      "answers": [
+        "Rễ",
+        "Hoa",
+        "Quả",
+        "Lá"
+      ],
+      "correct": "Rễ",
+      "feedback_correct": "Chính xác! Rễ giúp cây hút nước và chất dinh dưỡng.",
+      "feedback_wrong": "Gợi ý: phần này thường nằm dưới đất."
+    },
+    {
+      "question": "Lá xanh giúp cây làm gì?",
+      "answers": [
+        "Nhận ánh sáng",
+        "Chạy thật nhanh",
+        "Ngủ cả ngày",
+        "Biến thành đá"
+      ],
+      "correct": "Nhận ánh sáng",
+      "feedback_correct": "Giỏi quá! Lá giúp cây nhận ánh sáng để lớn lên.",
+      "feedback_wrong": "Gợi ý: lá thường xòe ra để đón nắng."
+    },
+    {
+      "question": "Bên trong quả đậu có gì?",
+      "answers": [
+        "Hạt mới",
+        "Cục tẩy",
+        "Viên bi",
+        "Con thuyền"
+      ],
+      "correct": "Hạt mới",
+      "feedback_correct": "Đúng rồi! Hạt mới có thể bắt đầu một vòng đời mới.",
+      "feedback_wrong": "Gợi ý: từ hạt mới, cây đậu mới có thể mọc lên."
+    }
+  ]
+}

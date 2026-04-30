@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tập đọc câu ngắn - Học mà chơi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600;700;800;900&family=Nunito:wght@500;700;800;900&display=swap&subset=vietnamese" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    :root { --ink: #f8fbff; --sky: #7dd3fc; --sun: #ffd166; }
+    body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 12% 12%, rgba(125,211,252,.28), transparent 30%), radial-gradient(circle at 88% 18%, rgba(255,209,102,.22), transparent 26%), linear-gradient(135deg, #07111f 0%, #102033 52%, #18324a 100%); color: var(--ink); font-family: "Nunito", "Be Vietnam Pro", Arial, sans-serif; text-rendering: optimizeLegibility; }
+    .viewer { display: grid; grid-template-columns: minmax(0, 1fr) 320px; height: 100vh; }
+    .stage { display: grid; place-items: center; padding: clamp(12px, 3vw, 32px); }
+    .slide { width: min(100%, calc((100vh - 64px) * 16 / 9)); aspect-ratio: 16 / 9; object-fit: contain; border: 0; border-radius: 24px; background: #fff; box-shadow: 0 28px 80px rgba(0,0,0,.46), 0 0 0 1px rgba(255,255,255,.18); }
+    aside { border-left: 1px solid rgba(255,255,255,.14); background: linear-gradient(180deg, rgba(23,43,66,.96), rgba(9,22,36,.98)); padding: 24px; overflow: auto; }
+    h1 { margin: 0 0 10px; font-family: "Be Vietnam Pro", sans-serif; font-size: clamp(24px, 2.4vw, 32px); line-height: 1.16; letter-spacing: -.02em; }
+    .tag { display: inline-flex; padding: 7px 11px; border-radius: 999px; background: #e8f7ff; color: #005b7a; font-weight: 900; margin-bottom: 16px; box-shadow: 0 8px 20px rgba(125,211,252,.2); }
+    .controls { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 18px 0; }
+    button, a.button { min-height: 46px; border: 0; border-radius: 16px; padding: 0 14px; background: var(--sky); color: #062536; font: inherit; font-weight: 900; cursor: pointer; text-decoration: none; display: grid; place-items: center; box-shadow: 0 10px 24px rgba(125,211,252,.18); }
+    button, a.button { white-space: nowrap; }
+    button.secondary, a.secondary { background: var(--sun); color: #503900; }
+    button:hover, a.button:hover { transform: translateY(-1px); filter: brightness(1.03); }
+    .notes { display: grid; gap: 10px; margin-top: 14px; }
+    .note { padding: 14px; border-radius: 16px; background: rgba(255,255,255,.1); color: #eef7ff; line-height: 1.58; font-size: 16px; }
+    .thumbs { display: grid; gap: 8px; margin-top: 14px; }
+    .thumbs button { justify-content: start; background: rgba(255,255,255,.08); color: #fff; text-align: left; }
+    .thumbs button.active { background: #e8f7ff; color: #005b7a; }
+    @media (max-width: 900px) { .viewer { grid-template-columns: 1fr; height: auto; min-height: 100vh; } aside { border-left: 0; border-top: 1px solid rgba(255,255,255,.12); } .stage { padding: 12px; } .slide { width: 100%; border-radius: 18px; } }
+  </style>
+</head>
+<body>
+  <main class="viewer">
+    <section class="stage">
+      <img class="slide" id="slide" alt="Slide bài học" />
+    </section>
+    <aside>
+      <span class="tag">Tiếng Việt · Lớp 1</span>
+      <h1>Tập đọc câu ngắn</h1>
+      <div id="counter">1 / 7</div>
+      <div class="controls">
+        <button id="prev">Trước</button>
+        <button id="next">Tiếp</button>
+        <button class="secondary" id="speak">Nghe</button>
+        <a class="button secondary" href="../index.html">Thư viện</a>
+      </div>
+      <div class="note">Phím tắt: ← → để chuyển slide, phím cách để nghe hoặc dừng lời dẫn.</div>
+      <div class="notes" id="notes"></div>
+      <div class="thumbs" id="thumbs"></div>
+    </aside>
+  </main>
+  <script>
+    const slides = ["images2/slide-01.png", "images2/slide-02.png", "images2/slide-03.png", "images2/slide-04.png", "images2/slide-05.png", "images2/slide-06.png", "images2/slide-07.png"];
+    const notes = ["Tập đọc câu ngắn. Tiếng Việt lớp 1 Học bằng hình, nói bằng lời, chơi để nhớ lâu. Hoạt động: Giáo viên hoặc phụ huynh đọc tên bài, bé nhắc lại chủ đề.", "Mục tiêu hôm nay. Bé sẽ biết: - Nhận ra nội dung chính của bài. - Nói được từ khóa quan trọng. - Làm một nhiệm vụ nhỏ để kiểm tra. Hoạt động: Bé giơ tay khi nghe từ khóa quen thuộc.", "Từ khóa cần nhớ. - Bé đi học. - Mẹ nấu cơm. - Cô khen bé. Hoạt động: Bé đọc từng từ khóa. Nếu từ khó, đọc chậm từng tiếng.", "Ví dụ dễ hiểu. - Bé đi học. - Mẹ nấu cơm. - Cô khen bé ngoan. Hoạt động: Bé chọn một ví dụ và nói lại bằng lời của mình.", "Bé cùng luyện tập. Bé đọc từng câu, nghỉ nhẹ sau dấu chấm. Hoạt động: Làm mẫu một lần, sau đó để bé tự làm lại.", "Trò chơi củng cố. Xếp thẻ từ thành câu đúng rồi đọc lại. Hoạt động: Hoàn thành trò chơi, bé nhận 20-35 xu tùy mức độ cố gắng.", "Con đã học được gì?. Hôm nay bé đã học: tập đọc câu ngắn. Bé nói lại 2 từ khóa và 1 điều bé thích nhất. Hoạt động: Phụ huynh ghi nhận xét ngắn: rõ, cần luyện thêm, hoặc rất tự tin."];
+    const audioFiles = slides.map((_, i) => `audio/slide-${String(i + 1).padStart(2, "0")}.mp3`);    let current = 0;
+    let activeAudio = null;    const slideEl = document.querySelector("#slide");
+    const counter = document.querySelector("#counter");
+    const notesEl = document.querySelector("#notes");
+    const thumbsEl = document.querySelector("#thumbs");
+    const speakBtn = document.querySelector("#speak");
+    function setSpeakLabel(isPlaying) {
+      speakBtn.textContent = isPlaying ? "Dừng" : "Nghe";
+    }
+    function stopAudio() {
+      if (activeAudio) {
+        activeAudio.pause();
+        activeAudio.currentTime = 0;
+        activeAudio = null;
+      }
+      setSpeakLabel(false);
+    }
+    function show(index) {
+      const next = Math.max(0, Math.min(slides.length - 1, index));
+      if (next !== current) stopAudio();
+      current = next;
+      slideEl.src = slides[current];
+      counter.textContent = `${current + 1} / ${slides.length}`;
+      notesEl.textContent = "";
+      const note = document.createElement("div");
+      note.className = "note";
+      note.textContent = notes[current] || "Bé quan sát slide và làm theo hướng dẫn.";
+      notesEl.appendChild(note);
+      [...thumbsEl.children].forEach((button, i) => button.classList.toggle("active", i === current));
+    }
+    function speakWithBrowser(text) { playGeneratedTts(text); return true; }
+    async function playGeneratedTts(text) {
+      try {
+        const response = await fetch("http://127.0.0.1:8000/tts", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ text })
+        });
+        if (!response.ok) throw new Error(`TTS ${response.status}`);
+        const blob = await response.blob();
+        const url = URL.createObjectURL(blob);
+        const audio = new Audio(url);
+        activeAudio = audio;
+        setSpeakLabel(true);
+        audio.onended = () => { URL.revokeObjectURL(url); activeAudio = null; setSpeakLabel(false); };
+        audio.onerror = () => { URL.revokeObjectURL(url); activeAudio = null; setSpeakLabel(false); };
+        await audio.play();
+      } catch (error) {
+        console.warn("Server TTS failed", error);
+        activeAudio = null;
+        setSpeakLabel(false);
+      }
+    }
+    function playOrStopCurrent() {
+      if (activeAudio) {
+        stopAudio();
+        return;
+      }
+      const text = notes[current] || "Tập đọc câu ngắn. Bé quan sát và đọc theo cô nhé.";
+      const audio = new Audio(audioFiles[current]);
+      audio.preload = "metadata";
+      activeAudio = audio;
+      setSpeakLabel(true);
+      audio.onended = () => { activeAudio = null; setSpeakLabel(false); };
+      audio.onerror = () => { activeAudio = null; speakWithBrowser(text); };
+      audio.play().catch(() => { activeAudio = null; speakWithBrowser(text); });
+    }
+    document.querySelector("#prev").onclick = () => show(current - 1);
+    document.querySelector("#next").onclick = () => show(current + 1);
+    speakBtn.onclick = playOrStopCurrent;
+    slides.forEach((_, i) => {
+      const button = document.createElement("button");
+      button.textContent = `Slide ${i + 1}`;
+      button.onclick = () => show(i);
+      thumbsEl.appendChild(button);
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowLeft") show(current - 1);
+      if (event.key === "ArrowRight") show(current + 1);
+      if (event.key === " ") { event.preventDefault(); playOrStopCurrent(); }
+    });
+    show(0);
+  </script>
+</body>
+</html>

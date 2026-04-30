@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "title": "Hào khí Việt Nam: Ôn tập các mốc Lịch sử quan trọng",
+    "total_slides": 5,
+    "resolution": "2K",
+    "style": "styles/vector-illustration.md",
+    "generated_at": "2026-04-30T08:31:45.576717"
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "cover",
+      "content": "Hào khí Việt Nam: Ôn tập các mốc Lịch sử quan trọng",
+      "script": "Chào các con! Hôm nay Siêu Sao sẽ cùng các con bay xuyên không gian và thời gian để về thăm những mốc son chói lọi của dân tộc nhé. Hãy lắng nghe giai điệu hào hùng và ghi nhớ những bài thơ thần chú của cô nào!",
+      "visual_prompt": "Friendly Grade 1 Vietnamese alphabet lesson cover, sparkling letters, Bento grid, title text: Hào khí Việt Nam: Ôn tập các mốc Lịch sử quan trọng",
+      "prompt": "风格ID\nvector-illustration\n\nAll visible Vietnamese text must use clean UTF-8 accents and a friendly education font similar to Be Vietnam Pro or Inter. Do not distort Vietnamese tone marks.\n\nVisual direction from lesson script:\nFriendly Grade 1 Vietnamese alphabet lesson cover, sparkling letters, Bento grid, title text: Hào khí Việt Nam: Ôn tập các mốc Lịch sử quan trọng\n\nPlease generate a cover page based on visual balance aesthetics.\nPlace a large complex 3D glass object in the center, overlaid with bold text:\n\nHào khí Việt Nam: Ôn tập các mốc Lịch sử quan trọng\n\nBackground with extended aurora waves.",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Hao_khi_Viet_Nam_On_tap_cac_moc_Lich_su_qu_1777512705468\\images\\slide-01.png"
+    },
+    {
+      "slide_number": 2,
+      "page_type": "content",
+      "content": "Năm 1930, Đảng Cộng sản Việt Nam ra đời như một ánh đuốc soi đường. Con hãy nhớ câu thơ này nhé: 'Ba mươi Đảng gốc ra đời - Soi đường dẫn lối cho người Việt Nam'.",
+      "script": "Năm 1930, Đảng Cộng sản Việt Nam ra đời như một ánh đuốc soi đường. Con hãy nhớ câu thơ này nhé: 'Ba mươi Đảng gốc ra đời - Soi đường dẫn lối cho người Việt Nam'.",
+      "visual_prompt": "Vector illustration, a glowing torch in the dark, a stylized map of Vietnam with a golden star, Superman-like character (Siêu Sao) pointing to the year 1930, historical bento style, high resolution",
+      "prompt": "风格ID\nvector-illustration\n\nAll visible Vietnamese text must use clean UTF-8 accents and a friendly education font similar to Be Vietnam Pro or Inter. Do not distort Vietnamese tone marks.\n\nVisual direction from lesson script:\nVector illustration, a glowing torch in the dark, a stylized map of Vietnam with a golden star, Superman-like character (Siêu Sao) pointing to the year 1930, historical bento style, high resolution\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nNăm 1930, Đảng Cộng sản Việt Nam ra đời như một ánh đuốc soi đường. Con hãy nhớ câu thơ này nhé: 'Ba mươi Đảng gốc ra đời - Soi đường dẫn lối cho người Việt Nam'.",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Hao_khi_Viet_Nam_On_tap_cac_moc_Lich_su_qu_1777512705468\\images\\slide-02.png"
+    },
+    {
+      "slide_number": 3,
+      "page_type": "content",
+      "content": "Năm 1945, mùa thu lịch sử, Bác Hồ đọc Tuyên ngôn Độc lập tại quảng trường Ba Đình. 'Bốn lăm Cách mạng rạng ngời trời Thu'. Một kỷ nguyên mới đã mở ra cho đất nước ta!",
+      "script": "Năm 1945, mùa thu lịch sử, Bác Hồ đọc Tuyên ngôn Độc lập tại quảng trường Ba Đình. 'Bốn lăm Cách mạng rạng ngời trời Thu'. Một kỷ nguyên mới đã mở ra cho đất nước ta!",
+      "visual_prompt": "Vector illustration, Ba Dinh Square under a blue autumn sky, red flags with yellow stars flying, historical monuments, bento layout, artistic and emotional, high resolution",
+      "prompt": "风格ID\nvector-illustration\n\nAll visible Vietnamese text must use clean UTF-8 accents and a friendly education font similar to Be Vietnam Pro or Inter. Do not distort Vietnamese tone marks.\n\nVisual direction from lesson script:\nVector illustration, Ba Dinh Square under a blue autumn sky, red flags with yellow stars flying, historical monuments, bento layout, artistic and emotional, high resolution\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nNăm 1945, mùa thu lịch sử, Bác Hồ đọc Tuyên ngôn Độc lập tại quảng trường Ba Đình. 'Bốn lăm Cách mạng rạng ngời trời Thu'. Một kỷ nguyên mới đã mở ra cho đất nước ta!",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Hao_khi_Viet_Nam_On_tap_cac_moc_Lich_su_qu_1777512705468\\images\\slide-03.png"
+    },
+    {
+      "slide_number": 4,
+      "page_type": "content",
+      "content": "Năm 1954, chiến thắng Điện Biên Phủ 'lừng lẫy năm châu, chấn động địa cầu'. Còn năm 1975, chúng ta ca vang bài ca thống nhất, Bắc Nam sum họp một nhà.",
+      "script": "Năm 1954, chiến thắng Điện Biên Phủ 'lừng lẫy năm châu, chấn động địa cầu'. Còn năm 1975, chúng ta ca vang bài ca thống nhất, Bắc Nam sum họp một nhà.",
+      "visual_prompt": "Vector illustration, historical scenes of victory, soldiers waving flags on top of a tank, peaceful landscape of unified Vietnam, golden sunset, high resolution",
+      "prompt": "风格ID\nvector-illustration\n\nAll visible Vietnamese text must use clean UTF-8 accents and a friendly education font similar to Be Vietnam Pro or Inter. Do not distort Vietnamese tone marks.\n\nVisual direction from lesson script:\nVector illustration, historical scenes of victory, soldiers waving flags on top of a tank, peaceful landscape of unified Vietnam, golden sunset, high resolution\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nNăm 1954, chiến thắng Điện Biên Phủ 'lừng lẫy năm châu, chấn động địa cầu'. Còn năm 1975, chúng ta ca vang bài ca thống nhất, Bắc Nam sum họp một nhà.",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Hao_khi_Viet_Nam_On_tap_cac_moc_Lich_su_qu_1777512705468\\images\\slide-04.png"
+    },
+    {
+      "slide_number": 5,
+      "page_type": "data",
+      "content": "Cùng ôn lại bài học",
+      "script": "Lịch sử đất nước ta thật hào hùng phải không các con? Hãy luôn tự hào và yêu quê hương mình nhé. Siêu Sao chào tạm biệt và hẹn gặp lại các con!",
+      "visual_prompt": "Cheerful Vietnamese Grade 1 summary slide, letters A B C, stars, friendly classroom Bento grid",
+      "prompt": "风格ID\nvector-illustration\n\nAll visible Vietnamese text must use clean UTF-8 accents and a friendly education font similar to Be Vietnam Pro or Inter. Do not distort Vietnamese tone marks.\n\nVisual direction from lesson script:\nCheerful Vietnamese Grade 1 summary slide, letters A B C, stars, friendly classroom Bento grid\n\nPlease generate a data/summary page using split-screen design.\nLeft side: typeset the following text.\nRight side: floating large glowing 3D data visualization:\n\nCùng ôn lại bài học",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Hao_khi_Viet_Nam_On_tap_cac_moc_Lich_su_qu_1777512705468\\images\\slide-05.png"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Đảng Cộng sản Việt Nam ra đời vào năm nào?",
+      "answers": [
+        "1930",
+        "1945",
+        "1954"
+      ],
+      "correct": "1930",
+      "feedback_correct": "Đúng rồi! 'Ba mươi Đảng gốc ra đời', con nhớ thơ rất giỏi!",
+      "feedback_wrong": "Con hãy nhớ lại câu thơ thần chú của cô nhé!"
+    },
+    {
+      "question": "Sự kiện lịch sử trọng đại nào diễn ra vào năm 1945?",
+      "answers": [
+        "Chiến thắng Điện Biên Phủ",
+        "Cách mạng tháng Tám thành công",
+        "Giải phóng miền Nam"
+      ],
+      "correct": "Cách mạng tháng Tám thành công",
+      "feedback_correct": "Chính xác! 'Bốn lăm Cách mạng rạng ngời trời Thu'.",
+      "feedback_wrong": "Gợi ý: Đây là sự kiện Bác Hồ đọc Tuyên ngôn Độc lập đấy!"
+    }
+  ]
+}

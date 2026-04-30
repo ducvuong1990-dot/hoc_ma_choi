@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "title": "Khám phá thế giới động vật rừng",
+    "total_slides": 5,
+    "resolution": "2K",
+    "style": "styles/vector-illustration.md",
+    "generated_at": "2026-04-30T07:01:26.950299"
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "cover",
+      "content": "Chào mừng các bé đến với Khu Rừng Xanh Thẳm!",
+      "script": "Xin chào tất cả các bé yêu quý! Cô là (tên giáo viên) và hôm nay, chúng mình sẽ cùng nhau bắt đầu một chuyến phiêu lưu thật thú vị vào một nơi rất đặc biệt: đó là khu rừng xanh thẳm đấy. Các con có sẵn sàng gặp gỡ những người bạn động vật dễ thương không nào?",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a cover page based on visual balance aesthetics.\nPlace a large complex 3D glass object in the center, overlaid with bold text:\n\nChào mừng các bé đến với Khu Rừng Xanh Thẳm!\n\nBackground with extended aurora waves.",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_C_c_lo_i___ng_v_t_tr_1777507286798\\images\\slide-01.png"
+    },
+    {
+      "slide_number": 2,
+      "page_type": "content",
+      "content": "Rừng là ngôi nhà của ai nhỉ?",
+      "script": "Các con nhìn xem, đây là một khu rừng thật là rộng lớn và có rất nhiều cây xanh mát mẻ. Rừng không chỉ có cây cối đâu, mà còn là ngôi nhà chung của rất nhiều loài động vật đấy. Chúng mình cùng tìm hiểu xem có những ai đang sống ở đây nhé!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nRừng là ngôi nhà của ai nhỉ?",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_C_c_lo_i___ng_v_t_tr_1777507286798\\images\\slide-02.png"
+    },
+    {
+      "slide_number": 3,
+      "page_type": "content",
+      "content": "Sư tử dũng mãnh và Khỉ tinh nghịch!",
+      "script": "Ôi, ai đây nhỉ? Đây là bạn Sư tử với bộ lông vàng óng và tiếng gầm vang trời, chú là một vị chúa tể rất dũng mãnh của rừng xanh. Còn kia là chú Khỉ tinh nghịch, thích leo trèo trên cây và rất thích ăn chuối nữa đấy!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nSư tử dũng mãnh và Khỉ tinh nghịch!",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_C_c_lo_i___ng_v_t_tr_1777507286798\\images\\slide-03.png"
+    },
+    {
+      "slide_number": 4,
+      "page_type": "content",
+      "content": "Voi to lớn và Gấu mập mạp!",
+      "script": "Tiếp theo, chúng ta cùng chào đón bạn Voi với chiếc vòi dài và đôi tai to lớn, chú Voi tuy to nhưng rất hiền lành đấy. Còn đây là bạn Gấu nâu mập mạp, chú rất thích ăn mật ong ngọt lịm và hay tìm quả trong rừng. Các con có thấy các bạn ấy đáng yêu không?",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nVoi to lớn và Gấu mập mạp!",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_C_c_lo_i___ng_v_t_tr_1777507286798\\images\\slide-04.png"
+    },
+    {
+      "slide_number": 5,
+      "page_type": "content",
+      "content": "Hãy yêu quý và bảo vệ các bạn động vật nhé!",
+      "script": "Hôm nay chúng mình đã được gặp gỡ rất nhiều người bạn động vật đáng yêu trong rừng rồi phải không nào? Các con hãy nhớ yêu quý và bảo vệ môi trường sống của các bạn ấy nhé, để các bạn động vật của chúng ta luôn được sống vui vẻ và khỏe mạnh trong khu rừng xanh tươi này!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a data/summary page using split-screen design.\nLeft side: typeset the following text.\nRight side: floating large glowing 3D data visualization:\n\nHãy yêu quý và bảo vệ các bạn động vật nhé!",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_C_c_lo_i___ng_v_t_tr_1777507286798\\images\\slide-05.png"
+    }
+  ]
+}

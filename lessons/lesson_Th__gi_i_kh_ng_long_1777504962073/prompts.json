@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "Thế giới khủng long: Cùng khám phá những người bạn khổng lồ!",
+    "total_slides": 5,
+    "resolution": "2K",
+    "style": "styles/vector-illustration.md",
+    "generated_at": "2026-04-30T06:22:42.203124"
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "cover",
+      "content": "Chào mừng đến với THẾ GIỚI KHỦNG LONG! 🦖 Cùng bay về quá khứ nhé!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a cover page based on visual balance aesthetics.\nPlace a large complex 3D glass object in the center, overlaid with bold text:\n\nChào mừng đến với THẾ GIỚI KHỦNG LONG! 🦖 Cùng bay về quá khứ nhé!\n\nBackground with extended aurora waves.",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Th__gi_i_kh_ng_long_1777504962073\\images\\slide-01.png"
+    },
+    {
+      "slide_number": 2,
+      "page_type": "content",
+      "content": "Khủng long là ai vậy? 😮 Chúng là những con vật rất to lớn, sống trên Trái Đất từ rất rất lâu rồi! (Hình ảnh minh họa nhiều loại khủng long khác nhau trong rừng xanh cổ đại)",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nKhủng long là ai vậy? 😮 Chúng là những con vật rất to lớn, sống trên Trái Đất từ rất rất lâu rồi! (Hình ảnh minh họa nhiều loại khủng long khác nhau trong rừng xanh cổ đại)",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Th__gi_i_kh_ng_long_1777504962073\\images\\slide-02.png"
+    },
+    {
+      "slide_number": 3,
+      "page_type": "data",
+      "content": "Gặp gỡ bạn khủng long T-Rex! 🍖 Đây là chúa tể săn mồi, rất khỏe và thích ăn thịt! (Hình ảnh T-Rex vui vẻ, không đáng sợ) \n Gặp gỡ bạn Brontosaurus! 🌿 Đây là khủng long cổ dài, rất hiền lành và thích ăn lá cây! (Hình ảnh Brontosaurus đang gặm lá)",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a data/summary page using split-screen design.\nLeft side: typeset the following text.\nRight side: floating large glowing 3D data visualization:\n\nGặp gỡ bạn khủng long T-Rex! 🍖 Đây là chúa tể săn mồi, rất khỏe và thích ăn thịt! (Hình ảnh T-Rex vui vẻ, không đáng sợ) \n Gặp gỡ bạn Brontosaurus! 🌿 Đây là khủng long cổ dài, rất hiền lành và thích ăn lá cây! (Hình ảnh Brontosaurus đang gặm lá)",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Th__gi_i_kh_ng_long_1777504962073\\images\\slide-03.png"
+    },
+    {
+      "slide_number": 4,
+      "page_type": "content",
+      "content": "Những điều thú vị về khủng long! 🥚 Khủng long cũng đẻ trứng giống như gà con vậy! (Hình ảnh quả trứng khủng long đang nứt ra) \n Đố bé: Khủng long có sống cùng chúng ta bây giờ không? (Đáp án: Không! Chúng đã biến mất rồi!)",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nNhững điều thú vị về khủng long! 🥚 Khủng long cũng đẻ trứng giống như gà con vậy! (Hình ảnh quả trứng khủng long đang nứt ra) \n Đố bé: Khủng long có sống cùng chúng ta bây giờ không? (Đáp án: Không! Chúng đã biến mất rồi!)",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Th__gi_i_kh_ng_long_1777504962073\\images\\slide-04.png"
+    },
+    {
+      "slide_number": 5,
+      "page_type": "content",
+      "content": "Tạm biệt những người bạn khủng long! 👋 Chúng ta đã có một chuyến phiêu lưu thật vui phải không nào? Hẹn gặp lại trong những chuyến phiêu lưu khác nhé! (Hình ảnh nhiều khủng long con đang vẫy tay chào)",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a data/summary page using split-screen design.\nLeft side: typeset the following text.\nRight side: floating large glowing 3D data visualization:\n\nTạm biệt những người bạn khủng long! 👋 Chúng ta đã có một chuyến phiêu lưu thật vui phải không nào? Hẹn gặp lại trong những chuyến phiêu lưu khác nhé! (Hình ảnh nhiều khủng long con đang vẫy tay chào)",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Th__gi_i_kh_ng_long_1777504962073\\images\\slide-05.png"
+    }
+  ]
+}

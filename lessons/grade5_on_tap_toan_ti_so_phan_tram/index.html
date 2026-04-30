@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ôn tỉ số phần trăm - Học mà chơi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600;700;800;900&family=Nunito:wght@500;700;800;900&display=swap&subset=vietnamese" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: #0f1720; color: #fff; font-family: "Nunito", "Be Vietnam Pro", Arial, sans-serif; }
+    .viewer { display: grid; grid-template-columns: minmax(0, 1fr) 300px; height: 100vh; }
+    .stage { display: grid; place-items: center; padding: 24px; }
+    .slide { width: min(100%, calc((100vh - 48px) * 16 / 9)); aspect-ratio: 16 / 9; border: 0; border-radius: 18px; background: #fff; box-shadow: 0 24px 70px rgba(0,0,0,.42); }
+    aside { border-left: 1px solid rgba(255,255,255,.12); background: #131e29; padding: 22px; overflow: auto; }
+    h1 { margin: 0 0 8px; font-family: "Be Vietnam Pro", sans-serif; font-size: 24px; line-height: 1.25; }
+    .tag { display: inline-flex; padding: 6px 10px; border-radius: 999px; background: #e8f7ff; color: #006688; font-weight: 900; margin-bottom: 16px; }
+    .controls { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 18px 0; }
+    button, a.button { min-height: 44px; border: 0; border-radius: 14px; padding: 0 12px; background: #4fc3f7; color: #062536; font: inherit; font-weight: 900; cursor: pointer; text-decoration: none; display: grid; place-items: center; white-space: nowrap; }
+    button.secondary, a.secondary { background: #fdd34d; color: #5a4300; }
+    .note { padding: 12px; border-radius: 14px; background: rgba(255,255,255,.08); color: #dce7ee; line-height: 1.5; }
+    .thumbs { display: grid; gap: 8px; margin-top: 14px; }
+    .thumbs button { justify-content: start; background: rgba(255,255,255,.08); color: #fff; text-align: left; }
+    .thumbs button.active { background: #e8f7ff; color: #006688; }
+    @media (max-width: 900px) { .viewer { grid-template-columns: 1fr; height: auto; min-height: 100vh; } aside { border-left: 0; border-top: 1px solid rgba(255,255,255,.12); } .stage { padding: 12px; } }
+  </style>
+</head>
+<body>
+  <main class="viewer">
+    <section class="stage"><img class="slide" id="slide" alt="Slide bài học" /></section>
+    <aside>
+      <span class="tag">Ôn tập cuối năm - Toán · Lớp 5</span>
+      <h1>Ôn tỉ số phần trăm</h1>
+      <div id="counter">1 / 7</div>
+      <div class="controls">
+        <button id="prev">Trước</button><button id="next">Tiếp</button><button class="secondary" id="speak">Nghe</button><a class="button secondary" href="../index.html">Thư viện</a>
+      </div>
+      <div class="note">Phím tắt: ← → để chuyển slide, phím cách để nghe hoặc dừng lời dẫn.</div>
+      <div id="notes"></div><div class="thumbs" id="thumbs"></div>
+    </aside>
+  </main>
+  <script>
+    const slides = ["images/slide-01.svg", "images/slide-02.svg", "images/slide-03.svg", "images/slide-04.svg", "images/slide-05.svg", "images/slide-06.svg", "images/slide-07.svg"];
+    const notes = ["Ôn tỉ số phần trăm. Ôn tập cuối năm - Toán lớp 5 Học bằng hình, luyện bằng trò chơi. Hoạt động: Đọc tên bài, quan sát tranh và nêu điều đã biết.", "Mục tiêu. Học sinh sẽ: - Nhận biết kiến thức trọng tâm. - Luyện bằng ví dụ ngắn. - Tự kiểm tra qua trò chơi. Hoạt động: Nói lại mục tiêu bằng một câu ngắn.", "Từ khóa. - phần trăm - tỉ số - giảm giá - biểu đồ Hoạt động: Đọc từng từ khóa, đánh dấu từ còn cần luyện.", "Ví dụ. - 25% nghĩa là 25 phần trong 100 phần - Tính 10% của 200 Hoạt động: Chọn một ví dụ và giải thích bằng lời của mình.", "Luyện tập. Học sinh giải bài toán mua bán đơn giản. Hoạt động: Làm chậm một lượt, sau đó thử làm nhanh hơn.", "Trò chơi. Chọn nhãn phần trăm đúng cho biểu đồ. Hoạt động: Hoàn thành trò chơi để nhận xu và sticker ôn tập.", "Tự kiểm tra. Hôm nay đã học: ôn tỉ số phần trăm. Nói lại 2 từ khóa và 1 điều còn muốn luyện. Hoạt động: Tự chấm: chắc rồi, cần luyện thêm, hoặc muốn thử mức khó hơn."];
+    const audioFiles = slides.map((_, i) => `audio/slide-${String(i + 1).padStart(2, "0")}.mp3`);
+    let current = 0, activeAudio = null;
+    const slideEl = document.querySelector("#slide"), counter = document.querySelector("#counter"), notesEl = document.querySelector("#notes"), thumbsEl = document.querySelector("#thumbs"), speakBtn = document.querySelector("#speak");
+    function setSpeakLabel(isPlaying) { speakBtn.textContent = isPlaying ? "Dừng" : "Nghe"; }
+    function stopAudio() { if (activeAudio) { activeAudio.pause(); activeAudio.currentTime = 0; activeAudio = null; } setSpeakLabel(false); }
+    function show(index) { const next = Math.max(0, Math.min(slides.length - 1, index)); if (next !== current) stopAudio(); current = next; slideEl.src = slides[current]; counter.textContent = `${current + 1} / ${slides.length}`; notesEl.innerHTML = ""; const note = document.createElement("div"); note.className = "note"; note.textContent = notes[current] || "Quan sát slide và làm theo hướng dẫn."; notesEl.appendChild(note); [...thumbsEl.children].forEach((button, i) => button.classList.toggle("active", i === current)); }
+    function speakWithBrowser(text) { playGeneratedTts(text); return true; }
+    async function playGeneratedTts(text) {
+      try {
+        const response = await fetch("http://127.0.0.1:8000/tts", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ text })
+        });
+        if (!response.ok) throw new Error(`TTS ${response.status}`);
+        const blob = await response.blob();
+        const url = URL.createObjectURL(blob);
+        const audio = new Audio(url);
+        activeAudio = audio;
+        setSpeakLabel(true);
+        audio.onended = () => { URL.revokeObjectURL(url); activeAudio = null; setSpeakLabel(false); };
+        audio.onerror = () => { URL.revokeObjectURL(url); activeAudio = null; setSpeakLabel(false); };
+        await audio.play();
+      } catch (error) {
+        console.warn("Server TTS failed", error);
+        activeAudio = null;
+        setSpeakLabel(false);
+      }
+    }
+    function playOrStopCurrent() { if (activeAudio) { stopAudio(); return; } const text = notes[current] || "Ôn tỉ số phần trăm. Quan sát và đọc theo nhé."; const audio = new Audio(audioFiles[current]); activeAudio = audio; setSpeakLabel(true); audio.onended = () => { activeAudio = null; setSpeakLabel(false); }; audio.onerror = () => { activeAudio = null; speakWithBrowser(text); }; audio.play().catch(() => { activeAudio = null; speakWithBrowser(text); }); }
+    document.querySelector("#prev").onclick = () => show(current - 1); document.querySelector("#next").onclick = () => show(current + 1); speakBtn.onclick = playOrStopCurrent;
+    slides.forEach((_, i) => { const button = document.createElement("button"); button.textContent = `Slide ${i + 1}`; button.onclick = () => show(i); thumbsEl.appendChild(button); });
+    document.addEventListener("keydown", (event) => { if (event.key === "ArrowLeft") show(current - 1); if (event.key === "ArrowRight") show(current + 1); if (event.key === " ") { event.preventDefault(); playOrStopCurrent(); } });
+    show(0);
+  </script>
+</body>
+</html>

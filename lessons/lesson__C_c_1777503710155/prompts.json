@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "Cùng Khám Phá 'Các'!",
+    "total_slides": 5,
+    "resolution": "2K",
+    "style": "styles/vector-illustration.md",
+    "generated_at": "2026-04-30T06:01:50.360467"
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "cover",
+      "content": "Chào mừng các bạn nhỏ đến với bài học siêu thú vị về 'Các'! (Hình ảnh: Những bạn nhỏ đang cười tươi, xung quanh là nhiều đồ vật đủ màu sắc và hình dáng.)",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a cover page based on visual balance aesthetics.\nPlace a large complex 3D glass object in the center, overlaid with bold text:\n\nChào mừng các bạn nhỏ đến với bài học siêu thú vị về 'Các'! (Hình ảnh: Những bạn nhỏ đang cười tươi, xung quanh là nhiều đồ vật đủ màu sắc và hình dáng.)\n\nBackground with extended aurora waves.",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson__C_c_1777503710155\\images\\slide-01.png"
+    },
+    {
+      "slide_number": 2,
+      "page_type": "content",
+      "content": "Một hay Nhiều? Cô có MỘT chú chim nhỏ xinh. (Hình ảnh: Một chú chim duy nhất đang hót). Còn đây là NHIỀU chú chim đang bay lượn! (Hình ảnh: Ba đến bốn chú chim đang cùng bay trên bầu trời). Chúng mình thấy sự khác biệt chưa nào?",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nMột hay Nhiều? Cô có MỘT chú chim nhỏ xinh. (Hình ảnh: Một chú chim duy nhất đang hót). Còn đây là NHIỀU chú chim đang bay lượn! (Hình ảnh: Ba đến bốn chú chim đang cùng bay trên bầu trời). Chúng mình thấy sự khác biệt chưa nào?",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson__C_c_1777503710155\\images\\slide-02.png"
+    },
+    {
+      "slide_number": 3,
+      "page_type": "content",
+      "content": "Giới thiệu từ 'Các'! Khi chúng ta có NHIỀU chú chim, chúng ta có thể nói là CÁC chú chim! (Hình ảnh: Một đàn chim đang đậu trên cành cây). Tương tự, khi có NHIỀU bạn học sinh, chúng ta nói CÁC bạn học sinh! (Hình ảnh: Một nhóm học sinh đang cùng nhau vui đùa).",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nGiới thiệu từ 'Các'! Khi chúng ta có NHIỀU chú chim, chúng ta có thể nói là CÁC chú chim! (Hình ảnh: Một đàn chim đang đậu trên cành cây). Tương tự, khi có NHIỀU bạn học sinh, chúng ta nói CÁC bạn học sinh! (Hình ảnh: Một nhóm học sinh đang cùng nhau vui đùa).",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson__C_c_1777503710155\\images\\slide-03.png"
+    },
+    {
+      "slide_number": 4,
+      "page_type": "data",
+      "content": "Cùng Tập Nói 'Các'! Các con hãy nhìn và nói xem đây là CÁC gì nhé! (Hình ảnh: Ba quả bóng bay đủ màu sắc). Đúng rồi! CÁC quả bóng bay! (Hình ảnh: Bốn bông hoa hồng đang nở rộ). Tuyệt vời! CÁC bông hoa!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a data/summary page using split-screen design.\nLeft side: typeset the following text.\nRight side: floating large glowing 3D data visualization:\n\nCùng Tập Nói 'Các'! Các con hãy nhìn và nói xem đây là CÁC gì nhé! (Hình ảnh: Ba quả bóng bay đủ màu sắc). Đúng rồi! CÁC quả bóng bay! (Hình ảnh: Bốn bông hoa hồng đang nở rộ). Tuyệt vời! CÁC bông hoa!",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson__C_c_1777503710155\\images\\slide-04.png"
+    },
+    {
+      "slide_number": 5,
+      "page_type": "content",
+      "content": "Mình Đã Hiểu 'Các'! Vậy là từ 'Các' giúp chúng mình nói về NHIỀU thứ, NHIỀU người hoặc NHIỀU con vật đó! Các con thật là giỏi! (Hình ảnh: Một ngôi sao lớn tỏa sáng và các bạn nhỏ vui vẻ vẫy tay chào tạm biệt).",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a data/summary page using split-screen design.\nLeft side: typeset the following text.\nRight side: floating large glowing 3D data visualization:\n\nMình Đã Hiểu 'Các'! Vậy là từ 'Các' giúp chúng mình nói về NHIỀU thứ, NHIỀU người hoặc NHIỀU con vật đó! Các con thật là giỏi! (Hình ảnh: Một ngôi sao lớn tỏa sáng và các bạn nhỏ vui vẻ vẫy tay chào tạm biệt).",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson__C_c_1777503710155\\images\\slide-05.png"
+    }
+  ]
+}

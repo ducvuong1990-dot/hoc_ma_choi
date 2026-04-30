@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "Cùng Học Bảng Chữ Cái!",
+    "total_slides": 5,
+    "resolution": "2K",
+    "style": "styles/vector-illustration.md",
+    "generated_at": "2026-04-30T05:55:48.959941"
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "cover",
+      "content": "Chào mừng các bé đến với thế giới chữ cái! (Hình ảnh nhiều chữ cái vui nhộn, màu sắc sặc sỡ, có bạn nhỏ cười tươi)",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a cover page based on visual balance aesthetics.\nPlace a large complex 3D glass object in the center, overlaid with bold text:\n\nChào mừng các bé đến với thế giới chữ cái! (Hình ảnh nhiều chữ cái vui nhộn, màu sắc sặc sỡ, có bạn nhỏ cười tươi)\n\nBackground with extended aurora waves.",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson___1777503347987\\images\\slide-01.png"
+    },
+    {
+      "slide_number": 2,
+      "page_type": "content",
+      "content": "Chữ A: A là quả Táo đỏ! (Hình ảnh quả táo lớn và chữ A to)\nChữ B: B là trái Bóng tròn! (Hình ảnh trái bóng và chữ B to)\nChữ C: C là chú Chim xinh! (Hình ảnh chú chim và chữ C to)",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nChữ A: A là quả Táo đỏ! (Hình ảnh quả táo lớn và chữ A to)\nChữ B: B là trái Bóng tròn! (Hình ảnh trái bóng và chữ B to)\nChữ C: C là chú Chim xinh! (Hình ảnh chú chim và chữ C to)",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson___1777503347987\\images\\slide-02.png"
+    },
+    {
+      "slide_number": 3,
+      "page_type": "content",
+      "content": "Chữ D: D là con Dê trắng! (Hình ảnh con dê và chữ D to)\nChữ E: E là con Én bay! (Hình ảnh con én và chữ E to)\nChữ G: G là con Gà cục tác! (Hình ảnh con gà và chữ G to)",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nChữ D: D là con Dê trắng! (Hình ảnh con dê và chữ D to)\nChữ E: E là con Én bay! (Hình ảnh con én và chữ E to)\nChữ G: G là con Gà cục tác! (Hình ảnh con gà và chữ G to)",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson___1777503347987\\images\\slide-03.png"
+    },
+    {
+      "slide_number": 4,
+      "page_type": "data",
+      "content": "Trò chơi: Bé tìm chữ cái! (Hình ảnh nhiều đồ vật như: quả cam, cây đàn, con chó, con voi,... và các chữ cái A, B, C, D, E, G lộn xộn. Yêu cầu bé nối chữ với hình ảnh hoặc gọi tên chữ cái đầu tiên của đồ vật.)",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a data/summary page using split-screen design.\nLeft side: typeset the following text.\nRight side: floating large glowing 3D data visualization:\n\nTrò chơi: Bé tìm chữ cái! (Hình ảnh nhiều đồ vật như: quả cam, cây đàn, con chó, con voi,... và các chữ cái A, B, C, D, E, G lộn xộn. Yêu cầu bé nối chữ với hình ảnh hoặc gọi tên chữ cái đầu tiên của đồ vật.)",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson___1777503347987\\images\\slide-04.png"
+    },
+    {
+      "slide_number": 5,
+      "page_type": "content",
+      "content": "Tuyệt vời! Bé đã nhớ chữ cái rồi! (Hình ảnh các bạn nhỏ vỗ tay, vui vẻ, có bảng chữ cái đầy đủ).\nHãy ôn tập mỗi ngày để thuộc hết bảng chữ cái nhé!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a data/summary page using split-screen design.\nLeft side: typeset the following text.\nRight side: floating large glowing 3D data visualization:\n\nTuyệt vời! Bé đã nhớ chữ cái rồi! (Hình ảnh các bạn nhỏ vỗ tay, vui vẻ, có bảng chữ cái đầy đủ).\nHãy ôn tập mỗi ngày để thuộc hết bảng chữ cái nhé!",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson___1777503347987\\images\\slide-05.png"
+    }
+  ]
+}

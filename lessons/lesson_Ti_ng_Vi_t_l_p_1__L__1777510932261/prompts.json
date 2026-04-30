@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "title": "Tiếng Việt lớp 1: Làm quen với chữ cái và âm vần",
+    "total_slides": 5,
+    "resolution": "2K",
+    "style": "styles/vector-illustration.md",
+    "generated_at": "2026-04-30T08:02:12.397420"
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "cover",
+      "content": "Chào mừng các bạn đến với Tiếng Việt lớp 1: Làm quen với chữ cái và âm vần!",
+      "script": "Xin chào tất cả các bé yêu quý! Cô là chuyên gia giáo dục của các con đây. Hôm nay, chúng ta sẽ cùng nhau khám phá một thế giới thật vui tươi và đầy màu sắc của tiếng Việt, đó là làm quen với các chữ cái và những âm vần đáng yêu nhé!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a cover page based on visual balance aesthetics.\nPlace a large complex 3D glass object in the center, overlaid with bold text:\n\nChào mừng các bạn đến với Tiếng Việt lớp 1: Làm quen với chữ cái và âm vần!\n\nBackground with extended aurora waves.",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Ti_ng_Vi_t_l_p_1__L__1777510932261\\images\\slide-01.png"
+    },
+    {
+      "slide_number": 2,
+      "page_type": "content",
+      "content": "Chữ cái là gì? – Những hạt giống nhỏ xinh!",
+      "script": "Các con ơi, các chữ cái giống như những hạt giống bé tí xíu vậy đó! Mỗi hạt giống có một hình dáng riêng và một cái tên đáng yêu. Khi chúng ta ghép các hạt giống này lại, chúng sẽ tạo thành những từ ngữ tuyệt vời.",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nChữ cái là gì? – Những hạt giống nhỏ xinh!",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Ti_ng_Vi_t_l_p_1__L__1777510932261\\images\\slide-02.png"
+    },
+    {
+      "slide_number": 3,
+      "page_type": "content",
+      "content": "Âm vần là gì? – Tiếng nói của chữ cái!",
+      "script": "Tiếp theo, chúng ta cùng nghe xem các chữ cái nói gì nhé! Mỗi chữ cái có một âm thanh riêng, giống như một bài hát nhỏ. Khi mình đọc chữ 'A', miệng mình tròn xinh phát ra âm 'a' thật đáng yêu phải không nào?",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nÂm vần là gì? – Tiếng nói của chữ cái!",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Ti_ng_Vi_t_l_p_1__L__1777510932261\\images\\slide-03.png"
+    },
+    {
+      "slide_number": 4,
+      "page_type": "content",
+      "content": "Ghép chữ cái thành tiếng – Khi các bạn chữ cái kết hợp!",
+      "script": "Giờ thì cùng chơi trò ghép hình nhé! Khi các chữ cái và âm thanh kết hợp với nhau, chúng ta sẽ tạo ra những 'tiếng' mới, giống như từ 'BA' hay 'CÔ' mà mình hay gọi đó. Thật là kỳ diệu phải không nào?",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nGhép chữ cái thành tiếng – Khi các bạn chữ cái kết hợp!",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Ti_ng_Vi_t_l_p_1__L__1777510932261\\images\\slide-04.png"
+    },
+    {
+      "slide_number": 5,
+      "page_type": "content",
+      "content": "Cùng luyện tập và khám phá! – Bé là nhà thám hiểm tiếng Việt!",
+      "script": "Tuyệt vời! Hôm nay chúng ta đã học được thật nhiều điều thú vị rồi. Bây giờ, các con hãy cùng cô luyện tập đọc to tên các chữ cái và tìm các âm vần trong những từ xung quanh mình nhé. Cứ luyện tập thật nhiều, con sẽ trở thành những nhà thám hiểm tiếng Việt siêu tài năng!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a data/summary page using split-screen design.\nLeft side: typeset the following text.\nRight side: floating large glowing 3D data visualization:\n\nCùng luyện tập và khám phá! – Bé là nhà thám hiểm tiếng Việt!",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_Ti_ng_Vi_t_l_p_1__L__1777510932261\\images\\slide-05.png"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "id": "grade5_trac_nghiem_tieng_anh",
+  "title": "Trắc nghiệm ôn tập Tiếng Anh lớp 5",
+  "grade": 5,
+  "subject": "Trắc nghiệm cuối năm - Tiếng Anh",
+  "type": "multiple_choice_quiz",
+  "keywords": [
+    "vocabulary",
+    "sentences",
+    "grammar",
+    "reading",
+    "daily routines"
+  ],
+  "question_count": 12,
+  "questions": [
+    {
+      "q": "Choose the correct sentence.",
+      "choices": [
+        "She like apples.",
+        "She likes apples.",
+        "She liking apples.",
+        "She liked apple everyday."
+      ],
+      "answer": 1,
+      "explain": "With 'she', use 'likes' in the present simple."
+    },
+    {
+      "q": "What is the opposite of 'hot'?",
+      "choices": [
+        "cold",
+        "warm",
+        "sunny",
+        "rainy"
+      ],
+      "answer": 0,
+      "explain": "'Cold' is the opposite of 'hot'."
+    },
+    {
+      "q": "Complete: I go to school ____ Monday.",
+      "choices": [
+        "in",
+        "on",
+        "at",
+        "for"
+      ],
+      "answer": 1,
+      "explain": "Use 'on' with days of the week."
+    },
+    {
+      "q": "Which word is a food?",
+      "choices": [
+        "banana",
+        "pencil",
+        "chair",
+        "river"
+      ],
+      "answer": 0,
+      "explain": "A banana is a food."
+    },
+    {
+      "q": "Question: 'Where are you from?' Correct answer:",
+      "choices": [
+        "I am ten.",
+        "I am from Viet Nam.",
+        "I like football.",
+        "It is sunny."
+      ],
+      "answer": 1,
+      "explain": "The question asks about country or hometown."
+    },
+    {
+      "q": "Complete: There ____ two books on the table.",
+      "choices": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "answer": 1,
+      "explain": "Use 'are' for plural nouns."
+    },
+    {
+      "q": "What time is '7:30'?",
+      "choices": [
+        "seven thirty",
+        "seven thirteen",
+        "half seven o'clock",
+        "thirty seven"
+      ],
+      "answer": 0,
+      "explain": "7:30 is read as seven thirty."
+    },
+    {
+      "q": "Choose the correct past form: 'go'",
+      "choices": [
+        "goed",
+        "went",
+        "goes",
+        "going"
+      ],
+      "answer": 1,
+      "explain": "The past form of 'go' is 'went'."
+    },
+    {
+      "q": "Which sentence asks about hobby?",
+      "choices": [
+        "What is your hobby?",
+        "Where is the book?",
+        "How old are you?",
+        "What color is it?"
+      ],
+      "answer": 0,
+      "explain": "It directly asks about hobby."
+    },
+    {
+      "q": "Complete: He is ____ than me.",
+      "choices": [
+        "tall",
+        "taller",
+        "tallest",
+        "more tall"
+      ],
+      "answer": 1,
+      "explain": "Use comparative form 'taller'."
+    },
+    {
+      "q": "What does 'library' mean?",
+      "choices": [
+        "thư viện",
+        "sân chơi",
+        "nhà bếp",
+        "bệnh viện"
+      ],
+      "answer": 0,
+      "explain": "'Library' means 'thư viện'."
+    },
+    {
+      "q": "Choose the correct answer: Can you swim?",
+      "choices": [
+        "Yes, I can.",
+        "Yes, I do.",
+        "Yes, I am.",
+        "Yes, I was."
+      ],
+      "answer": 0,
+      "explain": "Answer 'Can you...?' with 'can'."
+    }
+  ],
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "quiz_cover",
+      "title": "Trắc nghiệm ôn tập Tiếng Anh lớp 5",
+      "content": "Trắc nghiệm cuối năm - Tiếng Anh. 12 câu trắc nghiệm.",
+      "activity": "Làm bài, xem giải thích và ghi lại phần cần ôn thêm.",
+      "audio_script": "Trắc nghiệm ôn tập Tiếng Anh lớp 5. Bài có 12 câu trắc nghiệm. Hãy đọc kỹ câu hỏi rồi chọn đáp án đúng nhất.",
+      "image": "images/slide-01.svg",
+      "audio": "audio/slide-01.mp3"
+    }
+  ],
+  "created_at": "2026-04-28T10:22:11",
+  "source_note": "Bộ câu hỏi tự soạn để ôn tập cuối năm lớp 5, không sao chép nguyên văn sách giáo khoa."
+}

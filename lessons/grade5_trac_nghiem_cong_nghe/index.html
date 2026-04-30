@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trắc nghiệm ôn tập Công nghệ lớp 5 - Học mà chơi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600;700;800;900&family=Nunito:wght@500;700;800;900&display=swap&subset=vietnamese" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: #f5fbff; color: #17202a; font-family: "Nunito", "Be Vietnam Pro", Arial, sans-serif; }
+    main { width: min(1120px, calc(100% - 28px)); margin: 0 auto; padding: 28px 0; }
+    header { display: flex; justify-content: space-between; gap: 16px; align-items: center; margin-bottom: 18px; }
+    h1 { margin: 0; font-family: "Be Vietnam Pro", sans-serif; font-size: clamp(28px, 4vw, 46px); line-height: 1.08; }
+    .pill { display: inline-flex; align-items: center; min-height: 34px; padding: 6px 12px; border-radius: 999px; background: #e8f7ff; color: #006688; font-weight: 900; white-space: nowrap; }
+    .quiz { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 18px; align-items: start; }
+    .panel, .side { background: #fff; border: 3px solid #dfe8ee; border-radius: 18px; box-shadow: 0 8px 0 #dfe8ee; }
+    .panel { padding: 24px; }
+    .side { padding: 18px; display: grid; gap: 12px; }
+    .progress { height: 12px; border-radius: 999px; background: #edf3f7; overflow: hidden; margin: 14px 0 20px; }
+    .bar { height: 100%; width: 0; background: #2fb8ff; transition: width .2s ease; }
+    .question { font-family: "Be Vietnam Pro", sans-serif; font-size: clamp(24px, 3vw, 34px); font-weight: 900; line-height: 1.22; margin: 0 0 18px; }
+    .choices { display: grid; gap: 12px; }
+    button { border: 0; min-height: 48px; border-radius: 14px; padding: 12px 14px; font: inherit; font-weight: 900; cursor: pointer; }
+    .choice { text-align: left; background: #f4f8fb; color: #17202a; border: 2px solid #dce8ef; }
+    .choice.correct { background: #e9fbef; border-color: #55bd70; color: #14552a; }
+    .choice.wrong { background: #fff0f3; border-color: #ff8aa5; color: #7a1730; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .primary { background: #2fb8ff; color: #06364c; }
+    .secondary { background: #fdd34d; color: #5a4300; }
+    .feedback { min-height: 58px; margin-top: 16px; padding: 12px 14px; border-radius: 14px; background: #f8fbff; border: 2px solid #dfe8ee; font-weight: 800; line-height: 1.45; }
+    .score { font-family: "Be Vietnam Pro", sans-serif; font-size: 34px; font-weight: 900; color: #006688; }
+    .mini { color: #52616b; font-weight: 800; line-height: 1.45; }
+    .result { display: none; padding: 22px; border-radius: 18px; background: #fff8d7; border: 3px solid #f4c34f; margin-top: 18px; }
+    @media (max-width: 860px) { header, .quiz { grid-template-columns: 1fr; display: grid; } header { align-items: start; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div><span class="pill">Trắc nghiệm cuối năm - Công nghệ</span><h1>Trắc nghiệm ôn tập Công nghệ lớp 5</h1></div>
+      <a class="pill" href="../index.html">Thư viện</a>
+    </header>
+    <section class="quiz">
+      <article class="panel">
+        <div id="counter">Câu 1 / 12</div>
+        <div class="progress"><div class="bar" id="bar"></div></div>
+        <p class="question" id="question"></p>
+        <div class="choices" id="choices"></div>
+        <div class="feedback" id="feedback">Chọn một đáp án để xem giải thích.</div>
+        <div class="actions"><button class="primary" id="next">Câu tiếp</button><button class="secondary" id="restart">Làm lại</button></div>
+        <div class="result" id="result"></div>
+      </article>
+      <aside class="side">
+        <div class="score" id="score">0 xu</div>
+        <div class="mini">Mỗi câu đúng nhận 8 xu. Hoàn thành bài nhận thêm 20 xu. Từ 9 câu đúng trở lên nhận sticker ôn tập.</div>
+        <div class="mini" id="best"></div>
+      </aside>
+    </section>
+  </main>
+  <script>
+    const questions = [{"q": "Khi làm sản phẩm thủ công, bước đầu tiên nên là:", "choices": ["xác định yêu cầu và lập kế hoạch", "cắt vật liệu ngay", "bỏ qua dụng cụ", "dọn dẹp sau cùng trước khi làm"], "answer": 0, "explain": "Lập kế hoạch giúp chọn vật liệu và thao tác an toàn."}, {"q": "Dụng cụ sắc nhọn cần được sử dụng:", "choices": ["cẩn thận, đúng cách, có người lớn hướng dẫn khi cần", "đùa nghịch với bạn", "cầm chạy trong lớp", "để dưới sàn"], "answer": 0, "explain": "Dụng cụ sắc nhọn cần dùng an toàn."}, {"q": "Vật liệu tái chế có lợi vì:", "choices": ["giảm rác thải và tiết kiệm tài nguyên", "luôn đắt hơn", "không cần làm sạch", "không dùng được"], "answer": 0, "explain": "Tái chế giúp bảo vệ môi trường và tiết kiệm."}, {"q": "Khi sản phẩm chưa chắc chắn, em nên:", "choices": ["kiểm tra, điều chỉnh và thử lại", "bỏ qua lỗi", "giấu đi", "đổ lỗi cho vật liệu"], "answer": 0, "explain": "Thiết kế công nghệ cần thử nghiệm và cải tiến."}, {"q": "Để dán hai mảnh giấy chắc hơn, cần:", "choices": ["bôi keo vừa đủ và ép nhẹ", "bôi quá nhiều keo", "không chờ keo khô", "dán vào bụi bẩn"], "answer": 0, "explain": "Keo vừa đủ và bề mặt sạch giúp dán chắc."}, {"q": "Khi dùng thiết bị điện đơn giản, em cần:", "choices": ["đọc hướng dẫn và giữ tay khô", "cắm rút bằng tay ướt", "tháo thiết bị đang hoạt động", "kéo mạnh dây điện"], "answer": 0, "explain": "Đọc hướng dẫn và tay khô giúp an toàn."}, {"q": "Tiêu chí đánh giá sản phẩm có thể gồm:", "choices": ["đúng yêu cầu, chắc chắn, đẹp, an toàn", "chỉ màu sắc", "chỉ kích thước", "không cần kiểm tra"], "answer": 0, "explain": "Sản phẩm cần đạt nhiều tiêu chí, không chỉ đẹp."}, {"q": "Khi làm việc nhóm, việc nên làm là:", "choices": ["phân công, lắng nghe, hỗ trợ nhau", "tranh giành dụng cụ", "không trao đổi", "làm hỏng phần của bạn"], "answer": 0, "explain": "Làm việc nhóm cần phối hợp và tôn trọng."}, {"q": "Bản phác thảo giúp:", "choices": ["hình dung sản phẩm trước khi làm", "thay thế mọi vật liệu", "không cần đo đạc", "làm sản phẩm tự hoàn thành"], "answer": 0, "explain": "Phác thảo giúp lên ý tưởng và kiểm tra bố cục."}, {"q": "Nếu cần làm mô hình cây cầu giấy, yếu tố quan trọng là:", "choices": ["độ vững và cách gấp, nối", "màu bút duy nhất", "dán càng nhiều keo càng tốt", "không thử tải"], "answer": 0, "explain": "Cầu cần vững, các mối nối và cách gấp rất quan trọng."}, {"q": "Sau khi hoàn thành sản phẩm, nên:", "choices": ["dọn dụng cụ và ghi nhận điều cần cải tiến", "vứt vật liệu còn dùng được", "để kéo dưới đất", "không kiểm tra sản phẩm"], "answer": 0, "explain": "Dọn dẹp và rút kinh nghiệm là thói quen tốt."}, {"q": "Chọn vật liệu cho sản phẩm cần dựa vào:", "choices": ["mục đích sử dụng, độ bền, an toàn", "chọn ngẫu nhiên", "chỉ chọn vật nặng nhất", "chỉ chọn vật đắt nhất"], "answer": 0, "explain": "Vật liệu phù hợp giúp sản phẩm dùng tốt và an toàn."}];
+    const storageKey = "grade5_trac_nghiem_cong_nghe-best";
+    let index = 0, score = 0, answered = false;
+    const counter = document.querySelector("#counter"), bar = document.querySelector("#bar"), questionEl = document.querySelector("#question"), choicesEl = document.querySelector("#choices"), feedback = document.querySelector("#feedback"), scoreEl = document.querySelector("#score"), result = document.querySelector("#result"), bestEl = document.querySelector("#best");
+    function updateBest() { const best = Number(localStorage.getItem(storageKey) || 0); bestEl.textContent = best ? `Kỷ lục: ${best}/${questions.length} câu đúng.` : "Chưa có kỷ lục cho bài này."; }
+    function render() {
+      answered = false; result.style.display = "none"; const item = questions[index];
+      counter.textContent = `Câu ${index + 1} / ${questions.length}`; bar.style.width = `${(index / questions.length) * 100}%`; questionEl.textContent = item.q; feedback.textContent = "Chọn một đáp án để xem giải thích."; choicesEl.innerHTML = "";
+      item.choices.forEach((choice, choiceIndex) => { const button = document.createElement("button"); button.className = "choice"; button.textContent = `${String.fromCharCode(65 + choiceIndex)}. ${choice}`; button.onclick = () => answer(choiceIndex, button); choicesEl.appendChild(button); });
+      scoreEl.textContent = `${score * 8} xu`;
+    }
+    function answer(choiceIndex) {
+      if (answered) return; answered = true; const item = questions[index]; const buttons = [...choicesEl.children];
+      buttons.forEach((button, i) => { if (i === item.answer) button.classList.add("correct"); if (i === choiceIndex && i !== item.answer) button.classList.add("wrong"); });
+      if (choiceIndex === item.answer) { score += 1; feedback.textContent = `Đúng. ${item.explain}`; } else { feedback.textContent = `Chưa đúng. Đáp án đúng là ${String.fromCharCode(65 + item.answer)}. ${item.explain}`; }
+      scoreEl.textContent = `${score * 8} xu`;
+    }
+    function finish() {
+      bar.style.width = "100%"; const bonus = 20; const coins = score * 8 + bonus; const sticker = score >= 9 ? " Có sticker ôn tập." : " Luyện thêm để nhận sticker.";
+      const best = Math.max(Number(localStorage.getItem(storageKey) || 0), score); localStorage.setItem(storageKey, String(best)); updateBest();
+      result.style.display = "block"; result.innerHTML = `<strong>Hoàn thành: ${score}/${questions.length} câu đúng.</strong><br>Nhận ${coins} xu.${sticker}`;
+    }
+    document.querySelector("#next").onclick = () => { if (!answered) { feedback.textContent = "Hãy chọn đáp án trước khi sang câu tiếp."; return; } if (index < questions.length - 1) { index += 1; render(); } else finish(); };
+    document.querySelector("#restart").onclick = () => { index = 0; score = 0; render(); };
+    updateBest(); render();
+  </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+{
+  "id": "grade1_tieng_anh_so_1_10",
+  "title": "Numbers 1 to 10",
+  "grade": 1,
+  "subject": "Tiếng Anh làm quen",
+  "keywords": [
+    "one",
+    "two",
+    "three",
+    "five",
+    "ten"
+  ],
+  "objectives": [
+    "Nhận biết kiến thức trọng tâm.",
+    "Luyện tập qua ví dụ và trò chơi.",
+    "Tự kiểm tra mức độ chắc chắn."
+  ],
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "cover",
+      "title": "Numbers 1 to 10",
+      "content": "Tiếng Anh làm quen lớp 1\nHọc bằng hình, luyện bằng trò chơi.",
+      "activity": "Đọc tên bài, quan sát tranh và nêu điều đã biết.",
+      "audio_script": "Numbers 1 to 10. Tiếng Anh làm quen lớp 1 Học bằng hình, luyện bằng trò chơi. Hoạt động: Đọc tên bài, quan sát tranh và nêu điều đã biết.",
+      "image": "images/slide-01.svg",
+      "audio": "audio/slide-01.mp3"
+    },
+    {
+      "slide_number": 2,
+      "page_type": "goal",
+      "title": "Mục tiêu",
+      "content": "Học sinh sẽ:\n- Nhận biết kiến thức trọng tâm.\n- Luyện bằng ví dụ ngắn.\n- Tự kiểm tra qua trò chơi.",
+      "activity": "Nói lại mục tiêu bằng một câu ngắn.",
+      "audio_script": "Mục tiêu. Học sinh sẽ: - Nhận biết kiến thức trọng tâm. - Luyện bằng ví dụ ngắn. - Tự kiểm tra qua trò chơi. Hoạt động: Nói lại mục tiêu bằng một câu ngắn.",
+      "image": "images/slide-02.svg",
+      "audio": "audio/slide-02.mp3"
+    },
+    {
+      "slide_number": 3,
+      "page_type": "keywords",
+      "title": "Từ khóa",
+      "content": "- one\n- two\n- three\n- five\n- ten",
+      "activity": "Đọc từng từ khóa, đánh dấu từ còn cần luyện.",
+      "audio_script": "Từ khóa. - one - two - three - five - ten Hoạt động: Đọc từng từ khóa, đánh dấu từ còn cần luyện.",
+      "image": "images/slide-03.svg",
+      "audio": "audio/slide-03.mp3"
+    },
+    {
+      "slide_number": 4,
+      "page_type": "examples",
+      "title": "Ví dụ",
+      "content": "- one là một\n- ten là mười",
+      "activity": "Chọn một ví dụ và giải thích bằng lời của mình.",
+      "audio_script": "Ví dụ. - one là một - ten là mười Hoạt động: Chọn một ví dụ và giải thích bằng lời của mình.",
+      "image": "images/slide-04.svg",
+      "audio": "audio/slide-04.mp3"
+    },
+    {
+      "slide_number": 5,
+      "page_type": "practice",
+      "title": "Luyện tập",
+      "content": "Bé đếm đồ vật bằng tiếng Anh.",
+      "activity": "Làm chậm một lượt, sau đó thử làm nhanh hơn.",
+      "audio_script": "Luyện tập. Bé đếm đồ vật bằng tiếng Anh. Hoạt động: Làm chậm một lượt, sau đó thử làm nhanh hơn.",
+      "image": "images/slide-05.svg",
+      "audio": "audio/slide-05.mp3"
+    },
+    {
+      "slide_number": 6,
+      "page_type": "game",
+      "title": "Trò chơi",
+      "content": "Ghép số với từ tiếng Anh.",
+      "activity": "Hoàn thành trò chơi để nhận xu và sticker ôn tập.",
+      "audio_script": "Trò chơi. Ghép số với từ tiếng Anh. Hoạt động: Hoàn thành trò chơi để nhận xu và sticker ôn tập.",
+      "image": "images/slide-06.svg",
+      "audio": "audio/slide-06.mp3"
+    },
+    {
+      "slide_number": 7,
+      "page_type": "summary",
+      "title": "Tự kiểm tra",
+      "content": "Hôm nay đã học: numbers 1 to 10.\nNói lại 2 từ khóa và 1 điều còn muốn luyện.",
+      "activity": "Tự chấm: chắc rồi, cần luyện thêm, hoặc muốn thử mức khó hơn.",
+      "audio_script": "Tự kiểm tra. Hôm nay đã học: numbers 1 to 10. Nói lại 2 từ khóa và 1 điều còn muốn luyện. Hoạt động: Tự chấm: chắc rồi, cần luyện thêm, hoặc muốn thử mức khó hơn.",
+      "image": "images/slide-07.svg",
+      "audio": "audio/slide-07.mp3"
+    }
+  ],
+  "created_at": "2026-04-28T09:26:11",
+  "source_note": "Nội dung tự soạn theo năng lực phù hợp, không sao chép nguyên văn sách giáo khoa."
+}

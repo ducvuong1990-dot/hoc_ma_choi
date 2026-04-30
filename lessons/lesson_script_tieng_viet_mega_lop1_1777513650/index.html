@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIÊU HÀNH TRÌNH CHỮ CÁI: BÉ GIỎI TIẾNG VIỆT LỚP 1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;700;800;900&family=Inter:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <script src="../../node_modules/canvas-confetti/dist/confetti.browser.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 12%, rgba(34, 242, 210, .24), transparent 28%),
+        radial-gradient(circle at 86% 16%, rgba(255, 138, 92, .22), transparent 26%),
+        linear-gradient(135deg, #f8fdff 0%, #e7f8ff 52%, #fff3dc 100%);
+      color: #142033;
+      font-family: "Be Vietnam Pro", Inter, system-ui, sans-serif;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+    .app-container {
+      display: grid;
+      grid-template-rows: minmax(0, 1fr) auto;
+      width: 100vw;
+      height: 100vh;
+    }
+    .slide-area {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: 0;
+      padding: 72px 32px 24px;
+      overflow: hidden;
+    }
+    .slide-img {
+      display: none;
+      width: min(1280px, 94vw);
+      max-height: calc(100vh - 300px);
+      aspect-ratio: 16 / 9;
+      object-fit: contain;
+      border: 1px solid rgba(255, 255, 255, .82);
+      border-radius: 28px;
+      background: #fff;
+      box-shadow: 0 26px 70px rgba(23, 78, 121, .22);
+    }
+    .slide-img.active { display: block; animation: fadeIn .35s ease both; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px) scale(.985); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .script-area {
+      min-height: 230px;
+      padding: 22px clamp(18px, 5vw, 72px);
+      border-top: 1px solid rgba(255, 255, 255, .78);
+      background: rgba(255, 255, 255, .72);
+      box-shadow: 0 -18px 60px rgba(23, 78, 121, .14);
+      backdrop-filter: blur(18px);
+    }
+    .script-text {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      gap: 8px 10px;
+      min-height: 124px;
+      max-width: 1180px;
+      margin: 0 auto;
+      color: #25364a;
+      font-size: clamp(24px, 3vw, 34px);
+      font-weight: 800;
+      line-height: 1.55;
+      text-align: center;
+    }
+    .word {
+      display: inline-block;
+      padding: 0 3px;
+      border-radius: 10px;
+      transition: color .12s ease, background .12s ease, transform .12s ease;
+    }
+    .word.highlight {
+      color: #7a4a00;
+      background: #ffe46b;
+      transform: translateY(-2px) scale(1.08);
+      box-shadow: 0 10px 22px rgba(253, 211, 77, .26);
+    }
+    .controls, .indicator {
+      position: fixed;
+      z-index: 50;
+      border: 1px solid rgba(255, 255, 255, .78);
+      background: rgba(255, 255, 255, .72);
+      box-shadow: 0 14px 34px rgba(23, 78, 121, .16);
+      backdrop-filter: blur(16px);
+    }
+    .controls {
+      top: 18px;
+      left: 50%;
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+      border-radius: 999px;
+      transform: translateX(-50%);
+    }
+    .btn {
+      display: inline-grid;
+      place-items: center;
+      min-width: 48px;
+      height: 48px;
+      padding: 0 16px;
+      border: 0;
+      border-radius: 999px;
+      background: #e8f7ff;
+      color: #075985;
+      cursor: pointer;
+      font: inherit;
+      font-weight: 900;
+    }
+    .btn.primary {
+      background: linear-gradient(145deg, #a7f36d, #48d5ff);
+      color: #083344;
+    }
+    .btn:disabled { opacity: .46; cursor: not-allowed; }
+    .indicator {
+      top: 26px;
+      right: 28px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      color: #075985;
+      font-weight: 900;
+    }
+    .loading-screen {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      display: grid;
+      place-items: center;
+      background: #f8fdff;
+      color: #075985;
+    }
+    .quiz-screen {
+      position: fixed;
+      inset: 0;
+      z-index: 80;
+      display: none;
+      place-items: center;
+      padding: 28px;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(255, 228, 107, .42), transparent 28%),
+        radial-gradient(circle at 82% 18%, rgba(72, 213, 255, .34), transparent 30%),
+        rgba(248, 253, 255, .96);
+    }
+    .quiz-screen.active { display: grid; }
+    .quiz-card {
+      width: min(920px, 100%);
+      padding: clamp(22px, 4vw, 42px);
+      border: 1px solid rgba(255, 255, 255, .82);
+      border-radius: 34px;
+      background: rgba(255, 255, 255, .82);
+      box-shadow: 0 28px 90px rgba(23, 78, 121, .22);
+      backdrop-filter: blur(18px);
+    }
+    .quiz-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .quiz-pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 0 14px;
+      border-radius: 999px;
+      background: #fff7d6;
+      color: #8a5a00;
+      font-weight: 900;
+    }
+    .quiz-question {
+      margin: 14px 0 24px;
+      font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.2;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+    .quiz-answers {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .quiz-answer {
+      min-height: 92px;
+      padding: 18px;
+      border: 2px solid rgba(255, 255, 255, .84);
+      border-radius: 24px;
+      background: #fff;
+      color: #142033;
+      cursor: pointer;
+      font: inherit;
+      font-size: clamp(20px, 2.3vw, 28px);
+      font-weight: 900;
+      box-shadow: 0 12px 26px rgba(23, 78, 121, .1);
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+    }
+    .quiz-answer:hover { transform: translateY(-4px); border-color: #48d5ff; background: #e8f7ff; }
+    .quiz-answer.correct { background: #dcffd7; border-color: #74f19c; }
+    .quiz-answer.wrong { background: #ffe0e8; border-color: #ff7aa8; }
+    .quiz-feedback {
+      min-height: 38px;
+      margin-top: 18px;
+      color: #456174;
+      font-size: 18px;
+      font-weight: 800;
+    }
+    .quiz-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    canvas#confettiCanvas {
+      position: fixed;
+      inset: 0;
+      z-index: 120;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+    }
+    @media (max-width: 720px) {
+      .slide-img { max-height: calc(100vh - 330px); }
+      .script-area { min-height: 260px; }
+      .quiz-answers { grid-template-columns: 1fr; }
+      .indicator { right: 12px; top: 82px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="loading-screen" id="loading"><h1>Đang tải bài học...</h1></div>
+
+  <div class="app-container" id="lessonMode">
+    <div class="slide-area" id="slideArea"></div>
+    <div class="script-area">
+      <div class="script-text" id="scriptText"></div>
+      <audio id="audioPlayer"></audio>
+    </div>
+  </div>
+
+  <div class="quiz-screen" id="quizScreen" aria-live="polite">
+    <article class="quiz-card">
+      <div class="quiz-top">
+        <span class="quiz-pill" id="quizCounter">Quiz 1 / 1</span>
+        <span class="quiz-pill" id="quizScore">0 điểm</span>
+      </div>
+      <h1 class="quiz-question" id="quizQuestion"></h1>
+      <div class="quiz-answers" id="quizAnswers"></div>
+      <div class="quiz-feedback" id="quizFeedback"></div>
+      <div class="quiz-actions">
+        <button class="btn" id="reviewBtn">Xem lại bài</button>
+        <button class="btn primary" id="nextQuizBtn">Câu tiếp</button>
+      </div>
+    </article>
+  </div>
+
+  <div class="indicator" id="indicator">1 / 1</div>
+  <div class="controls">
+    <button class="btn" id="prevBtn" title="Trở lại">←</button>
+    <button class="btn primary" id="playBtn" title="Nghe lại">Nghe</button>
+    <button class="btn" id="nextBtn" title="Tiếp theo">→</button>
+    <button class="btn" id="quizBtn" title="Làm quiz">Quiz</button>
+  </div>
+  <canvas id="confettiCanvas"></canvas>
+
+  <script>
+    const slides = [/* IMAGE_LIST_PLACEHOLDER */];
+    const rawScripts = [/* SCRIPTS_LIST_PLACEHOLDER */];
+    const quizData = /* QUIZ_DATA_PLACEHOLDER */;
+    let currentIdx = 0;
+    let quizIdx = 0;
+    let quizScore = 0;
+    let answered = false;
+    let wordTimestamps = [];
+
+    const audioPlayer = document.getElementById("audioPlayer");
+    const scriptContainer = document.getElementById("scriptText");
+    const indicator = document.getElementById("indicator");
+    const quizScreen = document.getElementById("quizScreen");
+    const quizCounter = document.getElementById("quizCounter");
+    const quizScoreEl = document.getElementById("quizScore");
+    const quizQuestion = document.getElementById("quizQuestion");
+    const quizAnswers = document.getElementById("quizAnswers");
+    const quizFeedback = document.getElementById("quizFeedback");
+    const nextQuizBtn = document.getElementById("nextQuizBtn");
+
+    function escapeHtml(value) {
+      return String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    }
+
+    async function loadSlide(index) {
+      if (index < 0 || index >= slides.length) return;
+      hideQuiz();
+      currentIdx = index;
+      document.querySelectorAll(".slide-img").forEach((img, i) => img.classList.toggle("active", i === index));
+      indicator.textContent = `${index + 1} / ${slides.length}`;
+      document.getElementById("prevBtn").disabled = index === 0;
+      document.getElementById("nextBtn").disabled = index === slides.length - 1 && !quizData.length;
+
+      const slideNum = String(index + 1).padStart(2, "0");
+      audioPlayer.src = `audio/slide-${slideNum}.mp3`;
+      audioPlayer.playbackRate = 1.08;
+
+      try {
+        const response = await fetch(`audio/slide-${slideNum}.json`);
+        if (!response.ok) throw new Error("timestamps missing");
+        wordTimestamps = await response.json();
+        renderScript();
+      } catch {
+        wordTimestamps = [];
+        const fallbackText = rawScripts[index] ? rawScripts[index].text : "Đang phát âm thanh thuyết minh...";
+        scriptContainer.innerHTML = `<span style="opacity:.9">${escapeHtml(fallbackText)}</span>`;
+      }
+      audioPlayer.currentTime = 0;
+      audioPlayer.play().catch(() => {});
+    }
+
+    function renderScript() {
+      scriptContainer.innerHTML = wordTimestamps.map((w, i) => `<span class="word" id="word-${i}">${escapeHtml(w.text)}</span>`).join(" ");
+    }
+
+    audioPlayer.ontimeupdate = () => {
+      if (!wordTimestamps.length) return;
+      const time = audioPlayer.currentTime;
+      wordTimestamps.forEach((w, i) => {
+        const el = document.getElementById(`word-${i}`);
+        if (!el) return;
+        const end = Number.isFinite(w.end) ? w.end : (wordTimestamps[i + 1]?.start ?? Number.MAX_SAFE_INTEGER);
+        el.classList.toggle("highlight", time >= w.start && time < end);
+      });
+    };
+
+    audioPlayer.onended = () => {
+      if (currentIdx === slides.length - 1 && quizData.length) {
+        window.setTimeout(showQuiz, 700);
+      }
+    };
+
+    function normalizeQuizItem(item, index) {
+      const answers = item.answers || item.options || item.choices || [];
+      const correct = item.correct ?? item.answer ?? item.correct_answer ?? answers[item.correctIndex] ?? answers[0];
+      return {
+        question: item.question || item.q || `Câu hỏi ${index + 1}`,
+        answers,
+        correct,
+        feedbackCorrect: item.explanation || item.feedback_correct || item.feedbackCorrect || item.feedback || "Giỏi lắm, bé đã chọn đúng!",
+        feedbackWrong: item.feedback_wrong || item.feedbackWrong || `Gần đúng rồi. Đáp án đúng là: ${correct}`
+      };
+    }
+
+    function showQuiz() {
+      if (!quizData.length) return;
+      audioPlayer.pause();
+      quizScreen.classList.add("active");
+      quizIdx = Math.min(quizIdx, quizData.length - 1);
+      renderQuiz();
+    }
+
+    function hideQuiz() {
+      quizScreen.classList.remove("active");
+    }
+
+    function renderQuiz() {
+      answered = false;
+      const item = normalizeQuizItem(quizData[quizIdx], quizIdx);
+      quizCounter.textContent = `Quiz ${quizIdx + 1} / ${quizData.length}`;
+      quizScoreEl.textContent = `${quizScore} điểm`;
+      quizQuestion.textContent = item.question;
+      quizFeedback.textContent = "";
+      nextQuizBtn.textContent = quizIdx === quizData.length - 1 ? "Hoàn thành" : "Câu tiếp";
+      nextQuizBtn.disabled = true;
+      quizAnswers.innerHTML = item.answers.map((answer, index) => `<button class="quiz-answer" data-index="${index}">${escapeHtml(answer)}</button>`).join("");
+      quizAnswers.querySelectorAll(".quiz-answer").forEach((button) => button.addEventListener("click", () => answerQuiz(button, item)));
+    }
+
+    function answerQuiz(button, item) {
+      if (answered) return;
+      answered = true;
+      const selected = item.answers[Number(button.dataset.index)];
+      const isCorrect = selected === String(item.correct);
+      quizAnswers.querySelectorAll(".quiz-answer").forEach((btn) => {
+        const value = item.answers[Number(btn.dataset.index)];
+        btn.classList.toggle("correct", value === String(item.correct));
+        btn.classList.toggle("wrong", btn === button && !isCorrect);
+      });
+      if (isCorrect) {
+        quizScore += 10;
+        quizScoreEl.textContent = `${quizScore} điểm`;
+        quizFeedback.textContent = item.feedbackCorrect;
+        celebrate();
+        playSuccessTone();
+      } else {
+        quizFeedback.textContent = item.feedbackWrong;
+      }
+      nextQuizBtn.disabled = false;
+    }
+
+    function celebrate() {
+      if (window.confetti) {
+        const canvas = document.getElementById("confettiCanvas");
+        const fire = window.confetti.create(canvas, { resize: true, useWorker: true });
+        fire({ particleCount: 120, spread: 72, origin: { y: .68 }, scalar: 1.1 });
+        fire({ particleCount: 80, angle: 60, spread: 55, origin: { x: 0, y: .78 } });
+        fire({ particleCount: 80, angle: 120, spread: 55, origin: { x: 1, y: .78 } });
+      } else {
+        document.body.animate([{ filter: "brightness(1.18)" }, { filter: "brightness(1)" }], { duration: 520 });
+      }
+    }
+
+    function playSuccessTone() {
+      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContext) return;
+      const ctx = new AudioContext();
+      [523.25, 659.25, 783.99].forEach((freq, index) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.frequency.value = freq;
+        osc.type = "sine";
+        gain.gain.setValueAtTime(0.001, ctx.currentTime + index * 0.08);
+        gain.gain.exponentialRampToValueAtTime(0.08, ctx.currentTime + index * 0.08 + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + index * 0.08 + 0.24);
+        osc.connect(gain).connect(ctx.destination);
+        osc.start(ctx.currentTime + index * 0.08);
+        osc.stop(ctx.currentTime + index * 0.08 + 0.26);
+      });
+    }
+
+    function init() {
+      const slideArea = document.getElementById("slideArea");
+      slides.forEach((src, i) => {
+        const img = document.createElement("img");
+        img.src = src;
+        img.alt = `Slide ${i + 1}`;
+        img.className = "slide-img";
+        slideArea.appendChild(img);
+      });
+      document.getElementById("prevBtn").onclick = () => loadSlide(currentIdx - 1);
+      document.getElementById("nextBtn").onclick = () => currentIdx === slides.length - 1 && quizData.length ? showQuiz() : loadSlide(currentIdx + 1);
+      document.getElementById("playBtn").onclick = () => { audioPlayer.currentTime = 0; audioPlayer.play().catch(() => {}); };
+      document.getElementById("quizBtn").onclick = showQuiz;
+      document.getElementById("reviewBtn").onclick = () => loadSlide(0);
+      nextQuizBtn.onclick = () => {
+        if (quizIdx < quizData.length - 1) {
+          quizIdx += 1;
+          renderQuiz();
+        } else {
+          quizFeedback.textContent = `Hoàn thành! Bé đạt ${quizScore} điểm.`;
+          nextQuizBtn.disabled = true;
+          celebrate();
+        }
+      };
+      document.getElementById("loading").style.display = "none";
+      loadSlide(0);
+    }
+
+    window.onload = init;
+    document.addEventListener("keydown", (e) => {
+      if (quizScreen.classList.contains("active")) return;
+      if (e.key === "ArrowRight") document.getElementById("nextBtn").click();
+      if (e.key === "ArrowLeft") loadSlide(currentIdx - 1);
+      if (e.key === " ") {
+        audioPlayer.paused ? audioPlayer.play().catch(() => {}) : audioPlayer.pause();
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>

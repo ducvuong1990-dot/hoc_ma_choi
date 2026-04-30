@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "title": "Bí mật của các loài động vật trong rừng xanh",
+    "total_slides": 5,
+    "resolution": "2K",
+    "style": "styles/vector-illustration.md",
+    "generated_at": "2026-04-30T07:39:12.996972"
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "cover",
+      "content": "Tiêu đề: Bí mật của các loài động vật trong rừng xanh. Hình ảnh: Một khu rừng xanh tươi với các con vật đáng yêu như sóc, thỏ, chim đang chơi đùa.",
+      "script": "Chào các bạn nhỏ đáng yêu của cô (hoặc thầy)! Hôm nay, chúng mình sẽ cùng nhau bắt đầu một cuộc phiêu lưu thật thú vị vào thế giới rừng xanh huyền bí. Các con có muốn cùng cô (hoặc thầy) khám phá những bí mật của các bạn động vật ở đó không nào?",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a cover page based on visual balance aesthetics.\nPlace a large complex 3D glass object in the center, overlaid with bold text:\n\nTiêu đề: Bí mật của các loài động vật trong rừng xanh. Hình ảnh: Một khu rừng xanh tươi với các con vật đáng yêu như sóc, thỏ, chim đang chơi đùa.\n\nBackground with extended aurora waves.",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_B__m_t_c_a_c_c_lo_i__1777509552847\\images\\slide-01.png"
+    },
+    {
+      "slide_number": 2,
+      "page_type": "content",
+      "content": "Nội dung: Chào mừng đến với Rừng Xanh! Hình ảnh: Một khu rừng rậm rạp với nhiều cây cối, ánh nắng chiếu qua và một vài bóng động vật ẩn hiện. Câu hỏi tương tác: 'Các con có biết những ai sống trong rừng không?'",
+      "script": "Ồ, nhìn kìa! Đây là khu rừng xanh mát, tràn ngập cây cối và những tia nắng ấm áp. Trong khu rừng rộng lớn này, có rất nhiều bạn động vật đáng yêu đang sinh sống. Các con có tò mò muốn biết những ai đang ở trong rừng và họ có gì đặc biệt không nhỉ?",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nNội dung: Chào mừng đến với Rừng Xanh! Hình ảnh: Một khu rừng rậm rạp với nhiều cây cối, ánh nắng chiếu qua và một vài bóng động vật ẩn hiện. Câu hỏi tương tác: 'Các con có biết những ai sống trong rừng không?'",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_B__m_t_c_a_c_c_lo_i__1777509552847\\images\\slide-02.png"
+    },
+    {
+      "slide_number": 3,
+      "page_type": "content",
+      "content": "Nội dung: Khám phá bạn Voi con - Chiếc vòi dài tài ba! Hình ảnh: Một chú voi con đang dùng vòi để uống nước hoặc nhấc một cành cây nhỏ. Thông tin: 'Voi dùng vòi để uống nước, tắm mát và nhổ cây nữa đó!'",
+      "script": "Xin chào bạn Voi con to lớn và hiền lành! Các con thấy chiếc vòi của bạn Voi có dài không nào? Chiếc vòi này không chỉ giúp bạn Voi uống nước, mà còn rất tài tình khi giúp bạn ấy nhổ những cành cây hay thậm chí là tắm mát nữa đấy!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nNội dung: Khám phá bạn Voi con - Chiếc vòi dài tài ba! Hình ảnh: Một chú voi con đang dùng vòi để uống nước hoặc nhấc một cành cây nhỏ. Thông tin: 'Voi dùng vòi để uống nước, tắm mát và nhổ cây nữa đó!'",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_B__m_t_c_a_c_c_lo_i__1777509552847\\images\\slide-03.png"
+    },
+    {
+      "slide_number": 4,
+      "page_type": "content",
+      "content": "Nội dung: Khám phá bạn Khỉ tinh nghịch - Vua leo trèo! Hình ảnh: Một chú khỉ đang chuyền cành hoặc ăn chuối trên cây. Thông tin: 'Khỉ rất thích ăn chuối và leo trèo thoăn thoắt trên những cành cây cao.'",
+      "script": "Kìa, ai đang nhảy nhót thoăn thoắt trên cây cao thế nhỉ? À, đó là bạn Khỉ tinh nghịch của chúng ta đấy! Bạn ấy rất thích ăn chuối và có đôi tay cực kì khéo léo để leo trèo từ cành này sang cành khác nhanh như chớp, trông thật là vui mắt!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nNội dung: Khám phá bạn Khỉ tinh nghịch - Vua leo trèo! Hình ảnh: Một chú khỉ đang chuyền cành hoặc ăn chuối trên cây. Thông tin: 'Khỉ rất thích ăn chuối và leo trèo thoăn thoắt trên những cành cây cao.'",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_B__m_t_c_a_c_c_lo_i__1777509552847\\images\\slide-04.png"
+    },
+    {
+      "slide_number": 5,
+      "page_type": "content",
+      "content": "Nội dung: Rừng xanh thật tuyệt vời! Hình ảnh: Một bức tranh tổng hợp các con vật đã được học (voi, khỉ) và các con vật khác (chim, bướm) đang sống hòa bình trong rừng. Lời nhắn nhủ: 'Chúng mình đã khám phá được nhiều điều thú vị! Hãy luôn yêu quý và bảo vệ rừng xanh nhé!'",
+      "script": "Các con ơi, vậy là chúng mình đã cùng nhau khám phá những bí mật nho nhỏ của các bạn động vật trong rừng xanh rồi đó! Mỗi bạn đều có một điều đặc biệt và đáng yêu riêng phải không nào? Hãy nhớ yêu thương và bảo vệ ngôi nhà chung của các bạn ấy nhé!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a data/summary page using split-screen design.\nLeft side: typeset the following text.\nRight side: floating large glowing 3D data visualization:\n\nNội dung: Rừng xanh thật tuyệt vời! Hình ảnh: Một bức tranh tổng hợp các con vật đã được học (voi, khỉ) và các con vật khác (chim, bướm) đang sống hòa bình trong rừng. Lời nhắn nhủ: 'Chúng mình đã khám phá được nhiều điều thú vị! Hãy luôn yêu quý và bảo vệ rừng xanh nhé!'",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_B__m_t_c_a_c_c_lo_i__1777509552847\\images\\slide-05.png"
+    }
+  ]
+}

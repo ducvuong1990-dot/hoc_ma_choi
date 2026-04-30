@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trắc nghiệm ôn tập Lịch sử lớp 5 - Học mà chơi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600;700;800;900&family=Nunito:wght@500;700;800;900&display=swap&subset=vietnamese" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: #f5fbff; color: #17202a; font-family: "Nunito", "Be Vietnam Pro", Arial, sans-serif; }
+    main { width: min(1120px, calc(100% - 28px)); margin: 0 auto; padding: 28px 0; }
+    header { display: flex; justify-content: space-between; gap: 16px; align-items: center; margin-bottom: 18px; }
+    h1 { margin: 0; font-family: "Be Vietnam Pro", sans-serif; font-size: clamp(28px, 4vw, 46px); line-height: 1.08; }
+    .pill { display: inline-flex; align-items: center; min-height: 34px; padding: 6px 12px; border-radius: 999px; background: #e8f7ff; color: #006688; font-weight: 900; white-space: nowrap; }
+    .quiz { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 18px; align-items: start; }
+    .panel, .side { background: #fff; border: 3px solid #dfe8ee; border-radius: 18px; box-shadow: 0 8px 0 #dfe8ee; }
+    .panel { padding: 24px; }
+    .side { padding: 18px; display: grid; gap: 12px; }
+    .progress { height: 12px; border-radius: 999px; background: #edf3f7; overflow: hidden; margin: 14px 0 20px; }
+    .bar { height: 100%; width: 0; background: #2fb8ff; transition: width .2s ease; }
+    .question { font-family: "Be Vietnam Pro", sans-serif; font-size: clamp(24px, 3vw, 34px); font-weight: 900; line-height: 1.22; margin: 0 0 18px; }
+    .choices { display: grid; gap: 12px; }
+    button { border: 0; min-height: 48px; border-radius: 14px; padding: 12px 14px; font: inherit; font-weight: 900; cursor: pointer; }
+    .choice { text-align: left; background: #f4f8fb; color: #17202a; border: 2px solid #dce8ef; }
+    .choice.correct { background: #e9fbef; border-color: #55bd70; color: #14552a; }
+    .choice.wrong { background: #fff0f3; border-color: #ff8aa5; color: #7a1730; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .primary { background: #2fb8ff; color: #06364c; }
+    .secondary { background: #fdd34d; color: #5a4300; }
+    .feedback { min-height: 58px; margin-top: 16px; padding: 12px 14px; border-radius: 14px; background: #f8fbff; border: 2px solid #dfe8ee; font-weight: 800; line-height: 1.45; }
+    .score { font-family: "Be Vietnam Pro", sans-serif; font-size: 34px; font-weight: 900; color: #006688; }
+    .mini { color: #52616b; font-weight: 800; line-height: 1.45; }
+    .result { display: none; padding: 22px; border-radius: 18px; background: #fff8d7; border: 3px solid #f4c34f; margin-top: 18px; }
+    @media (max-width: 860px) { header, .quiz { grid-template-columns: 1fr; display: grid; } header { align-items: start; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div><span class="pill">Trắc nghiệm cuối năm - Lịch sử</span><h1>Trắc nghiệm ôn tập Lịch sử lớp 5</h1></div>
+      <a class="pill" href="../index.html">Thư viện</a>
+    </header>
+    <section class="quiz">
+      <article class="panel">
+        <div id="counter">Câu 1 / 12</div>
+        <div class="progress"><div class="bar" id="bar"></div></div>
+        <p class="question" id="question"></p>
+        <div class="choices" id="choices"></div>
+        <div class="feedback" id="feedback">Chọn một đáp án để xem giải thích.</div>
+        <div class="actions"><button class="primary" id="next">Câu tiếp</button><button class="secondary" id="restart">Làm lại</button></div>
+        <div class="result" id="result"></div>
+      </article>
+      <aside class="side">
+        <div class="score" id="score">0 xu</div>
+        <div class="mini">Mỗi câu đúng nhận 8 xu. Hoàn thành bài nhận thêm 20 xu. Từ 9 câu đúng trở lên nhận sticker ôn tập.</div>
+        <div class="mini" id="best"></div>
+      </aside>
+    </section>
+  </main>
+  <script>
+    const questions = [{"q": "Khi học lịch sử, dòng thời gian giúp ta:", "choices": ["sắp xếp sự kiện theo thứ tự", "tính diện tích", "đọc bản đồ thời tiết", "đo khối lượng"], "answer": 0, "explain": "Dòng thời gian thể hiện thứ tự trước sau của sự kiện."}, {"q": "Một sự kiện lịch sử thường cần tìm hiểu:", "choices": ["thời gian, địa điểm, nhân vật, ý nghĩa", "màu áo yêu thích", "số trang vở", "độ dài bút chì"], "answer": 0, "explain": "Đó là các thông tin cốt lõi khi tìm hiểu sự kiện."}, {"q": "Khi đọc tư liệu lịch sử, nên:", "choices": ["kiểm tra nguồn và đối chiếu thông tin", "tin ngay mọi thông tin", "chỉ nhìn hình", "bỏ qua mốc thời gian"], "answer": 0, "explain": "Kiểm tra nguồn giúp học lịch sử chính xác hơn."}, {"q": "Câu hỏi 'Vì sao sự kiện này quan trọng?' giúp tìm:", "choices": ["ý nghĩa lịch sử", "màu sắc bức tranh", "số chữ trong đoạn", "độ cao ngọn núi"], "answer": 0, "explain": "Câu hỏi đó hướng đến ý nghĩa của sự kiện."}, {"q": "Nhân vật lịch sử là:", "choices": ["người có vai trò trong sự kiện, giai đoạn lịch sử", "nhân vật trong trò chơi bất kỳ", "tên một đồ vật", "một phép tính"], "answer": 0, "explain": "Nhân vật lịch sử gắn với sự kiện hoặc giai đoạn lịch sử."}, {"q": "Khi kể lại một sự kiện, trình tự hợp lý là:", "choices": ["bối cảnh - diễn biến - kết quả - ý nghĩa", "kết quả - màu sắc - trò chơi", "ý nghĩa - bỏ diễn biến", "chỉ nêu một chi tiết"], "answer": 0, "explain": "Trình tự này giúp câu chuyện lịch sử rõ ràng."}, {"q": "Bản đồ lịch sử thường dùng để:", "choices": ["xác định địa điểm, phạm vi sự kiện", "nghe âm thanh", "đo cân nặng", "tô màu tùy ý"], "answer": 0, "explain": "Bản đồ giúp hiểu không gian của sự kiện."}, {"q": "Mốc thời gian là:", "choices": ["thời điểm xảy ra sự kiện", "tên một con vật", "một kiểu hình học", "một loại thức ăn"], "answer": 0, "explain": "Mốc thời gian cho biết khi nào sự kiện xảy ra."}, {"q": "Việc so sánh hai sự kiện giúp:", "choices": ["nhận ra điểm giống và khác", "làm mất thông tin", "không cần đọc bài", "thay thế mọi bằng chứng"], "answer": 0, "explain": "So sánh giúp hiểu sâu hơn về sự kiện."}, {"q": "Kết quả của một sự kiện lịch sử là:", "choices": ["điều xảy ra sau sự kiện", "tên người kể chuyện", "màu nền của trang", "số trang sách"], "answer": 0, "explain": "Kết quả cho biết sự kiện dẫn đến điều gì."}, {"q": "Khi ôn lịch sử, cách học hiệu quả là:", "choices": ["lập sơ đồ sự kiện và mốc thời gian", "học thuộc rời rạc từng chữ", "bỏ qua câu hỏi vì sao", "không xem lại bài"], "answer": 0, "explain": "Sơ đồ giúp hệ thống kiến thức."}, {"q": "Ý nghĩa lịch sử thường trả lời câu hỏi:", "choices": ["Sự kiện để lại bài học hoặc tác động gì?", "Bút dài bao nhiêu?", "Bài có mấy màu?", "Hôm nay ăn gì?"], "answer": 0, "explain": "Ý nghĩa nói về tác động và bài học của sự kiện."}];
+    const storageKey = "grade5_trac_nghiem_lich_su-best";
+    let index = 0, score = 0, answered = false;
+    const counter = document.querySelector("#counter"), bar = document.querySelector("#bar"), questionEl = document.querySelector("#question"), choicesEl = document.querySelector("#choices"), feedback = document.querySelector("#feedback"), scoreEl = document.querySelector("#score"), result = document.querySelector("#result"), bestEl = document.querySelector("#best");
+    function updateBest() { const best = Number(localStorage.getItem(storageKey) || 0); bestEl.textContent = best ? `Kỷ lục: ${best}/${questions.length} câu đúng.` : "Chưa có kỷ lục cho bài này."; }
+    function render() {
+      answered = false; result.style.display = "none"; const item = questions[index];
+      counter.textContent = `Câu ${index + 1} / ${questions.length}`; bar.style.width = `${(index / questions.length) * 100}%`; questionEl.textContent = item.q; feedback.textContent = "Chọn một đáp án để xem giải thích."; choicesEl.innerHTML = "";
+      item.choices.forEach((choice, choiceIndex) => { const button = document.createElement("button"); button.className = "choice"; button.textContent = `${String.fromCharCode(65 + choiceIndex)}. ${choice}`; button.onclick = () => answer(choiceIndex, button); choicesEl.appendChild(button); });
+      scoreEl.textContent = `${score * 8} xu`;
+    }
+    function answer(choiceIndex) {
+      if (answered) return; answered = true; const item = questions[index]; const buttons = [...choicesEl.children];
+      buttons.forEach((button, i) => { if (i === item.answer) button.classList.add("correct"); if (i === choiceIndex && i !== item.answer) button.classList.add("wrong"); });
+      if (choiceIndex === item.answer) { score += 1; feedback.textContent = `Đúng. ${item.explain}`; } else { feedback.textContent = `Chưa đúng. Đáp án đúng là ${String.fromCharCode(65 + item.answer)}. ${item.explain}`; }
+      scoreEl.textContent = `${score * 8} xu`;
+    }
+    function finish() {
+      bar.style.width = "100%"; const bonus = 20; const coins = score * 8 + bonus; const sticker = score >= 9 ? " Có sticker ôn tập." : " Luyện thêm để nhận sticker.";
+      const best = Math.max(Number(localStorage.getItem(storageKey) || 0), score); localStorage.setItem(storageKey, String(best)); updateBest();
+      result.style.display = "block"; result.innerHTML = `<strong>Hoàn thành: ${score}/${questions.length} câu đúng.</strong><br>Nhận ${coins} xu.${sticker}`;
+    }
+    document.querySelector("#next").onclick = () => { if (!answered) { feedback.textContent = "Hãy chọn đáp án trước khi sang câu tiếp."; return; } if (index < questions.length - 1) { index += 1; render(); } else finish(); };
+    document.querySelector("#restart").onclick = () => { index = 0; score = 0; render(); };
+    updateBest(); render();
+  </script>
+</body>
+</html>

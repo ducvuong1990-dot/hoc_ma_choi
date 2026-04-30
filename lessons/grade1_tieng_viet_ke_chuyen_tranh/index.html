@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kể chuyện theo tranh - Tài liệu tương tác</title>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #fff4c7, #dff8ff);
+            font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+            color: #24313b
+        }
+
+        main {
+            width: min(1120px, calc(100% - 24px));
+            margin: auto;
+            padding: 22px 0 36px
+        }
+
+        .hero,
+        .card,
+        .side {
+            background: #fffdf7;
+            border: 4px solid #24313b;
+            border-radius: 28px;
+            box-shadow: 8px 8px 0 #24313b
+        }
+
+        .hero {
+            padding: 22px;
+            margin-bottom: 18px
+        }
+
+        .hero h1 {
+            font-size: clamp(34px, 6vw, 64px);
+            margin: 0;
+            line-height: 1
+        }
+
+        .hero p {
+            font-size: 22px;
+            font-weight: 800
+        }
+
+        .badge {
+            display: inline-block;
+            background: #ffd45a;
+            border: 3px solid #24313b;
+            border-radius: 999px;
+            padding: 8px 14px;
+            font-weight: 900
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 1fr 330px;
+            gap: 18px
+        }
+
+        .card,
+        .side {
+            padding: 18px
+        }
+
+        .scene {
+            display: none
+        }
+
+        .scene.active {
+            display: block
+        }
+
+        .picture {
+            min-height: 350px;
+            border: 4px solid #24313b;
+            border-radius: 24px;
+            background: linear-gradient(#bfeeff 0 58%, #9ddb87 59%);
+            position: relative;
+            overflow: hidden
+        }
+
+        .sun {
+            position: absolute;
+            right: 42px;
+            top: 34px;
+            width: 82px;
+            height: 82px;
+            border-radius: 50%;
+            background: #ffd45a;
+            border: 4px solid #24313b
+        }
+
+        .tree {
+            position: absolute;
+            left: 70px;
+            bottom: 72px;
+            width: 70px;
+            height: 150px;
+            background: #9b642f;
+            border: 4px solid #24313b;
+            border-radius: 18px
+        }
+
+        .tree:before {
+            content: "";
+            position: absolute;
+            left: -55px;
+            top: -86px;
+            width: 175px;
+            height: 135px;
+            border-radius: 50%;
+            background: #48b96b;
+            border: 4px solid #24313b
+        }
+
+        .kid {
+            position: absolute;
+            left: 325px;
+            bottom: 58px;
+            width: 118px
+        }
+
+        .head {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: #ffd2aa;
+            border: 4px solid #24313b;
+            margin: auto
+        }
+
+        .body {
+            height: 96px;
+            background: #ff806f;
+            border: 4px solid #24313b;
+            border-radius: 28px;
+            margin-top: -4px
+        }
+
+        .can {
+            position: absolute;
+            left: 465px;
+            bottom: 90px;
+            width: 108px;
+            height: 70px;
+            background: #48b7e8;
+            border: 4px solid #24313b;
+            border-radius: 18px;
+            transform: rotate(-12deg)
+        }
+
+        .drops {
+            position: absolute;
+            left: 568px;
+            bottom: 96px;
+            font-size: 40px
+        }
+
+        .plant {
+            position: absolute;
+            right: 165px;
+            bottom: 75px;
+            font-size: 86px
+        }
+
+        .caption {
+            font-size: 30px;
+            font-weight: 900;
+            margin: 14px 0
+        }
+
+        .choices,
+        .tools {
+            display: grid;
+            gap: 10px
+        }
+
+        .choice,
+        .nav button,
+        .word,
+        .library {
+            border: 3px solid #24313b;
+            border-radius: 18px;
+            background: #fff;
+            font: inherit;
+            font-size: 20px;
+            font-weight: 900;
+            cursor: pointer;
+            padding: 12px;
+            text-decoration: none;
+            color: #24313b
+        }
+
+        .choice.good {
+            background: #bff0c8
+        }
+
+        .choice.bad {
+            background: #ffc4bc
+        }
+
+        .nav {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 14px
+        }
+
+        .nav button {
+            background: #48b7e8;
+            box-shadow: 4px 4px 0 #24313b
+        }
+
+        .nav .yellow,
+        .yellow {
+            background: #ffd45a
+        }
+
+        .score {
+            font-size: 34px;
+            font-weight: 900;
+            color: #0b7040
+        }
+
+        .mini {
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 1.45
+        }
+
+        .wordbank {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px
+        }
+
+        .word {
+            border-radius: 999px
+        }
+
+        .dropzone {
+            min-height: 80px;
+            border: 4px dashed #24313b;
+            border-radius: 20px;
+            background: white;
+            padding: 12px;
+            font-size: 22px;
+            font-weight: 900
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 120px;
+            border: 3px solid #24313b;
+            border-radius: 18px;
+            padding: 12px;
+            font: inherit;
+            font-size: 20px
+        }
+
+        .feedback {
+            min-height: 34px;
+            font-size: 21px;
+            font-weight: 900;
+            margin-top: 12px
+        }
+
+        @media(max-width:880px) {
+            .layout {
+                grid-template-columns: 1fr
+            }
+
+            .picture {
+                min-height: 300px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="hero"><span class="badge">Tiếng Việt lớp 1</span>
+            <h1>Kể chuyện theo tranh</h1>
+            <p>Bé nhìn tranh, chọn câu đúng, sắp xếp ý và tự kể lại câu chuyện.</p>
+        </section>
+        <section class="layout">
+            <div class="card">
+                <div class="scene active">
+                    <div class="picture">
+                        <div class="sun"></div>
+                        <div class="tree"></div>
+                        <div class="kid">
+                            <div class="head"></div>
+                            <div class="body"></div>
+                        </div>
+                        <div class="can"></div>
+                        <div class="drops">💧💧💧</div>
+                        <div class="plant">🌱</div>
+                    </div>
+                    <div class="caption">Tranh 1: Bạn nhỏ đang làm gì?</div>
+                    <div class="choices"><button class="choice"
+                            onclick="answer(this,true,'Đúng rồi! Bạn nhỏ tưới cây.')">Bạn nhỏ tưới cây.</button><button
+                            class="choice" onclick="answer(this,false,'Chưa đúng. Con nhìn bình nước nhé.')">Bạn nhỏ đá
+                            bóng.</button><button class="choice"
+                            onclick="answer(this,false,'Chưa đúng. Đây là khu vườn, không phải lớp học.')">Bạn nhỏ viết
+                            bài.</button></div>
+                </div>
+                <div class="scene">
+                    <div class="picture">
+                        <div class="sun"></div>
+                        <div class="tree"></div>
+                        <div class="plant" style="font-size:112px">🌿</div>
+                        <div class="kid" style="left:405px">
+                            <div class="head"></div>
+                            <div class="body" style="background:#ffd45a"></div>
+                        </div>
+                    </div>
+                    <div class="caption">Tranh 2: Sau đó cây thế nào?</div>
+                    <div class="choices"><button class="choice"
+                            onclick="answer(this,true,'Chính xác! Cây xanh tốt hơn.')">Cây xanh tốt hơn.</button><button
+                            class="choice" onclick="answer(this,false,'Con thử nhìn cây trong tranh nhé.')">Cây bị
+                            héo.</button><button class="choice"
+                            onclick="answer(this,false,'Chưa đúng, trời đang nắng đẹp.')">Trời mưa to.</button></div>
+                </div>
+                <div class="scene">
+                    <div class="picture">
+                        <div class="sun"></div>
+                        <div class="tree"></div>
+                        <div class="plant" style="font-size:124px">🌳</div>
+                        <div class="kid" style="left:390px">
+                            <div class="head"></div>
+                            <div class="body" style="background:#4caf6d"></div>
+                        </div>
+                        <div style="position:absolute;left:418px;bottom:245px;font-size:58px">😊</div>
+                    </div>
+                    <div class="caption">Tranh 3: Kết quả là gì?</div>
+                    <div class="choices"><button class="choice"
+                            onclick="answer(this,true,'Tốt lắm! Bạn nhỏ vui vì cây lớn khỏe.')">Bạn nhỏ vui vì cây lớn
+                            khỏe.</button><button class="choice"
+                            onclick="answer(this,false,'Chưa đúng. Bạn nhỏ đang cười.')">Bạn nhỏ buồn.</button><button
+                            class="choice" onclick="answer(this,false,'Không phải rồi, cây vẫn ở trong vườn.')">Cây biến
+                            mất.</button></div>
+                </div>
+                <div class="scene">
+                    <h2>Sắp xếp câu chuyện</h2>
+                    <p class="mini">Bấm các thẻ theo thứ tự: đầu tiên - tiếp theo - cuối cùng.</p>
+                    <div class="wordbank"><button class="word" onclick="pick('Bạn nhỏ tưới cây.')">Bạn nhỏ tưới
+                            cây.</button><button class="word" onclick="pick('Cây xanh tốt hơn.')">Cây xanh tốt
+                            hơn.</button><button class="word" onclick="pick('Bạn nhỏ vui cười.')">Bạn nhỏ vui
+                            cười.</button></div>
+                    <div id="drop" class="dropzone"></div><button class="choice yellow" onclick="checkOrder()">Kiểm
+                        tra</button>
+                </div>
+                <div class="scene">
+                    <h2>Bé tự kể lại</h2>
+                    <p class="mini">Con hãy gõ hoặc đọc 2-3 câu kể lại câu chuyện.</p><textarea id="storyText"
+                        placeholder="Ví dụ: Bạn nhỏ tưới cây. Cây xanh tốt. Bạn nhỏ rất vui."></textarea>
+                    <div class="nav"><button onclick="finish()">Hoàn thành</button><button class="yellow"
+                            onclick="speak(document.getElementById('storyText').value || 'Bạn nhỏ tưới cây. Cây xanh tốt. Bạn nhỏ vui cười.')">Nghe
+                            bài của bé</button></div>
+                </div>
+                <div id="feedback" class="feedback"></div>
+                <div class="nav"><button onclick="go(-1)">Trước</button><button onclick="go(1)">Tiếp</button></div>
+            </div>
+            <aside class="side tools">
+                <div class="score">Xu: <span id="score">0</span></div>
+                <p class="mini">Mỗi câu đúng được 10 xu. Đây là học liệu để bé tự bấm, nghe, trả lời và kể chuyện.</p>
+                <button class="choice yellow" onclick="speak(currentHint())">Nghe gợi ý</button><button class="choice"
+                    onclick="speak('Ai trong tranh? Bạn nhỏ. Ở đâu? Trong vườn. Làm gì? Tưới cây. Kết quả? Cây xanh tốt, bạn nhỏ vui.')">Nghe
+                    mẫu đầy đủ</button>
+                <div class="mini"><b>Khung kể chuyện:</b><br>1. Ai?<br>2. Ở đâu?<br>3. Làm gì?<br>4. Kết quả ra sao?
+                </div><a class="library" href="../index.html">Thư viện</a>
+            </aside>
+        </section>
+    </main>
+    <script>
+        let current = 0, score = 0, picked = []; const scenes = [...document.querySelectorAll('.scene')];
+        function show() { scenes.forEach((s, i) => s.classList.toggle('active', i === current)); feedback.textContent = '' }
+        function go(d) { current = Math.max(0, Math.min(scenes.length - 1, current + d)); show() }
+        function addScore(n) { score += n; document.getElementById('score').textContent = score }
+        function answer(btn, ok, msg) { btn.classList.add(ok ? 'good' : 'bad'); feedback.textContent = msg; if (ok && !btn.dataset.done) { btn.dataset.done = 1; addScore(10) } }
+        function pick(text) { picked.push(text); drop.textContent = picked.join(' → ') }
+        function checkOrder() { const good = ['Bạn nhỏ tưới cây.', 'Cây xanh tốt hơn.', 'Bạn nhỏ vui cười.']; const ok = JSON.stringify(picked) === JSON.stringify(good); feedback.textContent = ok ? 'Đúng thứ tự rồi! Bé kể rất giỏi.' : 'Thử lại nhé: đầu tiên tưới cây, sau đó cây xanh tốt, cuối cùng bạn nhỏ vui.'; if (ok) addScore(10); else { picked = []; drop.textContent = '' } }
+        function finish() { const t = storyText.value.trim(); feedback.textContent = t.length > 20 ? 'Tuyệt vời! Bé đã tạo một câu chuyện của riêng mình.' : 'Con thử kể dài hơn một chút nhé.'; if (t.length > 20) addScore(10) }
+        function currentHint() { return ['Con nhìn tranh và chọn việc bạn nhỏ đang làm.', 'Con nhìn cây và chọn điều xảy ra sau khi được tưới nước.', 'Con nhìn nét mặt bạn nhỏ để chọn kết quả.', 'Bấm các thẻ theo thứ tự câu chuyện.', 'Con tự kể lại bằng hai hoặc ba câu.'][current] }
+        function speak(text) { return; }show();
+    </script>
+</body>
+
+</html>

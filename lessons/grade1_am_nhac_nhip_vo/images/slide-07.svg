@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f8fbff"/>
+  <circle cx="1480" cy="80" r="240" fill="#fff1df"/>
+  <circle cx="120" cy="790" r="240" fill="#fff1df"/>
+  <rect x="70" y="58" width="1460" height="784" rx="48" fill="#ffffff" stroke="#dde8ef" stroke-width="6"/>
+  <rect x="70" y="58" width="1460" height="96" rx="48" fill="#ffad4d"/>
+  <rect x="70" y="112" width="1460" height="42" fill="#ffad4d"/>
+  <text x="118" y="122" fill="#ffffff" font-size="34" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="900">Âm nhạc</text>
+  <text x="1430" y="122" fill="#ffffff" font-size="30" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="800">7/7</text>
+  <g transform="translate(1200 248)"><path d="M136 20v116a42 42 0 1 1-24-38V42l82-20v94a42 42 0 1 1-24-38V0Z" fill="#ffad4d"/></g>
+  <rect x="1140" y="210" width="300" height="260" rx="44" fill="#fff1df" opacity="0.86"/>
+  <rect x="118" y="206" width="945" height="158" rx="28" fill="#fff1df"/>
+  <text x="154" y="274" fill="#7a3a00" font-size="58" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="900">Con đã học được gì?</text>
+  <rect x="118" y="400" width="945" height="286" rx="30" fill="#ffffff" stroke="#e5edf2" stroke-width="4"/>
+  <text x="154" y="466" fill="#17202a" font-size="38" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="800">Hôm nay bé đã học: nhịp vỗ vui.</text>
+<text x="154" y="515" fill="#17202a" font-size="38" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="800">Bé nói lại 2 từ khóa và 1 điều bé thích</text>
+<text x="154" y="564" fill="#17202a" font-size="38" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="800">nhất.</text>
+  <rect x="118" y="718" width="1282" height="82" rx="26" fill="#fff1df" stroke="#ffad4d" stroke-width="4"/>
+  <text x="154" y="770" fill="#7a3a00" font-size="28" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="900">Hoạt động:</text>
+  <text x="330" y="770" fill="#24313b" font-size="26" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="800">Phụ huynh ghi nhận xét ngắn: rõ, cần luyện thêm, hoặc</text>
+<text x="330" y="801" fill="#24313b" font-size="26" font-family="Be Vietnam Pro, Nunito, Arial, sans-serif" font-weight="800">rất tự tin.</text>
+</svg>

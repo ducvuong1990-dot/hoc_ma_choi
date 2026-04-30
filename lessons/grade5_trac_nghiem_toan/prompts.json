@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "Trắc nghiệm ôn tập Toán lớp 5",
+    "grade": 5,
+    "subject": "Trắc nghiệm cuối năm - Toán",
+    "total_slides": 1,
+    "style": "quiz-cover-illustration-no-text",
+    "generated_at": "2026-04-28T10:22:11"
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "quiz_cover",
+      "content": "Trắc nghiệm ôn tập Toán lớp 5 - Trắc nghiệm cuối năm - Toán",
+      "prompt": "Use case: scientific-educational\nAsset type: 16:9 quiz cover illustration for Vietnamese grade 5 students\nPrimary request: Create a warm classroom illustration for a final-year multiple-choice review quiz: Trắc nghiệm ôn tập Toán lớp 5.\nSubject context: Trắc nghiệm cuối năm - Toán. Keywords: phân số, số thập phân, phần trăm, hình học, chuyển động.\nImportant: no letters, words, numbers, captions, labels, UI text, handwriting, watermark, or logo in the image. Text is rendered separately by HTML/SVG.",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\grade5_trac_nghiem_toan\\images\\slide-01.svg"
+    }
+  ]
+}

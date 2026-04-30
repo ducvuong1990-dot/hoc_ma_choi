@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "title": "Hành trình của giọt nước",
+    "total_slides": 5,
+    "resolution": "2K",
+    "style": "styles/vector-illustration.md",
+    "generated_at": "2026-04-30T07:05:30.890287"
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "page_type": "cover",
+      "content": "Tiêu đề lớn: HÀNH TRÌNH CỦA GIỌT NƯỚC. Hình ảnh một giọt nước nhỏ xinh đang cười, bên cạnh là cầu vồng và những đám mây trắng bồng bềnh.",
+      "script": "Chào các bạn nhỏ thân yêu! Hôm nay, cô (thầy) có một câu chuyện rất hay muốn kể cho chúng mình nghe về một người bạn bé tí hon nhưng lại cực kỳ quan trọng, đó là giọt nước đấy! Chúng mình cùng khám phá 'Hành trình của giọt nước' nhé, xem bạn ấy đã đi những đâu!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a cover page based on visual balance aesthetics.\nPlace a large complex 3D glass object in the center, overlaid with bold text:\n\nTiêu đề lớn: HÀNH TRÌNH CỦA GIỌT NƯỚC. Hình ảnh một giọt nước nhỏ xinh đang cười, bên cạnh là cầu vồng và những đám mây trắng bồng bềnh.\n\nBackground with extended aurora waves.",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_H_nh_tr_nh_c_a_gi_t__1777507530758\\images\\slide-01.png"
+    },
+    {
+      "slide_number": 2,
+      "page_type": "content",
+      "content": "Tiêu đề: Giọt nước từ đâu đến? - Bắt đầu từ những đám mây! Hình ảnh đám mây đang mưa, một giọt nước tí hon rơi xuống đất.",
+      "script": "Các con có biết không, hành trình kỳ diệu của giọt nước thường bắt đầu từ trên cao, trong những đám mây trắng bồng bềnh trên bầu trời. Khi trời mưa phùn hay mưa rào, những giọt nước bé xíu này sẽ nhảy ra khỏi đám mây và rơi xuống mặt đất, như đang nô đùa vậy!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nTiêu đề: Giọt nước từ đâu đến? - Bắt đầu từ những đám mây! Hình ảnh đám mây đang mưa, một giọt nước tí hon rơi xuống đất.",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_H_nh_tr_nh_c_a_gi_t__1777507530758\\images\\slide-02.png"
+    },
+    {
+      "slide_number": 3,
+      "page_type": "content",
+      "content": "Tiêu đề: Giọt nước đi đâu? - Về nhà dưới sông, hồ, biển cả! Hình ảnh giọt nước chảy vào dòng sông nhỏ, rồi ra biển lớn. Mặt trời chiếu sáng ấm áp.",
+      "script": "Sau khi rơi xuống đất, giọt nước sẽ không ở yên một chỗ đâu! Bạn ấy sẽ chạy thật nhanh, có thể là vào một vũng nước nhỏ, rồi chảy vào con suối, dòng sông. Cuối cùng, tất cả các giọt nước sẽ tụ họp với nhau trong những hồ nước lớn và cả đại dương mênh mông nữa đấy!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nTiêu đề: Giọt nước đi đâu? - Về nhà dưới sông, hồ, biển cả! Hình ảnh giọt nước chảy vào dòng sông nhỏ, rồi ra biển lớn. Mặt trời chiếu sáng ấm áp.",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_H_nh_tr_nh_c_a_gi_t__1777507530758\\images\\slide-03.png"
+    },
+    {
+      "slide_number": 4,
+      "page_type": "content",
+      "content": "Tiêu đề: Giọt nước bay lên trời! - Thành hơi nước và biến thành mây! Hình ảnh mặt trời chiếu xuống mặt nước, hơi nước bốc lên từ mặt nước thành những đám mây nhỏ.",
+      "script": "Nhưng hành trình chưa dừng lại ở đó đâu! Khi ông mặt trời chiếu những tia nắng ấm áp xuống mặt nước, giọt nước sẽ biến thành hơi nước thật nhẹ và bay vút lên trời cao. Trên đó, chúng lại gặp gỡ bạn bè, tụ lại thành những đám mây mới và chuẩn bị cho một chuyến đi khác!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a content page using Bento grid layout.\nOrganize the following content in modular rounded rectangle containers.\nContainer material must be frosted glass with blur effect:\n\nTiêu đề: Giọt nước bay lên trời! - Thành hơi nước và biến thành mây! Hình ảnh mặt trời chiếu xuống mặt nước, hơi nước bốc lên từ mặt nước thành những đám mây nhỏ.",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_H_nh_tr_nh_c_a_gi_t__1777507530758\\images\\slide-04.png"
+    },
+    {
+      "slide_number": 5,
+      "page_type": "content",
+      "content": "Tiêu đề: Bài học từ giọt nước - Chúng ta cùng giữ gìn nước sạch nhé! Hình ảnh một em bé đang tưới cây, một em bé đang uống nước, và một vòi nước đang được khóa lại cẩn thận.",
+      "script": "Thế là giọt nước của chúng ta lại bắt đầu một hành trình mới rồi đấy! Giọt nước rất quan trọng với tất cả chúng ta, vì vậy, các con hãy nhớ tiết kiệm nước bằng cách khóa vòi nước khi không dùng và luôn giữ gìn nguồn nước xung quanh mình sạch sẽ nhé!",
+      "prompt": "风格ID\nvector-illustration\n\nPlease generate a data/summary page using split-screen design.\nLeft side: typeset the following text.\nRight side: floating large glowing 3D data visualization:\n\nTiêu đề: Bài học từ giọt nước - Chúng ta cùng giữ gìn nước sạch nhé! Hình ảnh một em bé đang tưới cây, một em bé đang uống nước, và một vòi nước đang được khóa lại cẩn thận.",
+      "image_path": "E:\\Tools\\PC\\Hoc_chu\\lessons\\lesson_H_nh_tr_nh_c_a_gi_t__1777507530758\\images\\slide-05.png"
+    }
+  ]
+}
