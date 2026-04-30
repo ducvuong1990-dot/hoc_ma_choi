@@ -184,7 +184,7 @@ class ImageGeneratorAgent extends Agent {
       fs.writeFileSync(planPath, JSON.stringify(plan, null, 2), "utf8");
 
       return new Promise((resolve, reject) => {
-        const process = spawn(
+        const childProcess = spawn(
           "python",
           [
             "generate_ppt.py",
@@ -202,16 +202,16 @@ class ImageGeneratorAgent extends Agent {
         let stdout = "";
         let stderr = "";
 
-        process.stdout.on("data", (data) => {
+        childProcess.stdout.on("data", (data) => {
           stdout += data.toString();
           console.log(`[${this.name}] ${data.toString().trim()}`);
         });
 
-        process.stderr.on("data", (data) => {
+        childProcess.stderr.on("data", (data) => {
           stderr += data.toString();
         });
 
-        process.on("close", (code) => {
+        childProcess.on("close", (code) => {
           if (code === 0) {
             resolve({ success: true, outputDir });
           } else {
@@ -219,7 +219,7 @@ class ImageGeneratorAgent extends Agent {
           }
         });
 
-        process.on("error", (error) => {
+        childProcess.on("error", (error) => {
           reject(error);
         });
       });
@@ -240,7 +240,7 @@ class AudioGeneratorAgent extends Agent {
       fs.writeFileSync(promptsPath, JSON.stringify(plan, null, 2), "utf8");
 
       return new Promise((resolve, reject) => {
-        const process = spawn(
+        const childProcess = spawn(
           "python",
           ["generate_audio.py", "--script", promptsPath, "--output_dir", outputDir],
           {
@@ -252,16 +252,16 @@ class AudioGeneratorAgent extends Agent {
         let stdout = "";
         let stderr = "";
 
-        process.stdout.on("data", (data) => {
+        childProcess.stdout.on("data", (data) => {
           stdout += data.toString();
           console.log(`[${this.name}] ${data.toString().trim()}`);
         });
 
-        process.stderr.on("data", (data) => {
+        childProcess.stderr.on("data", (data) => {
           stderr += data.toString();
         });
 
-        process.on("close", (code) => {
+        childProcess.on("close", (code) => {
           if (code === 0) {
             resolve({ success: true, outputDir });
           } else {
@@ -269,7 +269,7 @@ class AudioGeneratorAgent extends Agent {
           }
         });
 
-        process.on("error", (error) => {
+        childProcess.on("error", (error) => {
           reject(error);
         });
       });
