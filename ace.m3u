@@ -1,7 +1,7 @@
 #EXTM3U url-tvg="http://bit.ly/guidevn"
 
 #EXTINF:-1 tvg-logo="https://www.designfreelogoonline.com/wp-content/uploads/2020/10/000668-soccer-01.png",✍ Kham Pha 1/5--2/5
-acestream://01ca28470d6b820ed715f83e0621be9b8586e8d2
+http://127.0.0.1:6878/ace/getstream?id=01ca28470d6b820ed715f83e0621be9b8586e8d2
 #EXTINF:-1 tvg-logo="https://www.designfreelogoonline.com/wp-content/uploads/2020/10/000668-soccer-01.png",CÁC BÁC CHÚ Ý
 acestream://01ca28470d6b820ed715f83e0621be9b8586e8d2
 #EXTINF:-1 tvg-logo="https://www.designfreelogoonline.com/wp-content/uploads/2020/10/000668-soccer-01.png",KÉO DÂY LAN
