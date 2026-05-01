@@ -1,5 +1,9 @@
 #EXTM3U url-tvg="http://bit.ly/guidevn"
 
+#-------------------VTV-------------------#
+#EXTINF:0 tvg-id="vtv1hd" group-title="VTV" tvg-logo="https://i.imgur.com/nfkmvAY.png",VTV1 (HD 8Mbps)
+udp://@225.1.2.249:30120
+
 # --- NHÓM HƯỚNG DẪN ---
 #EXTINF:-1 tvg-logo="https://www.designfreelogoonline.com/wp-content/uploads/2020/10/000668-soccer-01.png" group-title="HUONG DAN",✍ KHAM PHA: DUNG LAN/WIFI 5GHZ
 acestream://01ca28470d6b820ed715f83e0621be9b8586e8d2[cite: 1]
